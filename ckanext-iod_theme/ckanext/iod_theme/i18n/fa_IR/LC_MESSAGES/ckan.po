@@ -3,11 +3,11 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-05 18:33+0100\n"
-"PO-Revision-Date: 2018-02-05 13:18+0000\n"
+"PO-Revision-Date: 2019-01-14 21:41-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -446,7 +446,7 @@ msgstr "تغییرات اخیر در مخزن CKAN."
 
 #: ckan/controllers/revision.py:110
 msgid "Datasets affected: %s.\n"
-msgstr "مجموعه داده‌های ذیربط: %s."
+msgstr "مجموعه داده‌های ذیربط: %s.\n"
 
 #: ckan/controllers/revision.py:190
 msgid "Revision updated"
@@ -682,7 +682,7 @@ msgstr "نمایش"
 
 #: ckan/lib/email_notifications.py:103
 msgid "{n} new activity from {site_title}"
-msgstr "{n} فعالیت جدید از {site_title} "
+msgstr "‫{n} فعالیت جدید از {site_title}"
 
 #: ckan/lib/formatters.py:19
 msgid "January"
@@ -2366,7 +2366,7 @@ msgstr "اضافه کردن مجموعه داده"
 
 #: ckan/templates/organization/snippets/feeds.html:3
 msgid "Datasets in organization: {group}"
-msgstr "مجموعه‌های داده در سازمان: {گروه}"
+msgstr "مجموعه‌های داده در سازمان: {group}"
 
 #: ckan%2Ftemplates%2Forganization%2Fsnippets%2Fhelp.html%3A4+ckan%2Ftemplates%2Forganization%2Fsnippets%2Fhelper.html%3A4
 msgid "What are Organizations?"
@@ -2402,7 +2402,7 @@ msgstr "ذخیره سازمان"
 
 #: ckan%2Ftemplates%2Forganization%2Fsnippets%2Forganization_item.html%3A37+ckan%2Ftemplates%2Forganization%2Fsnippets%2Forganization_item.html%3A38
 msgid "View {organization_name}"
-msgstr "نمایش {نام سازمان}"
+msgstr "نمایش {organization_name}"
 
 #: ckan%2Ftemplates%2Fpackage%2Fbase.html%3A22+ckan%2Ftemplates%2Fpackage%2Fnew.html%3A9+ckan%2Ftemplates%2Fpackage%2Fsnippets%2Fnew_package_breadcrumb.html%3A2
 msgid "Create Dataset"
@@ -3096,6 +3096,10 @@ msgstr " <p id=\"search-error\"><strong>در حین جستجو اشتباهی پ
 msgid "{number} dataset found for \"{query}\""
 msgstr "{number} مجموعه داده برای \"{query}\" پیدا شده است."
 
+#: ckan/templates/snippets/search_result_text.html:15
+msgid "{number} datasets found for \"{query}\""
+msgstr "{number} مجموعه داده برای \"{query}\" پیدا شده است."
+
 #: ckan/templates/snippets/search_result_text.html:16
 msgid "No datasets found for \"{query}\""
 msgstr "هیچ مجموعه داده‌ای برای \"{query}\" پیدا نشد"
@@ -3104,13 +3108,21 @@ msgstr "هیچ مجموعه داده‌ای برای \"{query}\" پیدا نشد
 msgid "{number} dataset found"
 msgstr "{number} مجموعه داده پیدا شده است."
 
+#: ckan/templates/snippets/search_result_text.html:17
+msgid "{number} datasets found"
+msgstr "{number} مجموعه داده پیدا شده است."
+
 #: ckan/templates/snippets/search_result_text.html:18
 msgid "No datasets found"
 msgstr "هیچ مجموعه داده‌ای پیدا نشده است"
 
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
-msgstr "{number} گروه برای \"{query}\" پیدا نشده است"
+msgstr "{number} گروه برای \"{query}\" پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:21
+msgid "{number} groups found for \"{query}\""
+msgstr "{number} گروه برای \"{query}\" پیدا شده است"
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "No groups found for \"{query}\""
@@ -3118,6 +3130,30 @@ msgstr "هیچ گروهی برای \"{query}\" پیدا نشده است"
 
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
+msgstr "{number} گروه پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:23
+msgid "{number} groups found"
+msgstr "{number} گروه پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:21
+msgid "{number} theme found for \"{query}\""
+msgstr "{number} گروه برای \"{query}\" پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:21
+msgid "{number} themes found for \"{query}\""
+msgstr "{number} گروه برای \"{query}\" پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:22
+msgid "No themes found for \"{query}\""
+msgstr "هیچ گروهی برای \"{query}\" پیدا نشده است"
+
+#: ckan/templates/snippets/search_result_text.html:23
+msgid "{number} theme found"
+msgstr "{number} گروه پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:23
+msgid "{number} themes found"
 msgstr "{number} گروه پیدا شده است"
 
 #: ckan/templates/snippets/search_result_text.html:24
@@ -3134,6 +3170,10 @@ msgstr "هیچ سازمانی برای \"{query}\" پیدا نشد"
 
 #: ckan/templates/snippets/search_result_text.html:29
 msgid "{number} organization found"
+msgstr "{number} سازمان پیدا شده است"
+
+#: ckan/templates/snippets/search_result_text.html:29
+msgid "{number} organizations found"
 msgstr "{number} سازمان پیدا شده است"
 
 #: ckan/templates/snippets/search_result_text.html:30
@@ -3865,3 +3905,783 @@ msgstr "نام"
 #: ckanext-iod_theme/ckanext/iod_theme/templates/contact/snippets/form.html:16
 msgid "Your Request"
 msgstr "پیام شما"
+
+#: Publisher
+msgid "This dataset has no publisher"
+msgstr "این مجموعه داده ناشر ندارد."
+
+#: TAGS
+msgid "accidents"
+msgstr "تصادفات"
+
+msgid "activity status"
+msgstr "وضع فعالیت"
+
+msgid "administrative boundaries"
+msgstr "تقسیمات کشوری"
+
+msgid "advanced diploma"
+msgstr "کاردانی"
+
+msgid "age"
+msgstr "سن"
+
+msgid "agriculture"
+msgstr "کشاورزی"
+
+msgid "air pollution"
+msgstr "آلودگی هوا"
+
+msgid "Ansar bank"
+msgstr "بانک انصار"
+
+msgid "art"
+msgstr "هنر"
+
+msgid "Ayandeh bank"
+msgstr "بانک آینده"
+
+msgid "bacholor"
+msgstr "کارشناسی"
+
+msgid "balance of trade"
+msgstr "تراز تجاری"
+
+msgid "balance sheet"
+msgstr "ترازنامه"
+
+msgid "bank"
+msgstr "بانک"
+
+msgid "banking"
+msgstr "بانکداری"
+
+msgid "banking system"
+msgstr "نظام بانکی"
+
+msgid "bauxite"
+msgstr "بوکسیت"
+
+msgid "beverages"
+msgstr "آشامیدنی‌ها"
+
+msgid "Bonyad Mostazafan"
+msgstr "بنیاد مستضعفان"
+
+msgid "budget"
+msgstr "بودجه"
+
+msgid "budget settlement"
+msgstr "تفریغ"
+
+msgid "buses"
+msgstr "اتوبوس"
+
+msgid "business"
+msgstr "تجارت "
+
+msgid "Caspian credit institution"
+msgstr "موسسه اعتباری كاسپين"
+
+msgid "cause of death"
+msgstr "علت مرگ "
+
+msgid "chromite"
+msgstr "کرومیت"
+
+msgid "cinema"
+msgstr "سینما "
+
+msgid "city"
+msgstr "شهر"
+
+msgid "classroom"
+msgstr "کلاس درسی"
+
+msgid "cng"
+msgstr "گاز طبیعی فشرده"
+
+msgid "coal"
+msgstr "زغال‌سنگ"
+
+msgid "commercial"
+msgstr "تجاری"
+
+msgid "communication"
+msgstr "ارتباطات"
+
+msgid "companies"
+msgstr "شرکت‌ها"
+
+msgid "computer"
+msgstr "رایانه"
+
+msgid "construction"
+msgstr "ساخت و ساز"
+
+msgid "construction material"
+msgstr "مصالح ساختمانی"
+
+msgid "construction permit"
+msgstr "مجوز ساخت و ساز "
+
+msgid "consultant"
+msgstr "مشاور"
+
+msgid "consumption"
+msgstr "مصرف"
+
+msgid "contractor"
+msgstr "پیمانکار"
+
+msgid "copper"
+msgstr "مس"
+
+msgid "cost"
+msgstr "هزینه"
+
+msgid "country divisions"
+msgstr "تقسیمات کشوری"
+
+msgid "county"
+msgstr "شهرستان"
+
+msgid "credit"
+msgstr "اعتبار"
+
+msgid "credit union"
+msgstr "موسسات اعتباری"
+
+msgid "crime"
+msgstr "جرم"
+
+msgid "crude oil"
+msgstr "نفت خام "
+
+msgid "cultivation"
+msgstr "کشت ، زراعت"
+
+msgid "culture"
+msgstr "فرهنگ"
+
+msgid "currency"
+msgstr "واحد پول"
+
+msgid "dam"
+msgstr "سد"
+
+msgid "death"
+msgstr "مرگ|فوت|مرگ و میر"
+
+msgid "debt"
+msgstr "بدهی"
+
+msgid "decompose"
+msgstr "تجزیه"
+
+msgid "decorative stone"
+msgstr "سنگ‌های تزئینی"
+
+msgid "defense"
+msgstr "امور دفاعی"
+
+msgid "degree"
+msgstr "مدرک"
+
+msgid "deposits"
+msgstr "سپرده "
+
+msgid "Dey bank"
+msgstr "بانک دی"
+
+msgid "diploma"
+msgstr "دیپلم"
+
+msgid "disease"
+msgstr "بیماری"
+
+msgid "district"
+msgstr "بخش"
+
+msgid "divorce"
+msgstr "طلاق"
+
+msgid "dolomite"
+msgstr "دولومیت"
+
+msgid "domestic sector"
+msgstr "امور داخلی"
+
+msgid "economics"
+msgstr "اقتصاد"
+
+msgid "economy"
+msgstr "اقتصاد"
+
+msgid "education"
+msgstr "آموزش"
+
+msgid "Eghtesad Novin bank"
+msgstr "بانک اقتصاد نوین"
+
+msgid "electricity"
+msgstr "برق"
+
+msgid "emergency"
+msgstr "اورژانس"
+
+msgid "employment"
+msgstr "اشتغال "
+
+msgid "energy"
+msgstr "انرژی"
+
+msgid "engineering"
+msgstr "مهندسی"
+
+msgid "environment"
+msgstr "محیط زیست"
+
+msgid "expenditure"
+msgstr "مخارج"
+
+msgid "exports"
+msgstr "صادرات "
+
+msgid "female-women"
+msgstr "زن"
+
+msgid "finance"
+msgstr "امور مالی"
+
+msgid "food"
+msgstr "مواد غذایی"
+
+msgid "food safety"
+msgstr "ایمنی غذایی"
+
+msgid "foreign affairs"
+msgstr "امور خارجی"
+
+msgid "foreign bank"
+msgstr "بانک خارجی"
+
+msgid "fuel"
+msgstr "سوخت"
+
+msgid "Gardeshgari bank"
+msgstr "بانک گردشگری"
+
+msgid "gas"
+msgstr "گاز"
+
+msgid "gasoline-petrol"
+msgstr "بنزین"
+
+msgid "gdp"
+msgstr "تولید ناخالص داخلی"
+
+msgid "gender"
+msgstr "جنسیت"
+
+msgid "Ghavamin bank"
+msgstr "بانک قوامین"
+
+msgid "global"
+msgstr "جهانی"
+
+msgid "governemental bank"
+msgstr "بانک دولتی"
+
+msgid "government"
+msgstr "دولت"
+
+msgid "graduates"
+msgstr "فارغ‌التحصیلان"
+
+msgid "health"
+msgstr "سلامت"
+
+msgid "health care"
+msgstr "بهداشت"
+
+msgid "Hekmat Iranian bank"
+msgstr "بانک حکمت ایرانیان"
+
+msgid "high school"
+msgstr "دبیرستان "
+
+msgid "high school diploma"
+msgstr "دیپلم "
+
+msgid "hospital"
+msgstr "بیمارستان"
+
+msgid "hotels"
+msgstr "هتل"
+
+msgid "household"
+msgstr "خانوار"
+
+msgid "housing"
+msgstr "مسکن"
+
+msgid "humanities"
+msgstr "علوم انسانی"
+
+msgid "ICT"
+msgstr "فناوری اطلاعات و ارتباطات"
+
+msgid "immigration"
+msgstr "مهاجرت"
+
+msgid "import"
+msgstr "واردات "
+
+msgid "income"
+msgstr "درآمد"
+
+msgid "industrial"
+msgstr "صنعتی"
+
+msgid "industry"
+msgstr "صنعت "
+
+msgid "inflation"
+msgstr "تورم"
+
+msgid "internet"
+msgstr "اینترنت"
+
+msgid "investment"
+msgstr "سرمایه‌گذاری"
+
+msgid "Iran"
+msgstr "ایران"
+
+msgid "Iran zamin bank"
+msgstr "بانک ایران زمین"
+
+msgid "Karafarinan bank"
+msgstr "بانک کارآفرین"
+
+msgid "Kowsar Markazi credit institution"
+msgstr "موسسه اعتباری كوثر مرکزی"
+
+msgid "Khavaremiyaneh bank"
+msgstr "بانک خاورمیانه"
+
+msgid "labour force"
+msgstr "نیروی کار"
+
+msgid "land"
+msgstr "زمین "
+
+msgid "literacy"
+msgstr "سواد"
+
+msgid "male-men"
+msgstr "مرد"
+
+msgid "marine"
+msgstr "دریایی"
+
+msgid "marriage"
+msgstr "ازدواج"
+
+msgid "Mashhad"
+msgstr "مشهد"
+
+msgid "masters"
+msgstr " کارشناسی ارشد "
+
+msgid "maths and physics"
+msgstr "ریاضی فیزیک"
+
+msgid "media"
+msgstr "رسانه "
+
+msgid "Mehr eghtesad bank"
+msgstr "بانک مهر اقتصاد"
+
+msgid "Mehr housing"
+msgstr "مسکن مهر"
+
+msgid "Melal credit institution"
+msgstr "موسسه اعتباری ملل"
+
+msgid "Mellat bank"
+msgstr "بانک ملت"
+
+msgid "meteorology"
+msgstr "هواشناسی"
+
+msgid "middle schools"
+msgstr "راهنمایی"
+
+msgid "minerals"
+msgstr "مواد معدنی"
+
+msgid "mining"
+msgstr "معدن"
+
+msgid "monetary"
+msgstr "پولی"
+
+msgid "Mostazafan foundation"
+msgstr "بنیاد مستضعفان"
+
+msgid "municipality"
+msgstr "شهرداری"
+
+msgid "municipality budget"
+msgstr "بودجه شهرداری"
+
+msgid "national"
+msgstr "ملی"
+
+msgid "national security"
+msgstr "امنیت ملی"
+
+msgid "national statistics"
+msgstr "آمار ملی"
+
+msgid "news"
+msgstr "خبر"
+
+msgid "newspaper"
+msgstr "روزنامه"
+
+msgid "nomads"
+msgstr "عشایر"
+
+msgid "non banking"
+msgstr "غیربانکی"
+
+msgid "non governmental"
+msgstr "غیر دولتی"
+
+msgid "nongovernmental bank"
+msgstr "بانک غیردولتی"
+
+msgid "Nour credit institution"
+msgstr "موسسه اعتباری نور"
+
+msgid "oil"
+msgstr "نفت"
+
+msgid "oil production"
+msgstr "تولید نفتی"
+
+msgid "OPEC"
+msgstr "اوپک"
+
+msgid "Parsian bank"
+msgstr "بانک پارسیان"
+
+msgid "Pasargad bank"
+msgstr "بانک پارسارگاد"
+
+msgid "permits"
+msgstr "مجوز"
+
+msgid "pesticides"
+msgstr "آفت‌کش"
+
+msgid "pests"
+msgstr "آفت‌ کشاورزی"
+
+msgid "petrol"
+msgstr "بنزین"
+
+msgid "petroleum"
+msgstr "نفت"
+
+msgid "petroleum product"
+msgstr "فرآورده‌های نفتی"
+
+msgid "phd"
+msgstr "دکترای حرفه‌ای "
+
+msgid "phone line"
+msgstr "خط تلفن"
+
+msgid "police station"
+msgstr "ایستگاه پلیس"
+
+msgid "pollution"
+msgstr "آلودگی"
+
+msgid "population"
+msgstr "جمعیت"
+
+msgid "population growth"
+msgstr "رشد جمعیت"
+
+msgid "post"
+msgstr "پست"
+
+msgid "Post bank"
+msgstr "پست بانک"
+
+msgid "post doctorate"
+msgstr "دکترای تخصصی"
+
+msgid "post office"
+msgstr "اداره پست"
+
+msgid "poverty"
+msgstr "فقر"
+
+msgid "power"
+msgstr "قدرت"
+
+msgid "practical science"
+msgstr "علوم تجربی"
+
+msgid "pre university"
+msgstr "پیش‌‌دانشگاهی"
+
+msgid "precipitation"
+msgstr "بارندگی"
+
+msgid "premit"
+msgstr "مجوز"
+
+msgid "preschool"
+msgstr "پیش‌دبستانی"
+
+msgid "press"
+msgstr "مطبوعات"
+
+msgid "price"
+msgstr "قیمت"
+
+msgid "primary school"
+msgstr "دبستان"
+
+msgid "private sector"
+msgstr "بخش خصوصی"
+
+msgid "production"
+msgstr "تولید"
+
+msgid "property"
+msgstr "دارایی"
+
+msgid "province"
+msgstr "استان"
+
+msgid "province area"
+msgstr "مساحت استان"
+
+msgid "public institutions"
+msgstr "موسسات دولتی"
+
+msgid "public sector"
+msgstr "بخش دولتی"
+
+msgid "recycle"
+msgstr "بازیافت"
+
+msgid "rent"
+msgstr "اجاره"
+
+msgid "Resalat gharzolhasaneh bank"
+msgstr "بانک قرض‌الحسنه رسالت"
+
+msgid "research"
+msgstr "تحقیق ، پژوهش"
+
+msgid "reservoir capacity"
+msgstr "ظرفیت مخزن"
+
+msgid "revenue"
+msgstr "درآمد"
+
+msgid "revenue sources"
+msgstr "منابع درآمدی"
+
+msgid "river"
+msgstr "رودخانه ، رود"
+
+msgid "road accidents"
+msgstr "تصادفات جاده‌ای"
+
+msgid "rural"
+msgstr "روستایی"
+
+msgid "rural district"
+msgstr "دهستان"
+
+msgid "Saderat bank"
+msgstr "بانک صادرات"
+
+msgid "Saman bank"
+msgstr "بانک سامان"
+
+msgid "Samen credit institution"
+msgstr "موسسه اعتباری ثامن"
+
+msgid "Sarmayeh bank"
+msgstr "بانک سرمایه"
+
+msgid "school"
+msgstr "مدرسه"
+
+msgid "science"
+msgstr "علوم تجربی"
+
+msgid "security affairs"
+msgstr "امور امنیتی"
+
+msgid "Shahr bank"
+msgstr "بانک شهر"
+
+msgid "share"
+msgstr "سهام"
+
+msgid "shareholders"
+msgstr "سهامداران"
+
+msgid "Shiraz"
+msgstr "شیراز"
+
+msgid "Sina bank"
+msgstr "بانک سینا"
+
+msgid "social affairs"
+msgstr "امور اجتماعی"
+
+msgid "social economics"
+msgstr "اجتماعی-اقتصادی"
+
+msgid "social security"
+msgstr "امنیت اجتماعی"
+
+msgid "sport"
+msgstr "ورزش"
+
+msgid "stock"
+msgstr "بورس"
+
+msgid "student"
+msgstr "دانش‌آموز"
+
+msgid "tax"
+msgstr "مالیات"
+
+msgid "technical and vocational"
+msgstr "فنی و حرفه‌ای"
+
+msgid "technology"
+msgstr "تکنولوٰژی"
+
+msgid "Tehran"
+msgstr "تهران"
+
+msgid "Tehran municipality"
+msgstr "شهرداری تهران"
+
+msgid "Tejarat bank"
+msgstr "بانک تجارت"
+
+msgid "telephone"
+msgstr "تلفن"
+
+msgid "television"
+msgstr "تلویزیون"
+
+msgid "tobacco"
+msgstr "دخانیات"
+
+msgid "Toseeh credit institution"
+msgstr "موسسه اعتباری توسعه"
+
+msgid "tourism"
+msgstr "گردشگری"
+
+msgid "trade"
+msgstr "تجارت"
+
+msgid "transportation"
+msgstr "حمل و نقل"
+
+msgid "unemployment"
+msgstr "بیکاری"
+
+msgid "university"
+msgstr "دانشگاه"
+
+msgid "urban"
+msgstr "شهری"
+
+msgid "urban planning"
+msgstr "برنامه‌ریزی شهری"
+
+msgid "village"
+msgstr "روستا"
+
+msgid "waste"
+msgstr "زباله"
+
+msgid "water"
+msgstr "آب"
+
+msgid "wealth"
+msgstr "ثروت"
+
+msgid "weather"
+msgstr "هوا"
+
+msgid "welfare"
+msgstr "رفاه"
+
+msgid "work"
+msgstr "کار"
+
+msgid "youth"
+msgstr "جوانان"
+
+#: Themes
+msgid "Art and Culture and Tourism"
+msgstr "هنر، فرهنگ و گردشگری"
+
+msgid "Banking and Finance"
+msgstr "مالی و بانکی"
+
+msgid "Budget and Government Spending"
+msgstr "بودجه و هزینه‌های دولت"
+
+msgid "Communications"
+msgstr "ارتباطات"
+
+msgid "Economic Sector"
+msgstr "بخش‌های اقتصادی"
+
+msgid "Education"
+msgstr "آموزش"
+
+msgid "Employment"
+msgstr "اشتغال"
+
+msgid "Energy"
+msgstr "انرژی"
+
+msgid "Environment"
+msgstr "محیط زیست"
+
+msgid "Health"
+msgstr "بهداشت"
+
+msgid "Housing"
+msgstr "مسکن"
+
+msgid "Population"
+msgstr "جمعیت"
+
+msgid "Trade"
+msgstr "تجارت"
+
+msgid "Transport"
+msgstr "حمل و نقل"
