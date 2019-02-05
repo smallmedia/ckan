@@ -1,4 +1,7 @@
 # encoding: utf-8
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 import logging
 from urllib import urlencode
@@ -258,7 +261,7 @@ class PackageController(base.BaseController):
             c.facet_titles = facets
 
             data_dict = {
-                'q': q,
+                'q': q.encode('utf-8').strip(),
                 'fq': fq.strip(),
                 'facet.field': facets.keys(),
                 'rows': limit,
