@@ -30,6 +30,67 @@
   src: url(/fonts/droid-kufi-bold.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir-FD.eot');
+    src: url('/fonts/vazir/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-FD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazir/Vazir-Bold-FD.eot');
+    src: url('/fonts/vazir/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-Bold-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-Bold-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazirVazir-Black-FD.eot');
+    src: url('/fonts/vazirVazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazirVazir-Black-FD.woff2') format('woff2'),
+         url('/fonts/vazirVazir-Black-FD.woff') format('woff'),
+         url('/fonts/vazirVazir-Black-FD.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazirVazir-Medium-FD.eot');
+    src: url('/fonts/vazirVazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazirVazir-Medium-FD.woff2') format('woff2'),
+         url('/fonts/vazirVazir-Medium-FD.woff') format('woff'),
+         url('/fonts/vazirVazir-Medium-FD.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazirVazir-Light-FD.eot');
+    src: url('/fonts/vazirVazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazirVazir-Light-FD.woff2') format('woff2'),
+         url('/fonts/vazirVazir-Light-FD.woff') format('woff'),
+         url('/fonts/vazirVazir-Light-FD.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/fonts/vazirVazir-Thin-FD.eot');
+    src: url('/fonts/vazirVazir-Thin-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazirVazir-Thin-FD.woff2') format('woff2'),
+         url('/fonts/vazirVazir-Thin-FD.woff') format('woff'),
+         url('/fonts/vazirVazir-Thin-FD.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -52,7 +113,7 @@ body:lang(en) {
 }
 
 body:lang(fa_IR) {
-  font-family: 'Droid Kufi', sans-serif;
+  font-family: Vazir, 'Droid Kufi', sans-serif;
 }
 
 h1:lang(en),
@@ -1504,7 +1565,7 @@ a:active {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   .navbar .nav-collapse {
     width: 100%;
     order: 2;
