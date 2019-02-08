@@ -12,21 +12,21 @@ Example:
 
 #}
 {% if type == 'dataset' %}
-  {% set text_query = ungettext('{number} dataset found for "{query}"', '{number} datasets found for "{query}"', count) %}
+  {% set text_query = ungettext(_('{number} dataset found for "{query}"'), _('{number} datasets found for "{query}"'), count) %}
   {% set text_query_none = _('No datasets found for "{query}"') %}
-  {% set text_no_query = ungettext('{number} dataset found', '{number} datasets found', count) %}
+  {% set text_no_query = ungettext(_('{number} dataset found'), _('{number} datasets found'), count) %}
   {% set text_no_query_none = _('No datasets found') %}
 
 {% elif type == 'group' %}
-  {% set text_query = ungettext('{number} theme found for "{query}"', '{number} themes found for "{query}"', count) %}
+  {% set text_query = ungettext(_('{number} theme found for "{query}"'), _('{number} themes found for "{query}"'), count) %}
   {% set text_query_none = _('No themes found for "{query}"') %}
-  {% set text_no_query = ungettext('{number} theme found', '{number} themes found', count) %}
+  {% set text_no_query = ungettext(_('{number} theme found'), _('{number} themes found'), count) %}
   {% set text_no_query_none = _('No themes found') %}
 
 {% elif type == 'organization' %}
-  {% set text_query = ungettext('{number} organization found for "{query}"', '{number} organizations found for "{query}"', count) %}
+  {% set text_query = ungettext(_('{number} organization found for "{query}"'), _('{number} organizations found for "{query}"'), count) %}
   {% set text_query_none = _('No organizations found for "{query}"') %}
-  {% set text_no_query = ungettext('{number} organization found', '{number} organizations found', count) %}
+  {% set text_no_query = ungettext(_('{number} organization found'), _('{number} organizations found'), count) %}
   {% set text_no_query_none = _('No organizations found') %}
 {%- endif -%}
 
