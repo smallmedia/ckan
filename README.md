@@ -39,7 +39,7 @@ Otherwise the ckan config file will be created based on `ckan.ini.j2` witch the 
 
 To update tracking summary: `paster tracking update -c /etc/ckan/default/ckan.ini`
 
-To rebuild the serch index: `aster search-index rebuild -c /etc/ckan/default/ckan.ini`
+To rebuild the serch index: `paster search-index rebuild -c /etc/ckan/default/ckan.ini`
 
 Also it's possible to create a cron job to do the updating and rebuilding periodically. run `crontab -e` and add this line to current cron file:
 ```
