@@ -27,3 +27,23 @@
 * Switch to the CKAN user: `sudo su - iod-ckan`
 * `paster <command> /etc/ckan/default/ckan.ini`
 * If server not running: `sudo service supervisor restart` (exit from CKAN user first)
+
+## Update View Tracking
+
+If you already deployed the ckan, set `ckan.tracking_enabled` to true in the `[app:main]` section of your CKAN configuration file (e.g `/etc/ckan/default/ckan.ini`):
+```
+[app:main]
+ckan.tracking_enabled = true
+```
+Otherwise the ckan config file will be created based on `ckan.ini.j2` witch the `tracking_enabled` is true by default.
+
+To update tracking summary: `paster tracking update -c /etc/ckan/default/ckan.ini`
+
+To rebuild the serch index: `paster search-index rebuild -c /etc/ckan/default/ckan.ini`
+
+Also it's possible to create a cron job to do the updating and rebuilding periodically. run `crontab -e` and add this line to current cron file:
+```
+@hourly /usr/lib/ckan/bin/paster --plugin=ckan tracking update -c /etc/ckan/default/ckan.ini && /usr/lib/ckan/bin/paster --plugin=ckan search-index rebuild -r -c /etc/ckan/default/ckan.ini
+```
+Be sure that the path of the paster is correct.
+The `@hourly` can be replaced with `@daily`, `@weekly` or `@monthly`.
