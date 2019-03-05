@@ -52,41 +52,41 @@
 }
 @font-face {
     font-family: Vazir;
-    src: url('/fonts/vazirVazir-Black-FD.eot');
-    src: url('/fonts/vazirVazir-Black-FD.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/vazirVazir-Black-FD.woff2') format('woff2'),
-         url('/fonts/vazirVazir-Black-FD.woff') format('woff'),
-         url('/fonts/vazirVazir-Black-FD.ttf') format('truetype');
+    src: url('/fonts/vazir/Vazir-Black-FD.eot');
+    src: url('/fonts/vazir/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-Black-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-Black-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-Black-FD.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: Vazir;
-    src: url('/fonts/vazirVazir-Medium-FD.eot');
-    src: url('/fonts/vazirVazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/vazirVazir-Medium-FD.woff2') format('woff2'),
-         url('/fonts/vazirVazir-Medium-FD.woff') format('woff'),
-         url('/fonts/vazirVazir-Medium-FD.ttf') format('truetype');
+    src: url('/fonts/vazir/Vazir-Medium-FD.eot');
+    src: url('/fonts/vazir/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-Medium-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-Medium-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-Medium-FD.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: Vazir;
-    src: url('/fonts/vazirVazir-Light-FD.eot');
-    src: url('/fonts/vazirVazir-Light-FD.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/vazirVazir-Light-FD.woff2') format('woff2'),
-         url('/fonts/vazirVazir-Light-FD.woff') format('woff'),
-         url('/fonts/vazirVazir-Light-FD.ttf') format('truetype');
+    src: url('/fonts/vazir/Vazir-Light-FD.eot');
+    src: url('/fonts/vazir/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-Light-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-Light-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-Light-FD.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: Vazir;
-    src: url('/fonts/vazirVazir-Thin-FD.eot');
-    src: url('/fonts/vazirVazir-Thin-FD.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/vazirVazir-Thin-FD.woff2') format('woff2'),
-         url('/fonts/vazirVazir-Thin-FD.woff') format('woff'),
-         url('/fonts/vazirVazir-Thin-FD.ttf') format('truetype');
+    src: url('/fonts/vazir/Vazir-Thin-FD.eot');
+    src: url('/fonts/vazir/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vazir/Vazir-Thin-FD.woff2') format('woff2'),
+         url('/fonts/vazir/Vazir-Thin-FD.woff') format('woff'),
+         url('/fonts/vazir/Vazir-Thin-FD.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
@@ -123,6 +123,23 @@ h4:lang(en),
 h5:lang(en),
 h6:lang(en) {
   font-family: "futura-pt",sans-serif;
+}
+
+h1:lang(fa_IR),
+h2:lang(fa_IR),
+h3:lang(fa_IR),
+h4:lang(fa_IR),
+h5:lang(fa_IR),
+h6:lang(fa_IR) {
+  font-family: Vazir, 'Droid Kufi', sans-serif;
+}
+
+.theme-list:lang(fa_IR) li h3 {
+  font-family: Vazir, 'Droid Kufi', sans-serif;
+}
+
+.theme-list:lang(fa_IR) li h4 {
+  font-family: Vazir, 'Droid Kufi', sans-serif;
 }
 
 /*------------------------------------*\
@@ -1607,4 +1624,48 @@ a:active {
   .wrapper {
     margin: 0;
   }
+}
+
+#lab_social_icon_footer {
+  padding: 40px 0;
+}
+
+#lab_social_icon_footer a {
+  color: #fbfbfb;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
 }
