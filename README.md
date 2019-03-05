@@ -47,3 +47,16 @@ Also it's possible to create a cron job to do the updating and rebuilding period
 ```
 Be sure that the path of the paster is correct.
 The `@hourly` can be replaced with `@daily`, `@weekly` or `@monthly`.
+
+
+## Showcase
+To install showcase:
+```
+cd ckanext-showcase
+python setup.py develop
+pip install -r dev-requirements.txt
+```
+
+Showcase will create it's tables. CKAN timeout when Showcase is enabled for the first time. to solve the problem you need to disable all plugins.
+Edit the local config file: `sudo vi /etc/ckan/default/ckan.ini` and comment out the `ckan.plugins` line. then add this line instead: `ckan.plugins = showcase` and run the CKAN.
+After creating the tables, enable all plugins again.
