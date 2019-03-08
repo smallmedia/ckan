@@ -7,6 +7,9 @@ log = logging.getLogger(__name__)
 
 
 def package_create(context, data_dict):
+    if 'owner_org' not in data_dict:
+        return l.action.create.package_create(context, data_dict)
+
     org_id = data_dict['owner_org']
     role = h.get_user_role_role_in_org(org_id)
 
