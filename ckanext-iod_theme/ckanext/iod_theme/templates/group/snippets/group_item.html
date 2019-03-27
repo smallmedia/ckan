@@ -21,7 +21,7 @@
         <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image js-inline-svg">
       {% endblock %}
       {% block title %}
-        <h3>{{ group.display_name }}</h3>
+        <h3>{{ _(group.display_name) }}</h3>
       {% endblock %}
       {% block description %}
         {% if group.description %}
@@ -30,7 +30,7 @@
       {% endblock %}
       {% block datasets %}
         {% if group.package_count %}
-          <p class="count">{{ ungettext('{num} Dataset', '{num} Datasets', group.package_count).format(num=group.package_count) }}</p>
+          <p class="count">{{ ungettext(_('{num} Dataset'), _('{num} Datasets'), group.package_count).format(num=group.package_count) }}</p>
         {% elif group.package_count == 0 %}
           <p class="count">{{ _('0 Datasets') }}</p>
         {% endif %}
