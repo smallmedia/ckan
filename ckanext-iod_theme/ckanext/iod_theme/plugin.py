@@ -5,6 +5,7 @@ import ckan.plugins.toolkit as toolkit
 from ckan.common import config
 import routes.mapper as mapper
 import ckanext.iod_theme.helpers as h
+import ckan.lib.helpers as hlp
 from ckanext.iod_theme.logic.auth.update import has_user_permission_to_make_dataset_public
 
 log = logging.getLogger(__name__)
@@ -53,6 +54,39 @@ def register_translator():
     registry.register(translator, translator_obj)
 
 
+def get_showcase_items():
+    DATASET_TYPE_NAME = 'showcase'
+
+    results = []
+    showcase = toolkit.get_action('ckanext_showcase_list')(
+        data_dict={})
+
+    showcase = showcase[:3]
+    for package_dict in showcase:
+        for item in plugins.PluginImplementations(
+                plugins.IPackageController):
+            package_dict = item.before_view(package_dict)
+
+        image_url = package_dict.get('image_url')
+
+        if image_url is None:
+            if ('extras' in package_dict and
+                    'value' in package_dict['extras'][0]):
+                image_url = package_dict['extras'][0]['value']
+        if image_url and not image_url.startswith('http'):
+            package_dict[u'image_url'] = image_url
+            package_dict[u'image_display_url'] = \
+                hlp.url_for_static(
+                    'uploads/{0}/{1}'
+                    .format(
+                        DATASET_TYPE_NAME,
+                        package_dict.get('image_url')),
+                    qualified=True)
+    results.append(package_dict)
+
+    return results
+
+
 class Iod_ThemePlugin(plugins.SingletonPlugin):
     '''IOD theme plugin.
 
@@ -94,7 +128,9 @@ class Iod_ThemePlugin(plugins.SingletonPlugin):
                 'iod_theme_free_tags_only':
                     h.free_tags_only,
                 'theme_pagination':
-                    h.theme_pagination
+                    h.theme_pagination,
+                'get_showcase_items':
+                    get_showcase_items
                }
 
     # Changing group icon WIP

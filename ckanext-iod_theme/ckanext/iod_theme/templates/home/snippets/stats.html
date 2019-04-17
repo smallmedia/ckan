@@ -2,7 +2,7 @@
 
 <div class="box stats">
   <div class="inner">
-    <h3>{{ _('{0} Statistics').format(g.site_title) }}</h3>
+    <h3>{{ _('statistics') }}</h3>
     <ul>
       {% block stats_group %}
       <li>
@@ -15,6 +15,12 @@
         <a href="{{ h.url_for(controller='group', action='index') }}">
           <b>{{ h.SI_number_span(stats.group_count) }}</b>
           {{ _('theme') if stats.group_count == 1 else _('themes') }}
+        </a>
+      </li>
+      <li>
+        <a href="{{ h.url_for('showcase') }}">
+          <b>{{ h.SI_number_span(stats.showcase_count) }}</b>
+          {{ _('showcase') if stats.showcase_count == 1 else _('showcases') }}
         </a>
       </li>
       {% endblock %}

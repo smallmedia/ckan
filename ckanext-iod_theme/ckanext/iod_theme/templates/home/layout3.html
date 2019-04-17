@@ -21,6 +21,10 @@
       </div>
 
       <div class="span12 col1">
+        {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items() %}
+      </div>
+
+      <div class="span12 col1">
         <div class="box usecases">
           <div class="inner">
             <h3>{{ _('Use cases') }}</h3>
