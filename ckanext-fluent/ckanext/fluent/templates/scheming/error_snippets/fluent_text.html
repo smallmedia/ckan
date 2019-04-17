@@ -1,0 +1,24 @@
+{%- set my_errors = [] -%}
+{%- for key, errors in unprocessed.items() -%}
+  {%- if key.startswith(field.field_name + '-') -%}
+    {%- do my_errors.append(key) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{# List errors in the language order from the schema #}
+{%- for lang in h.fluent_form_languages(field, entity_type, object_type, schema) -%}
+  {%- set key = field.field_name + '-' + lang -%}
+  {%- if key in my_errors -%}
+    {%- set errors = unprocessed.pop(key) -%}
+    <li data-field-label="{{ key }}"> {{
+      h.fluent_form_label(field, lang)}}: {{ errors[0] }}
+    {%- do my_errors.remove(key) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for key in my_errors | sort -%}
+  {%- set errors = unprocessed.pop(key) -%}
+  {%- set lang = key[(field.field_name + '-') | length:] -%}
+  <li data-field-label="{{ key }}"> {{
+    h.fluent_form_label(field, lang)}}: {{ errors[0] }}
+{%- endfor -%}
