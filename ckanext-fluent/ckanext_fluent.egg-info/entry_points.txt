@@ -1,0 +1,4 @@
+
+    [ckan.plugins]
+    fluent=ckanext.fluent.plugins:FluentPlugin
+    
