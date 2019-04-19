@@ -82,7 +82,8 @@ def get_showcase_items():
                         DATASET_TYPE_NAME,
                         package_dict.get('image_url')),
                     qualified=True)
-    results.append(package_dict)
+    if showcase:
+        results.append(package_dict)
 
     return results
 
