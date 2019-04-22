@@ -2209,6 +2209,9 @@ msgstr "اینجا مخصوص مطالب ویژه است"
 msgid "E.g. environment"
 msgstr "مثلا محیط زیست"
 
+msgid "E.g. environment, Bonyad Mostazafan or balance of trade"
+msgstr "مثلا محیط زیست، بنیاد مستضعفان یا تراز تجاری"
+
 #: ckan/templates/home/snippets/search.html:6
 msgid "Search data"
 msgstr "جستجوی داده"
@@ -3071,11 +3074,11 @@ msgstr "این مجموعه داده هیچ توضیحی ندارد"
 
 #: ckan/templates/snippets/search_form.html:17
 msgid "Submit"
-msgstr "تسلیم"
+msgstr "ثبت"
 
 #: ckan%2Ftemplates%2Fsnippets%2Fsearch_form.html%3A32+ckan%2Ftemplates%2Fsnippets%2Fsimple_search.html%3A8+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A12
 msgid "Order by"
-msgstr "سفارش تا تاریخ"
+msgstr "به ترتیب"
 
 #: ckan/templates/snippets/search_form.html:73
 msgid "Filter Results"
@@ -4802,11 +4805,15 @@ msgstr "‫<p><strong>مدیر کاربرد داده:</strong> می‌تواند
 msgid "{site_title} statistics"
 msgstr "آمار {site_title}"
 
+msgid "statistics"
+msgstr "آمارها"
+
 #: ckanext/showcase/templates/home/snippets/stats.html:28
 msgid "showcase"
-msgid_plural "showcases"
-msgstr[0] "کاربرد داده‌ها"
-msgstr[1] "کاربرد داده"
+msgstr "کاربرد داده"
+
+msgid "showcases"
+msgstr "کاربرد داده‌ها"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
