@@ -1,0 +1,98 @@
+---
+
+- name: Install ckanapi
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanapi"
+
+- name: Install contact
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-contact"
+
+- name: Install fluent
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-fluent"
+
+- name: Install iod-theme
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-iod_theme"
+
+- name: Install googleanalytics
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-googleanalytics"
+
+- name: Install pages
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-pages"
+
+- name: Install pdfview
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-pdfview"
+
+- name: Install scheming
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-scheming"
+
+- name: Install showcase
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-showcase"
+
+- name: Install showcase requirements
+  pip:
+    requirements: "{{ ckanext_root }}/ckanext-showcase/dev-requirements.txt"
+    virtualenv: "{{ virtualenv_path }}"
+
+- name: Install cKan paster config file to enable showcase
+  template:
+    dest: /etc/ckan/default/ckan.ini
+    src: 'roles/web/templates/ckan_showcase.ini.j2'
+
+- name: Restart supervisor for showcase
+  # service:
+  #   name: supervisor
+  #   state: restarted
+  shell: >
+    service supervisor restart
+
+- name: Pause for supervisor
+  pause:
+    seconds: 30
+
+- name: Install toolkit
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckantoolkit"
+
+- name: Install cKan paster config file to enable all plugins
+  template:
+    dest: /etc/ckan/default/ckan.ini
+    src: 'roles/web/templates/ckan_allplugins.ini.j2'
+
+- name: Restart supervisor for All Plugins
+  # service:
+  #   name: supervisor
+  #   state: restarted
+  shell: >
+    service supervisor restart
+
+- name: Pause for supervisor
+  pause:
+    seconds: 30

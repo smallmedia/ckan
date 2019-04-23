@@ -1,0 +1,13 @@
+- name: restart machine
+  shell: nohup sh -c '(sleep 5; shutdown -r now "Ansible restart") &' &>/dev/null
+  async: 1
+  poll: 0
+  become: yes
+  ignore_errors: true
+
+- name: wait for machine to restart
+  wait_for_connection:
+    connect_timeout: 20
+    sleep: 5
+    delay: 5
+    timeout: 30

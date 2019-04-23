@@ -3,23 +3,25 @@
 
 - name: Install cKan OS deps
   apt:
-    name: "{{item}}"
+    name: "{{ packages }}"
     state: present
-  with_items:
-    - build-essential
-    - git
-    - git-core
-    - libffi-dev
-    - libpq-dev
-    - libxml2-dev
-    - libxslt1-dev
-    - openjdk-6-jdk
-    - python-dev
-    - python-pip
-    - python-virtualenv
-    - redis-server
-    - solr-jetty
-    - zlib1g-dev
+    update_cache: '{{ update_apt_cache }}'
+  vars:
+    packages:
+        - build-essential
+        - git
+        - git-core
+        - libffi-dev
+        - libpq-dev
+        - libxml2-dev
+        - libxslt1-dev
+        - openjdk-6-jdk
+        - python-dev
+        - python-pip
+        - python-virtualenv
+        - redis-server
+        - solr-jetty
+        - zlib1g-dev
 
 
 - name: Install Jetty config file

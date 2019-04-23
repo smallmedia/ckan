@@ -1,12 +1,16 @@
 ---
 
 - name: Install PostgreSQL
-  apt: name={{ item }} update_cache={{ update_apt_cache }} state=installed
-  with_items:
-    - postgresql-{{ postgresql_version }}
-    - postgresql-contrib
-    - libpq-dev
-    - python-psycopg2
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: '{{ update_apt_cache }}'
+  vars:
+    packages:
+      - postgresql-{{ postgresql_version }}
+      - postgresql-contrib
+      - libpq-dev
+      - python-psycopg2
   tags: packages
 
 - name: Ensure the PostgreSQL service is running
@@ -56,8 +60,12 @@
   service: name=postgresql state=restarted enabled=yes
 
 - name: Install Postgres client components
-  apt: name={{ item }} update_cache={{ update_apt_cache }} state=installed
-  with_items:
-    - libpq-dev
-    - python-psycopg2
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: '{{ update_apt_cache }}'
+  vars:
+    packages:
+      - libpq-dev
+      - python-psycopg2
   tags: packages
