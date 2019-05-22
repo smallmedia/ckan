@@ -8,6 +8,8 @@
 
 - include: roles/web/tasks/datapusher.yml
 
+- include: roles/web/tasks/extensions.yml
+
 - name: Create a log directory for Supervisor
   file: path={{ application_log_dir }}/supervisord
         owner={{ application_user }}

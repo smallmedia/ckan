@@ -9,7 +9,7 @@
     line='{{ item }}'
     state=present
     insertafter=EOF
-  with_items:     
+  with_items:
     - '#Added by Ansible deloyment script for {{ application_name }}'
     - 'source {{ virtualenv_path }}/bin/activate'
     - 'source {{ virtualenv_path }}/bin/postactivate'
@@ -43,7 +43,14 @@
 # Set up git repo
 
 - name: Setup/pull the Git repo
-  git: repo={{ git_repo }} dest={{ git_root }} update=yes accept_hostkey=yes force=yes version={{ git_branch }}
+  git:
+    repo: "{{ git_repo }}"
+    dest: "{{ git_root }}"
+    update: yes
+    recursive: yes
+    accept_hostkey: yes
+    force: yes
+    version: "{{ git_branch }}"
   when: setup_git_repo
   tags:
     - git
@@ -130,6 +137,9 @@
     - django
     - migrate
 
+- name: Install CKAN Extensions
+  include: extensions.yml
+
 - name: Reset permissions for Datastore readonly user.
   shell: >
     paster --plugin=ckan datastore set-permissions -c /etc/ckan/default/ckan.ini | sudo -u postgres psql template1
@@ -174,7 +184,7 @@
 
 
 - name: Install Nginx
-  apt: name=nginx update_cache={{ update_apt_cache }} state=installed
+  apt: name=nginx update_cache={{ update_apt_cache }} state=present
   tags: packages
 
 
@@ -192,15 +202,20 @@
 
 
 - name: Ensure that the default site is disabled
-  command: rm /etc/nginx/sites-enabled/default
-           removes=/etc/nginx/sites-enabled/default
-
+#   command: rm /etc/nginx/sites-enabled/default
+#            removes=/etc/nginx/sites-enabled/default
+  file:
+    state: absent
+    path: "/etc/nginx/sites-enabled/default"
 
 - name: Ensure that the application site is enabled
-  command: ln -s /etc/nginx/sites-available/{{ application_name }}
-           /etc/nginx/sites-enabled/{{ application_name }}
-           creates=/etc/nginx/sites-enabled/{{ application_name }}
-
+#   command: ln -s /etc/nginx/sites-available/{{ application_name }}
+#            /etc/nginx/sites-enabled/{{ application_name }}
+#            creates=/etc/nginx/sites-enabled/{{ application_name }}
+  file:
+    src: '/etc/nginx/sites-available/{{ application_name }}'
+    dest: '/etc/nginx/sites-enabled/{{ application_name }}'
+    state: link
 
 - name: Ensure Nginx service is restarted
   service: name=nginx state=restarted enabled=yes

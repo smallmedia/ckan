@@ -1,16 +1,18 @@
 ---
 
 - name: 'Provision {{ application_name }} staging'
-  hosts: iod-ckan-live
+  hosts: iod-ckan-demo
   gather_facts: no
   become: true
 
   vars:
+    - ansible_become_method: sudo
+    - ansible_become_pass: "chANgeMe09!"
     - deploy_env: staging
-    - ckan_site_url: http://new.iranopendata.org
+    - ckan_site_url: http://167.99.170.59
     - datapusher_tgz: https://github.com/ckan/datapusher/archive/0.0.10.tar.gz
     - datapusher_root: /usr/lib/ckan/datapusher
-    - git_branch: iod-v2.6
+    - git_branch: iod-a19
     - application_name: 'iod-ckan'
     - set_up_application_user: yes
     - application_user: 'iod-ckan'
@@ -25,10 +27,11 @@
 
   vars_files:
     - vault/secrets.yml
-    - vars/db_live.yml
+    - vars/db.yml
     - vars/web.yml
 
   roles:
     - base
     - ckan-deps
+    - db
     - web
