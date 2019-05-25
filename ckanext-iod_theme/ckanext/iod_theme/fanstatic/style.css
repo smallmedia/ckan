@@ -1520,6 +1520,17 @@ a:active {
   float: left;
 }
 
+.form-actions--contact .btn-primary {
+  color: #111111;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to bottom,#dfe6e8,#cccccc);
+  text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.editor .editor-info-block a {
+    color: #e9552d;
+}
+
 /*------------------------------------*\
     #RESPONSIVE
 \*------------------------------------*/
