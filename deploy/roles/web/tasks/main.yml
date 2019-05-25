@@ -140,6 +140,10 @@
 - name: Install CKAN Extensions
   include: extensions.yml
 
+- name: Enable Views
+  shell: >
+    {{ virtualenv_path }}/bin/python paster views create -c /etc/ckan/default/ckan.ini
+
 - name: Reset permissions for Datastore readonly user.
   shell: >
     paster --plugin=ckan datastore set-permissions -c /etc/ckan/default/ckan.ini | sudo -u postgres psql template1

@@ -95,8 +95,8 @@ ckan.site_id = default
 
 # Note: Add ``datastore`` to enable the CKAN DataStore
 #       Add ``datapusher`` to enable DataPusher
-#		Add ``resource_proxy`` to enable resorce proxying and get around the
-#		same origin policy
+#       Add ``resource_proxy`` to enable resorce proxying and get around the
+#       same origin policy
 ckan.plugins = stats text_view image_view recline_view datastore datapusher resource_proxy webpage_view recline_map_view recline_graph_view recline_grid_view iod_theme scheming_datasets scheming_groups fluent pages googleanalytics pdf_view contact showcase
 
 # ckanext-contact
@@ -137,7 +137,7 @@ scheming.group_schemas = ckanext.iod_theme:iod_theme.json
 
 # Define which views should be created by default
 # (plugins must be loaded in ckan.plugins)
-ckan.views.default_views = recline_view
+ckan.views.default_views = recline_view pdf_view text_view recline_graph_view
 
 
 ## Front-End Settings
