@@ -90,7 +90,6 @@
     font-weight: 100;
     font-style: normal;
 }
-
 /*------------------------------------*\
     #GENERIC
 \*------------------------------------*/
@@ -109,7 +108,7 @@ p {
 }
 
 body:lang(en) {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
 body:lang(fa_IR) {
@@ -122,7 +121,7 @@ h3:lang(en),
 h4:lang(en),
 h5:lang(en),
 h6:lang(en) {
-  font-family: "futura-pt",sans-serif;
+  font-family: 'Lato', "futura-pt",sans-serif;
 }
 
 h1:lang(fa_IR),
@@ -141,7 +140,6 @@ h6:lang(fa_IR) {
 .theme-list:lang(fa_IR) li h4 {
   font-family: Vazir, 'Droid Kufi', sans-serif;
 }
-
 /*------------------------------------*\
     #RTL
 \*------------------------------------*/
@@ -530,14 +528,14 @@ blockquote:lang(fa_IR) {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
 .theme-list li h4 {
   text-align: center;
   font-size: 1.15rem;
   font-weight: 400;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
 .theme-list li .count {
