@@ -1,10 +1,10 @@
 {% ckan_extends %}
 
-{% block subtitle %}{{ c.group_dict.display_name }} - {{ _('Themes') }}{% endblock %}
+{% block subtitle %}{{ _(c.group_dict.display_name) }} - {{ _('Themes') }}{% endblock %}
 
 {% block breadcrumb_content %}
   <li>{% link_for _('Themes'), controller='group', action='index' %}</li>
-  <li class="active">{% link_for c.group_dict.display_name|truncate(35), controller='group', action='read', id=c.group_dict.name %}</li>
+  <li class="active">{% link_for _(c.group_dict.display_name)|truncate(35), controller='group', action='read', id=c.group_dict.name %}</li>
 {% endblock %}
 
 {% block content_primary_nav %}

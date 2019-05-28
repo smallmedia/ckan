@@ -1,10 +1,10 @@
 {#
     Renders a media item for a group. This should be used in a list.
-    
+
     group - A group dict.
-    
+
     Example:
-    
+
         <ul class="media-grid">
           {% for group in groups %}
             {% snippet "group/snippets/group_item.html", group=group %}
@@ -21,7 +21,7 @@
         <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image js-inline-svg">
       {% endblock %}
       {% block title %}
-        <h3>{{ group.display_name }}</h3>
+        <h3>{{ h.scheming_language_text(group.display_name) }}</h3>
       {% endblock %}
       {% block description %}
         {% if group.description %}
@@ -32,4 +32,3 @@
       {% endblock %}
     </li>
     {% endblock %}
-    
