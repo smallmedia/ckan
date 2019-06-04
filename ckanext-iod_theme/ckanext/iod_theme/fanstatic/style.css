@@ -1527,6 +1527,17 @@ a:active {
   text-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
+.form-actions--contact .btn-primary:hover,
+.form-actions--contact .btn-primary:focus,
+.form-actions--contact .btn-primary:active,
+.form-actions--contact .btn-primary.active,
+.form-actions--contact .btn-primary.disabled,
+.form-actions--contact .btn-primary[disabled] {
+  color: #000000;
+  background-color: #ccc8ca;
+  *background-color: #a29da0;
+}
+
 .editor .editor-info-block a {
     color: #e9552d;
 }
