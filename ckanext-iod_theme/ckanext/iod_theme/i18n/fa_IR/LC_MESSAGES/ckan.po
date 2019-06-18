@@ -3,11 +3,11 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-05 18:33+0100\n"
-"PO-Revision-Date: 2019-02-25 22:06-0500\n"
+"PO-Revision-Date: 2019-06-04 10:39-0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -2007,11 +2007,11 @@ msgstr "جستجوی گروه‌ها"
 
 #: ckan%2Ftemplates%2Fgroup%2Findex.html%3A20+ckan%2Ftemplates%2Fgroup%2Fread.html%3A16+ckan%2Ftemplates%2Forganization%2Fbulk_process.html%3A97+ckan%2Ftemplates%2Forganization%2Fread.html%3A20+ckan%2Ftemplates%2Fpackage%2Fsearch.html%3A30+ckan%2Ftemplates%2Fsnippets%2Fsearch_form.html%3A4+ckan%2Ftemplates%2Fsnippets%2Fsimple_search.html%3A10+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A15+ckanext%2Fexample_idatasetform%2Ftemplates%2Fpackage%2Fsearch.html%3A13
 msgid "Name Ascending"
-msgstr "اسامی به ترتیب صعودی"
+msgstr "اسامی از الف تا ی"
 
 #: ckan%2Ftemplates%2Fgroup%2Findex.html%3A20+ckan%2Ftemplates%2Fgroup%2Fread.html%3A17+ckan%2Ftemplates%2Forganization%2Fbulk_process.html%3A98+ckan%2Ftemplates%2Forganization%2Fread.html%3A21+ckan%2Ftemplates%2Fpackage%2Fsearch.html%3A31+ckan%2Ftemplates%2Fsnippets%2Fsearch_form.html%3A4+ckan%2Ftemplates%2Fsnippets%2Fsimple_search.html%3A10+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A16+ckanext%2Fexample_idatasetform%2Ftemplates%2Fpackage%2Fsearch.html%3A14
 msgid "Name Descending"
-msgstr "اسامی به ترتیب نزولی"
+msgstr "اسامی از ی تا الف"
 
 #: ckan/templates/group/index.html:29
 msgid "There are currently no groups for this site"
@@ -2091,7 +2091,7 @@ msgstr "ایجاد گروه"
 
 #: ckan%2Ftemplates%2Fgroup%2Fread.html%3A15+ckan%2Ftemplates%2Forganization%2Fread.html%3A19+ckan%2Ftemplates%2Fpackage%2Fsearch.html%3A29+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A14+ckanext%2Fexample_idatasetform%2Ftemplates%2Fpackage%2Fsearch.html%3A12
 msgid "Relevance"
-msgstr "موضوعیت"
+msgstr "موضوع"
 
 #: ckan%2Ftemplates%2Fgroup%2Fread.html%3A18+ckan%2Ftemplates%2Forganization%2Fbulk_process.html%3A99+ckan%2Ftemplates%2Forganization%2Fread.html%3A22+ckan%2Ftemplates%2Fpackage%2Fsearch.html%3A32+ckan%2Ftemplates%2Fpackage%2Fsnippets%2Fresource_form.html%3A51+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A17+ckanext%2Fexample_idatasetform%2Ftemplates%2Fpackage%2Fsearch.html%3A15
 msgid "Last Modified"
@@ -2099,7 +2099,7 @@ msgstr "تاریخ آخرین تغییرات"
 
 #: ckan%2Ftemplates%2Fgroup%2Fread.html%3A19+ckan%2Ftemplates%2Forganization%2Fread.html%3A23+ckan%2Ftemplates%2Fpackage%2Fsearch.html%3A33+ckan%2Ftemplates%2Fsnippets%2Fpackage_item.html%3A50+ckan%2Ftemplates%2Fsnippets%2Fpopular.html%3A3+ckan%2Ftemplates%2Fsnippets%2Fsort_by.html%3A19+ckanext%2Fexample_idatasetform%2Ftemplates%2Fpackage%2Fsearch.html%3A18
 msgid "Popular"
-msgstr "پرطرفدار"
+msgstr "پربیننده‌ترین‌ها"
 
 #: ckan%2Ftemplates%2Fgroup%2Fread.html%3A21+ckan%2Ftemplates%2Forganization%2Fread.html%3A25+ckan%2Ftemplates%2Fsnippets%2Fsearch_form.html%3A3
 msgid "Search datasets..."
@@ -2209,8 +2209,8 @@ msgstr "اینجا مخصوص مطالب ویژه است"
 msgid "E.g. environment"
 msgstr "مثلا محیط زیست"
 
-msgid "E.g. environment, Bonyad Mostazafan or balance of trade"
-msgstr "مثلا محیط زیست، بنیاد مستضعفان یا تراز تجاری"
+msgid "E.g. environment, Bonyad Mostazafan or Statistical Yearbook"
+msgstr "مثلا محیط زیست، بنیاد مستضعفان یا سالنامه آماری"
 
 #: ckan/templates/home/snippets/search.html:6
 msgid "Search data"

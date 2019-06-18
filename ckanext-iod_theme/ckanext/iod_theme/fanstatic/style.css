@@ -148,7 +148,7 @@ h6:lang(fa_IR) {
 
 ul:lang(fa_IR),
 ol:lang(fa_IR) {
-  margin: 0 25px 10px 0;
+  margin: 0 0px 10px 0 !important;
 }
 
 .unstyled:lang(fa_IR),
@@ -1525,6 +1525,17 @@ a:active {
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(to bottom,#dfe6e8,#cccccc);
   text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.form-actions--contact .btn-primary:hover,
+.form-actions--contact .btn-primary:focus,
+.form-actions--contact .btn-primary:active,
+.form-actions--contact .btn-primary.active,
+.form-actions--contact .btn-primary.disabled,
+.form-actions--contact .btn-primary[disabled] {
+  color: #000000;
+  background-color: #ccc8ca;
+  *background-color: #a29da0;
 }
 
 .editor .editor-info-block a {

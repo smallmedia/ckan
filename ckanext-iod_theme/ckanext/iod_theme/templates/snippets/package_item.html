@@ -56,7 +56,6 @@
               {% if publisher %}
                 {% set field = h.scheming_field_by_name(fields, 'publisher') %}
                   {% snippet 'scheming/display_snippets/select.html', field=field, data=package %}
-                  <div>{{ publisher }}</div>
               {% else %}
                 <p class="empty">{{ _("This dataset has no publisher") }}</p>
               {% endif %}
