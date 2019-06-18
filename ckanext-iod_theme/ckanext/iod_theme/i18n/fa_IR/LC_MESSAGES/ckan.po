@@ -3182,7 +3182,7 @@ msgstr "هیچ سازمانی پیدا نشد"
 
 #: ckan/templates/snippets/social.html:5
 msgid "Social"
-msgstr "اجتماعی"
+msgstr "شبکه‌های اجتماعی"
 
 #: ckan/templates/snippets/subscribe.html:2
 msgid "Subscribe"
