@@ -1689,3 +1689,10 @@ a:active {
 #lab_social_icon_footer #social-em:hover {
   color: #f39c12;
 }
+
+/*
+    Format section
+*/
+.nav-item>a, .nav-aside li a{
+  unicode-bidi: bidi-override;
+}
