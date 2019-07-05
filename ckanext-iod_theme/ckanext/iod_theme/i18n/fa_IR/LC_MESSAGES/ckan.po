@@ -3184,6 +3184,18 @@ msgstr "هیچ سازمانی پیدا نشد"
 msgid "Social"
 msgstr "شبکه‌های اجتماعی"
 
+#: ckan/templates/snippets/social.html:9
+msgid "Twitter"
+msgstr "توییتر"
+
+#: ckan/templates/snippets/social.html:10
+msgid "Facebook"
+msgstr "فیسبوک"
+
+#: ckan/templates/snippets/social.html:11
+msgid "Telegram"
+msgstr "تلگرام"
+
 #: ckan/templates/snippets/subscribe.html:2
 msgid "Subscribe"
 msgstr "عضو شوید"
