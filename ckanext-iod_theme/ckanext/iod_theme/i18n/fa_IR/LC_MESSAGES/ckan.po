@@ -1421,33 +1421,17 @@ msgstr "برای ویرایش یک گروه به کلید API معتبر نیا�
 msgid "License not specified"
 msgstr "مشخصات مجوز ارائه نشده"
 
-#: ckan/model/license.py:222
-msgid "مشخصات مجوز ارائه نشده"
-msgstr "License not specified"
-
 #: ckan/model/license.py:232
 msgid "Open Data Commons Public Domain Dedication and License (PDDL)"
 msgstr "مجوز و تقدیم‌نامه حوزه عمومی Open Data Commons (PDDL)d"
-
-#: ckan/model/license.py:232
-msgid "مجوز و تقدیم‌نامه حوزه عمومی Open Data Commons (PDDL)d"
-msgstr "Open Data Commons Public Domain Dedication and License (PDDL)"
 
 #: ckan/model/license.py:242
 msgid "Open Data Commons Open Database License (ODbL)"
 msgstr "مجوز پایگاه داده باز Open Data Commons (ODbL)d"
 
-#: ckan/model/license.py:242
-msgid "مجوز پایگاه داده باز Open Data Commons (ODbL)d"
-msgstr "Open Data Commons Open Database License (ODbL)"
-
 #: ckan/model/license.py:252
 msgid "Open Data Commons Attribution License"
 msgstr "مجوز اِسناد Open Data Commons"
-
-#: ckan/model/license.py:252
-msgid "مجوز اِسناد Open Data Commons"
-msgstr "Open Data Commons Attribution License"
 
 #: ckan/model/license.py:263
 msgid "Creative Commons CCZero"
@@ -1457,10 +1441,6 @@ msgstr "Creative Commons CCZero"
 msgid "Creative Commons Attribution"
 msgstr "اِسناد Creative Commons"
 
-#: ckan/model/license.py:272
-msgid "اِسناد Creative Commons"
-msgstr "Creative Commons Attribution"
-
 #: ckan/model/license.py:282
 msgid "Creative Commons Attribution Share-Alike"
 msgstr "Creative Commons Attribution Share-Alike"
@@ -1469,65 +1449,33 @@ msgstr "Creative Commons Attribution Share-Alike"
 msgid "GNU Free Documentation License"
 msgstr "مجوز مستند سازی رایگان GNU"
 
-#: ckan/model/license.py:291
-msgid "مجوز مستند سازی رایگان GNU"
-msgstr "GNU Free Documentation License"
-
 #: ckan/model/license.py:301
 msgid "Other (Open)"
 msgstr "سایر (Open)"
-
-#: ckan/model/license.py:301
-msgid "سایر (Open)"
-msgstr "Other (Open)"
 
 #: ckan/model/license.py:311
 msgid "Other (Public Domain)"
 msgstr "سایر (Public Domain)"
 
-#: ckan/model/license.py:311
-msgid "سایر (Public Domain)"
-msgstr "Other (Public Domain)"
-
 #: ckan/model/license.py:321
 msgid "Other (Attribution)"
 msgstr "سایر (Attribution)"
-
-#: ckan/model/license.py:321
-msgid "سایر (Attribution)"
-msgstr "Other (Attribution)"
 
 #: ckan/model/license.py:333
 msgid "UK Open Government Licence (OGL)"
 msgstr "مجوز دولت باز بریتانیا (OGL)"
 
-#: ckan/model/license.py:333
-msgid "مجوز دولت باز بریتانیا (OGL)"
-msgstr "UK Open Government Licence (OGL)"
-
 #: ckan/model/license.py:341
 msgid "Creative Commons Non-Commercial (Any)"
 msgstr "موارد غیرتجاری Creative Commons"
-
-#: ckan/model/license.py:341
-msgid "موارد غیرتجاری Creative Commons"
-msgstr "Creative Commons Non-Commercial (Any)"
 
 #: ckan/model/license.py:349
 msgid "Other (Non-Commercial)"
 msgstr "سایر (Non-Commercial)"
 
-#: ckan/model/license.py:349
-msgid "سایر (Non-Commercial)"
-msgstr "Other (Non-Commercial)"
-
 #: ckan/model/license.py:357
 msgid "Other (Not Open)"
 msgstr "سایر (Not Open)"
-
-#: ckan/model/license.py:357
-msgid "سایر (Not Open)"
-msgstr "Other (Not Open)"
 
 #: ckan/model/package_relationship.py:54
 msgid "depends on %s"
