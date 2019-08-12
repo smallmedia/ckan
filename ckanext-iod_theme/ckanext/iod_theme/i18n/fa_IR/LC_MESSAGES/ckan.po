@@ -5006,3 +5006,11 @@ msgstr "کاربرد داده‌ای یافته نشد"
 #: recline_view
 msgid "_id"
 msgstr " شماره ردیف"
+
+#: ckanext-iod_theme/ckanext/iod_theme/templates/group/snippets/helper.html:4
+msgid "What are Themes?"
+msgstr "حوزه‌‌ به چه معناست؟"
+
+#: ckanext-iod_theme/ckanext/iod_theme/templates/group/snippets/helper.html:8
+msgid "You can use CKAN Themes to create and manage collections of datasets. This could be to catalogue datasets for a particular project or team, or on a particular theme, or as a very simple way to help people find and search your own published datasets."
+msgstr "شما می‌توانید از حوزه‌های CKAN برای ایجاد و مدیریت مجموعه داده‌ها استفاده کنید. این حوزه‌ها می‌توانند مجموعه‌ای از مجموعه داده‌های یک پروژه خاص، یک گروه خاص یا بر روی حوزه‌ای بخصوص باشند. همچنین می‌تواند راه ساده‌ای برای کمک به دیگران در راستای یافتن مجموعه داده‌ها باشد یا به خود شما کمک کند تا در بین مجموعه داده‌هایی که منتشر کرده‌اید جستجو کنید."
