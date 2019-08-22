@@ -1690,6 +1690,14 @@ a:active {
   color: #f39c12;
 }
 
+#lab_social_icon_footer #social-in:hover {
+  color: #9E39C4;
+}
+
+#lab_social_icon_footer #social-tg:hover {
+  color: #2CA5E0;
+}
+
 /*
     Format section
 */
