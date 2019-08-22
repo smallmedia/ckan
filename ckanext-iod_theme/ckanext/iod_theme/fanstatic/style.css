@@ -1693,6 +1693,6 @@ a:active {
 /*
     Format section
 */
-.nav-item>a, .nav-aside li a{
+/*.nav-item>a, .nav-aside li a{
   unicode-bidi: bidi-override;
-}
+}*/
