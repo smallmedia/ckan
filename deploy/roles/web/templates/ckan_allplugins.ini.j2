@@ -95,8 +95,8 @@ ckan.site_id = default
 
 # Note: Add ``datastore`` to enable the CKAN DataStore
 #       Add ``datapusher`` to enable DataPusher
-#       Add ``resource_proxy`` to enable resorce proxying and get around the
-#       same origin policy
+#		Add ``resource_proxy`` to enable resorce proxying and get around the
+#		same origin policy
 ckan.plugins = stats text_view image_view recline_view datastore datapusher resource_proxy webpage_view recline_map_view recline_graph_view recline_grid_view iod_theme scheming_datasets scheming_groups fluent pages googleanalytics pdf_view contact showcase
 
 # ckanext-contact
@@ -165,7 +165,7 @@ ckan.locale_default = fa_IR
 ckan.locale_order = en pt_BR ja it cs_CZ ca es fr el sv sr sr@latin no sk fi ru de pl nl bg ko_KR hu sa sl lv
 ckan.locales_offered = fa_IR en
 ckan.locales_filtered_out = en_GB
-ckan.i18n_directory = ckanext-iod_theme/ckanext/iod_theme/
+ckan.i18n_directory = {{django_dir}}/ckanext-iod_theme/ckanext/iod_theme/
 
 ## Feeds Settings
 
@@ -189,7 +189,6 @@ ckan.datapusher.url = http://127.0.0.1:8800/
 
 # Resource Proxy settings
 # Preview size limit, default: 1MB
-#ckan.resource_proxy.max_file_size = 1048576
 ckan.resource_proxy.max_file_size = 2097152
 # Size of chunks to read/write.
 #ckan.resource_proxy.chunk_size = 4096
