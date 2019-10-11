@@ -4996,8 +4996,8 @@ msgstr "کاربرد داده‌ای برای ‘{query}’ یافته نشد."
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
 msgid "{number} showcase found"
 msgid_plural "{number} showcases found"
-msgstr[0] "‫{number}  کاربرد داد یافته شده است."
-msgstr[1] "‏‫{number}  کاربرد داد یافته شده است."
+msgstr[0] "‫{number}  کاربرد داده یافته شده است."
+msgstr[1] "‏‫{number}  کاربرد داده یافته شده است."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:10
 msgid "No showcases found"
