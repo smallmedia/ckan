@@ -2079,7 +2079,7 @@
            "en": "The National Land & Housing Organisation",
            "fa_IR": "سازمان ملی زمین و مسکن"
          }
-        }, 
+        },
         {
          "value": "The World Bank",
          "label": {
@@ -2092,6 +2092,27 @@
          "label": {
            "en": "Trade Promotion Organization of Iran",
            "fa_IR": "سازمان توسعه تجارت ایران"
+         }
+        },
+        {
+         "value": "Iran Meteorological Organization",
+         "label": {
+           "en": "Iran Meteorological Organization",
+           "fa_IR": "سازمان هواشناسی کشور"
+         }
+        },
+        {
+         "value": "Worldometers",
+         "label": {
+           "en": "Worldometers",
+           "fa_IR": "وردومیترز"
+         }
+        },
+        {
+         "value": "UNESCO",
+         "label": {
+           "en": "UNESCO",
+           "fa_IR": "یونسکو"
          }
         }
       ]
@@ -2538,7 +2559,7 @@
            "en": "The National Land & Housing Organisation",
            "fa_IR": "سازمان ملی زمین و مسکن"
          }
-        }, 
+        },
         {
          "value": "The World Bank",
          "label": {
