@@ -19,7 +19,7 @@
     {{ virtualenv_path }}/bin/pip install -e {{ django_dir }}
 
 - name: Install packages required by the Django app inside virtualenv
-  sudo: no
+  become: no
   pip: virtualenv={{ virtualenv_path }} requirements={{ requirements_file }}
   tags:
     - requirements
