@@ -111,3 +111,6 @@ class HomeController(base.BaseController):
 
     def use_cases(self):
         return base.render('home/use_cases.html')
+
+    def campaigns(self):
+        return base.render('home/campaigns.html')

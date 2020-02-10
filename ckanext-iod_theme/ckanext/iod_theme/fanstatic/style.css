@@ -564,6 +564,10 @@ blockquote:lang(fa_IR) {
   overflow: hidden;
 }
 
+.campaigns * .clamping{
+  height: 16.4rem;
+}
+
 .clamping:after {
   content: "";
   text-align: left;
