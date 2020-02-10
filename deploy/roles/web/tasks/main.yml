@@ -142,6 +142,7 @@
 
 # - name: Enable Views
 #   shell: >
+#     cd {{ git_root }};
 #     {{ virtualenv_path }}/bin/paster views create -c /etc/ckan/default/ckan.ini
 
 - name: Reset permissions for Datastore readonly user.
