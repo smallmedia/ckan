@@ -16,6 +16,3 @@
 [submodule "ckanext-contact"]
 	path = ckanext-contact
 	url = https://github.com/NaturalHistoryMuseum/ckanext-contact.git
-[submodule "ckanext-showcase"]
-	path = ckanext-showcase
-	url = https://github.com/ckan/ckanext-showcase.git

@@ -47,6 +47,7 @@ package_table = Table('package', meta.metadata,
         Column('notes', types.UnicodeText),
         Column('license_id', types.UnicodeText),
         Column('type', types.UnicodeText, default=u'dataset'),
+        Column('lang', types.UnicodeText, nullable=False, default=u'fa_IR'),
         Column('owner_org', types.UnicodeText),
         Column('creator_user_id', types.UnicodeText),
         Column('metadata_created', types.DateTime, default=datetime.datetime.utcnow),
@@ -220,6 +221,7 @@ class Package(vdm.sqlalchemy.RevisionedObjectMixin,
         import ckan.lib.helpers as h
         _dict['notes_rendered'] = h.render_markdown(self.notes)
         _dict['type'] = self.type or u'dataset'
+        _dict['lang'] = self.type or u'fa_IR'
         return _dict
 
     def add_relationship(self, type_, related_package, comment=u''):
@@ -499,7 +501,7 @@ class Package(vdm.sqlalchemy.RevisionedObjectMixin,
         # ['id', 'name', 'title', 'version', 'url', 'author', 'author_email', 'maintainer', 'maintainer_email', 'notes', 'license_id', 'state']
         fields = Package.revisioned_fields()
         if not core_only:
-            fields += ['resources', 'tags', 'groups', 'extras', 'relationships']
+            fields += ['resources', 'tags', 'groups', 'extras', 'relationships', 'lang']
 
         if fields_to_ignore:
             for field in fields_to_ignore:
