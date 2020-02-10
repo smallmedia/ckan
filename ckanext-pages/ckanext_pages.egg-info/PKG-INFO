@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ckanext-pages
+Version: 0.1.0
+Summary: Basic CMS extension for ckan
+Home-page: https://github.com/ckan/ckanext-pages
+Author: David Raznick
+Author-email: david.raznick@gokfn.org
+License: GNU Affero General Public License (AGPL) v3.0
+Description: UNKNOWN
+Keywords: CKAN CMS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
