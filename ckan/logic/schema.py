@@ -156,6 +156,7 @@ def default_create_package_schema():
         'state': [ignore_not_package_admin, ignore_missing],
         'type': [ignore_missing, unicode],
         'owner_org': [owner_org_validator, unicode],
+        'lang': [ignore_missing, unicode],
         'log_message': [ignore_missing, unicode, no_http],
         'private': [ignore_missing, boolean_validator,
                     datasets_with_no_organization_cannot_be_private],
@@ -265,6 +266,7 @@ def default_show_package_schema():
     schema['num_tags'] = []
     schema['organization'] = []
     schema['owner_org'] = []
+    schema['lang'] = []
     schema['private'] = []
     schema['revision_id'] = []
     schema['tracking_summary'] = [ignore_missing]

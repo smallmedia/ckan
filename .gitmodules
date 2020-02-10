@@ -10,15 +10,9 @@
 [submodule "ckanext-pdfview"]
     path = ckanext-pdfview
     url = https://github.com/ckan/ckanext-pdfview.git
-[submodule "ckanext-pages"]
-    path = ckanext-pages
-    url = https://github.com/ckan/ckanext-pages.git
 [submodule "ckanext-googleanalytics"]
 	path = ckanext-googleanalytics
 	url = https://github.com/ckan/ckanext-googleanalytics.git
 [submodule "ckanext-contact"]
 	path = ckanext-contact
 	url = https://github.com/NaturalHistoryMuseum/ckanext-contact.git
-[submodule "ckanext-showcase"]
-	path = ckanext-showcase
-	url = https://github.com/ckan/ckanext-showcase.git

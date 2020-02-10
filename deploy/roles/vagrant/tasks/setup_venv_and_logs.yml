@@ -14,7 +14,7 @@
     - 'cd {{ django_dir }}'
 
 - name: Create the virtualenv
-  sudo: no
+  become: no
   command: virtualenv {{ virtualenv_path }} --no-site-packages
            creates={{ virtualenv_path }}/bin/activate
 
