@@ -21,6 +21,21 @@
       </div>
 
       <div class="span12 col1">
+        <div class="box usecases">
+          <div class="inner">
+            <h3>{{ _('Promote') }}</h3>
+            <ul class="list">
+              {% if h.lang() == 'en' %}
+                {% snippet 'home/snippets/promote_list_home_en.html' %}
+              {% elif h.lang() == 'fa_IR' %}
+                {% snippet 'home/snippets/promote_list_home_fa.html' %}
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="span12 col1">
         {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items() %}
       </div>
 

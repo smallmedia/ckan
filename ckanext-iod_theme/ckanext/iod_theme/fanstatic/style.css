@@ -474,7 +474,7 @@ blockquote:lang(fa_IR) {
 }
 
 .theme-list li {
-  width: calc(20% - 20px);
+  width: calc(14% - 18px);
 }
 
 .theme-list--not-homepage li {
@@ -746,7 +746,7 @@ a:active {
 }
 
 .iod-title {
-  font-size: 6rem;
+  font-size: 4rem;
   text-align: center;
   padding: 10px 0 20px;
 }
