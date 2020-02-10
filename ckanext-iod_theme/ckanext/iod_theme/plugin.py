@@ -56,13 +56,14 @@ def register_translator():
 
 def get_showcase_items():
     DATASET_TYPE_NAME = 'showcase'
-
     results = []
-    showcase = toolkit.get_action('ckanext_showcase_list')(
-        data_dict={})
+    # search_data_dict = {}
+    # search_data_dict['q'] = '+dataset_type: showcase +lang:{0}'.format(hlp.lang())
+    showcase = toolkit.get_action('package_search')(
+        data_dict={'sort': 'metadata_modified desc'})
 
-    showcase = showcase[:3]
-    for package_dict in showcase:
+    showcases = showcase['results'][:3]
+    for package_dict in showcases:
         for item in plugins.PluginImplementations(
                 plugins.IPackageController):
             package_dict = item.before_view(package_dict)
@@ -82,7 +83,6 @@ def get_showcase_items():
                         DATASET_TYPE_NAME,
                         package_dict.get('image_url')),
                     qualified=True)
-    if showcase:
         results.append(package_dict)
 
     return results
