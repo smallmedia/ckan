@@ -1,0 +1,165 @@
+# Dutch translations for ckanext-mailchimp.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the ckanext-mailchimp
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-mailchimp 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-10-18 15:21+0200\n"
+"PO-Revision-Date: 2019-09-20 14:10+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"Language-Team: nl <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/mailchimp/templates/home/snippets/contact.html:3
+msgid "Subscribe to the mailing list"
+msgstr "Schrijf in op de mailinglijst"
+
+#: ckanext/mailchimp/templates/home/snippets/contact.html:6
+msgid "submit email for newsletter"
+msgstr "geef je mail voor de nieuwsbrief "
+
+#: ckanext/mailchimp/templates/home/snippets/contact.html:12
+msgid "Subscribe"
+msgstr "Schrijf in"
+
+#: ckanext/mailchimp/templates/home/snippets/newsletter.html:5
+#: ckanext/mailchimp/templates/home/snippets/newsletter.html:12
+msgid "SUBSCRIBE"
+msgstr "SCHRIJF IN"
+
+#: ckanext/mailchimp/templates/home/snippets/newsletter.html:6
+#, fuzzy
+#| msgid "Subscribe to newsletter"
+msgid "TO NEWSLETTER"
+msgstr "Schrijf in op de nieuwsbrief "
+
+#: ckanext/mailchimp/templates/home/snippets/newsletter.html:11
+msgid "Enter your email address"
+msgstr "Geef je e-mailadres in "
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:7
+msgid "Change details"
+msgstr "Contactgegevens veranderen"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:8
+#: ckanext/mailchimp/templates/user/new_user_form.html:5
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:10
+msgid "Full name"
+msgstr "Volle naam"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:10
+msgid "eg. Joe Bloggs"
+msgstr "bv. Joe Bloggs"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:12
+#: ckanext/mailchimp/templates/user/new_user_form.html:7
+msgid "Email"
+msgstr "e-mail"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:12
+msgid "eg. joe@example.com"
+msgstr "bv. joe@voorbeeld.com"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:14
+msgid "About"
+msgstr "Over"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:14
+msgid "A little information about yourself"
+msgstr "Een beetje informatie over jezelf"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:17
+msgid "Subscribe to notification emails"
+msgstr "Schrijf in op e-mail alerten"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:18
+msgid ""
+"You will receive notification emails from {site_title}, e.g. when you "
+"have new activities on your dashboard."
+msgstr "Je zal email alerten van {site_title} ontvangen, bv. als je nieuwe activiteiten op je dashboard hebt. "
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:22
+#: ckanext/mailchimp/templates/user/new_user_form.html:10
+msgid "Subscribe to newsletter"
+msgstr "Schrijf in op de nieuwsbrief "
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:28
+msgid "Change password"
+msgstr "Paswoord wijzigen"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:31
+msgid "Sysadmin Password"
+msgstr "Paswoord van systeemadministrator"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:31
+msgid "Old Password"
+msgstr "Oud paswoord"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:39
+#: ckanext/mailchimp/templates/user/new_user_form.html:8
+msgid "Password"
+msgstr "Paswoord"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:41
+msgid "Confirm Password"
+msgstr "Paswoord bevestigen"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:47
+msgid "Are you sure you want to delete this User?"
+msgstr "Ben je zeker dat je deze Gebruiker wil verwijderen?"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:47
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:52
+msgid "Are you sure you want to regenerate the API key?"
+msgstr "Ben je zeker dat je de API sleutel wil regenereren?"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:52
+msgid "Regenerate API Key"
+msgstr "API sleutel regenereren"
+
+#: ckanext/mailchimp/templates/user/edit_user_form.html:56
+msgid "Update Profile"
+msgstr "Profiel bijwerken"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:5
+msgid "username"
+msgstr "Gebruikersnaam"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:6
+msgid "Full Name"
+msgstr "Volle naam"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:6
+msgid "Joe Bloggs"
+msgstr "Joe Bloggs"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:7
+msgid "joe@example.com"
+msgstr "joe@voorbeeld.com"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:9
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: ckanext/mailchimp/templates/user/new_user_form.html:20
+msgid "Create Account"
+msgstr "Account creëren"
+
+#~ msgid "SUBSCRIBE TO NEWSLETTER"
+#~ msgstr "SCHRIJF IN OP DE NIEUWSBRIEF"
+

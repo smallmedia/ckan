@@ -1,0 +1,15 @@
+<div id="newsletter" class="flex-col">
+    <div class="flex">
+        <img src="/images/RetinaIcon.svg" style="padding: 10px 0 10px 10px;"/>
+        <div class="flex-col" style="padding: 10px 10px 10px 2px; justify-content: center;">
+            <h3 class="m-0 custom-font fs-20 lh-1">{{ _('SUBSCRIBE') }}</h3>
+            <h3 class="m-0 custom-font fs-20 lh-1">{{ _('TO NEWSLETTER') }}</h3>
+        </div>
+    </div>
+    <div class="mt-5px">
+        <form id="subscribe-mailinglist-form" class="dataset-form" method="post" action="/newsletter/subscribe">
+        <input id="contact-email" name="email" class="input-email p-0" placeholder="{{ _('Enter your email address') }}" type="text"  value="" autocomplete="off">
+        <button class="bt-large button-width button-height-34px" name="save" type="submit">{{ _('SUBSCRIBE') }}</button>
+             </form>
+    </div>
+</div>

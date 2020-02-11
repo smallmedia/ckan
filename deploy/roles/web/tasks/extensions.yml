@@ -48,6 +48,12 @@
   args:
     chdir: "{{ ckanext_root }}/ckanext-scheming"
 
+- name: Install mailchimp
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-mailchimp"
+
 - name: Install showcase
   shell: >
     {{ virtualenv_path }}/bin/python setup.py develop
