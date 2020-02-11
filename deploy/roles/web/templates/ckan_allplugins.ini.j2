@@ -97,7 +97,7 @@ ckan.site_id = default
 #       Add ``datapusher`` to enable DataPusher
 #		Add ``resource_proxy`` to enable resorce proxying and get around the
 #		same origin policy
-ckan.plugins = stats text_view image_view recline_view datastore datapusher resource_proxy webpage_view recline_map_view recline_graph_view recline_grid_view iod_theme scheming_datasets scheming_groups fluent pages googleanalytics pdf_view contact showcase
+ckan.plugins = stats text_view image_view recline_view datastore datapusher resource_proxy webpage_view recline_map_view recline_graph_view recline_grid_view iod_theme scheming_datasets scheming_groups fluent pages googleanalytics pdf_view contact showcase mailchimp
 
 # ckanext-contact
 ckanext.contact.mail_to = contact@iranopendata.org
@@ -116,6 +116,11 @@ ckanext.pages.group_menu = False
 ckanext.pages.organization_menu = False
 ckanext.pages.allow_html = True
 ckanext.pages.editor = ckeditor
+
+# ckanext-mailchimp
+ckan.mailchimp.api_key = {{mailchimp_api_key}}
+ckan.mailchimp.base_url = https://us1.api.mailchimp.com/3.0
+ckan.mailchimp.member_list_id = {{mailchimp_list_id}}
 
 #   module-path:file to schemas being used
 scheming.dataset_schemas = ckanext.iod_theme:iod_dataset.json

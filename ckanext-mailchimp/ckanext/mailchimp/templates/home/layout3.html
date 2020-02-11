@@ -1,0 +1,12 @@
+{% ckan_extends %}
+
+{% block stats %}
+    {{ super() }}
+    <br/><br/>
+    {% snippet 'home/snippets/contact.html' %}
+{% endblock %}
+
+
+{% block newsletter %}
+    {% snippet 'home/snippets/newsletter.html' %}
+{% endblock %}

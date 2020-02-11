@@ -1650,8 +1650,34 @@ a:active {
   }
 }
 
+/*------------------------------------*\
+    #FOOTER EMAIL FORM
+\*------------------------------------*/
+
+.footer-email-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-email-form .input-email {
+  height: 30px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 420px) {
+  .footer-email-form .input-email {
+    width: 175px;
+  }
+}
+
+.footer-email-form .btn {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
 #lab_social_icon_footer {
-  padding: 40px 0;
+  margin-top: 30px;
+  padding: 10px 0 20px;
 }
 
 #lab_social_icon_footer a {
