@@ -1,0 +1,19 @@
+<div class="col-md-4">
+    <strong>{{ _('SUBSCRIBE TO NEWSLETTER') }}</strong>
+    <form id="subscribe-mailinglist-form" class="dataset-form" method="post" action="/newsletter/subscribe">
+            <label
+                class="sr-only"
+                for="inputEmail"
+            >Email</label>
+            <input
+                type="email"
+                name="email"
+                class="input-email p-0"
+                id="contact-email"
+                placeholder="{{ _('Enter your email address') }}"
+                value=""
+                autocomplete="off"
+            >
+         <button type="submit" name="save" class="btn btn-default">{{ _('Subscribe') }}</button>
+     </form>
+ </div>
