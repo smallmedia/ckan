@@ -17,8 +17,13 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
  <li>
   {% block item_inner %}
     {% block link %}
-      <a href="{{ h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name) }}" title="{{ _('View {showcase_title}').format(showcase_title=package.title) }}" class="media-view">
-        <span>{{ _('View {showcase_title}').format(showcase_title=package.title) }}</span>
+      {% if type == 'page' %}
+        <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/' + package.name) }}" title="{{ _('View {page_title}').format(page_title=package.title) }}" class="media-view">
+          <span>{{ _('View {page_title}').format(page_title=package.title) }}</span>
+      {% else %}
+        <a href="{{ h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name) }}" title="{{ _('View {showcase_title}').format(showcase_title=package.title) }}" class="media-view">
+          <span>{{ _('View {showcase_title}').format(showcase_title=package.title) }}</span>
+      {% endif %}
     {% block image %}
       <img src="{{ package.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ package.name }}" class="media-image">
     {% endblock %}
@@ -26,10 +31,12 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
       <h3 class="media-heading">{{ h.truncate(title, truncate_title)}}</h3>
     {% endblock %}
     {% block notes %}
-      {% if notes %}
-        <div>{{ notes|urlize }}</div>
-      {% else %}
-        <p class="empty">{{ _("This showcase has no description") }}</p>
+      {% if type != 'page' %}
+        {% if notes %}
+          <div>{{ notes|urlize }}</div>
+        {% else %}
+          <p class="empty">{{ _("This showcase has no description") }}</p>
+        {% endif %}
       {% endif %}
     {% endblock %}
     {% block datasets %}

@@ -34,7 +34,11 @@
       {% endif %}
 
       <div class="span12 col1">
-        {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items() %}
+        {% if h.lang() == 'fa_IR' %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_recent_pages_home(), type='page' %}
+        {% else %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items(), type='showcase' %}
+        {% endif %}
       </div>
 
     </div>
