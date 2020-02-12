@@ -88,6 +88,54 @@ def get_showcase_items():
     return results
 
 
+def get_recent_pages_home(number=3, exclude=None):
+    DATASET_TYPE_NAME = "page_images"
+    # blog_list = toolkit.get_action('ckanext_pages_list')(
+    #     None, {
+    #            'page_type': 'blog'}
+    # )
+
+    data_dict = {
+        'org_id': None,
+        'order_publish_date': True,
+        'private': False,
+        'page_type': 'page'}
+
+    blog_list = toolkit.get_action('ckanext_pages_list')(
+        data_dict=data_dict)
+
+    new_list = []
+    for blog in blog_list:
+        if exclude and blog['name'] == exclude:
+            continue
+
+        image_url = blog.get('image')
+
+        if image_url is None:
+            if ('extras' in blog and
+                    'value' in blog['extras'][0]):
+                image_url = blog['extras'][0]['value']
+        if image_url and not image_url.startswith('http'):
+            blog[u'image_url'] = image_url
+            blog[u'image_display_url'] = \
+                hlp.url_for_static(
+                    'uploads/{0}/{1}'
+                    .format(
+                        DATASET_TYPE_NAME,
+                        blog.get('image_url')),
+                    qualified=True)
+        if image_url and image_url.startswith('http'):
+            blog[u'image_url'] = image_url
+            blog[u'image_display_url'] = image_url
+
+        new_list.append(blog)
+
+        if len(new_list) == number:
+            break
+
+    return new_list
+
+
 class Iod_ThemePlugin(plugins.SingletonPlugin):
     '''IOD theme plugin.
 
@@ -119,20 +167,16 @@ class Iod_ThemePlugin(plugins.SingletonPlugin):
         # Template helper function names should begin with the name of the
         # extension they belong to, to avoid clashing with functions from
         # other extensions.
-        return {'iod_theme_most_popular_groups': most_popular_groups,
-               'iod_theme_show_most_popular_groups':
-               show_most_popular_groups,
-                'iod_theme_get_user_role_role_in_org':
-                    h.get_user_role_role_in_org,
-                'iod_theme_create_geographic_strings':
-                    h.create_geographic_strings,
-                'iod_theme_free_tags_only':
-                    h.free_tags_only,
-                'theme_pagination':
-                    h.theme_pagination,
-                'get_showcase_items':
-                    get_showcase_items
-               }
+        return {
+            'iod_theme_most_popular_groups': most_popular_groups,
+            'iod_theme_show_most_popular_groups': show_most_popular_groups,
+            'iod_theme_get_user_role_role_in_org': h.get_user_role_role_in_org,
+            'iod_theme_create_geographic_strings': h.create_geographic_strings,
+            'iod_theme_free_tags_only': h.free_tags_only,
+            'theme_pagination': h.theme_pagination,
+            'get_showcase_items': get_showcase_items,
+            'get_recent_pages_home': get_recent_pages_home
+        }
 
     # Changing group icon WIP
     # map.redirect('/packages', '/dataset')

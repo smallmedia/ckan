@@ -20,23 +20,25 @@
         {% snippet 'home/snippets/group_list_home.html', groups=h.iod_theme_most_popular_groups() %}
       </div>
 
-      <div class="span12 col1">
-        <div class="box usecases">
-          <div class="inner">
-            <h3>{{ _('Promote') }}</h3>
-            <ul class="list">
-              {% if h.lang() == 'en' %}
-                {% snippet 'home/snippets/promote_list_home_en.html' %}
-              {% elif h.lang() == 'fa_IR' %}
+      {% if h.lang() == 'fa_IR' %}
+        <div class="span12 col1">
+          <div class="box usecases">
+            <div class="inner">
+              <h3>{{ _('Projects') }}</h3>
+              <ul class="list">
                 {% snippet 'home/snippets/promote_list_home_fa.html' %}
-              {% endif %}
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      {% endif %}
 
       <div class="span12 col1">
-        {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items() %}
+        {% if h.lang() == 'fa_IR' %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_recent_pages_home(), type='page' %}
+        {% else %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items(), type='showcase' %}
+        {% endif %}
       </div>
 
     </div>

@@ -14,11 +14,15 @@ show_remove    - If True, show the remove button to remove the showcase/dataset 
   <article class="module">
     <div class="module-content">
       <div class="usecases" id="list__container">
-        <h3>{% trans %}Showcases{% endtrans %}</h3>
+        {% if type == 'page' %}
+          <h3>{% trans %}Latest Articles{% endtrans %}</h3>
+        {% else %}
+          <h3>{% trans %}Latest Reports{% endtrans %}</h3>
+        {% endif %}
         <ul class="list">
             {% block package_list_inner %}
               {% for package in packages %}
-                {% snippet 'home/snippets/showcase_item_home.html', package=package, item_class=item_class, truncate=truncate, truncate_title=truncate_title, show_remove=show_remove %}
+                {% snippet 'home/snippets/showcase_item_home.html', package=package, item_class=item_class, truncate=truncate, truncate_title=truncate_title, show_remove=show_remove, type=type %}
               {% endfor %}
             {% endblock %}
         </ul>
