@@ -15,8 +15,17 @@
     #}
     {% set truncate = truncate or 180 %}
     {% set truncate_title = truncate_title or 80 %}
-    {% set title = package.title_translated[h.lang()] or package.title or package.name %}
-    {% set notes = h.markdown_extract(package.notes_translated[h.lang()], extract_length=truncate) %}
+    {% if 'title_translated' in package %}
+      {% set title = package.title_translated[h.lang()] or package.title or package.name %}
+    {% else %}
+      {% set title = package.title or package.name %}
+    {% endif %}
+    {% if 'notes_translated' in package %}
+      {% set notes = h.markdown_extract(package.notes_translated[h.lang()], extract_length=truncate) %}
+    {% else %}
+      {% set notes = h.markdown_extract(package.showcase_notes_formatted, extract_length=truncate) %}
+    {% endif %}
+
     {% set publisher = package.publisher %}
     {% set fields = h.scheming_get_dataset_schema('dataset')['dataset_fields'] %}
 
