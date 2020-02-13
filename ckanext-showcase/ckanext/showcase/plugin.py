@@ -251,10 +251,10 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
         filter = 'dataset_type:{0}'.format(DATASET_TYPE_NAME)
         if filter not in fq:
             search_params.update({'fq': fq + " -" + filter})
-
-        filter = 'lang:{0}'.format(h.lang())
-        if filter not in fq:
-            search_params.update({'fq': fq + " +" + filter})
+        else:
+            lanfilter = 'lang:{0}'.format(h.lang())
+            if lanfilter not in fq:
+                search_params.update({'fq': fq + " +" + lanfilter})
         return search_params
 
     # ITranslation
