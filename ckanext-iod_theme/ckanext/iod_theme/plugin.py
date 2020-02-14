@@ -60,7 +60,12 @@ def get_showcase_items():
     # search_data_dict = {}
     # search_data_dict['q'] = '+dataset_type: showcase +lang:{0}'.format(hlp.lang())
     showcase = toolkit.get_action('package_search')(
-        data_dict={'sort': 'metadata_modified desc'})
+        data_dict={
+            'sort': 'metadata_modified desc',
+            'fq': '+dataset_type:{0} +lang:{1}'.format(
+                DATASET_TYPE_NAME,
+                hlp.lang())
+        })
 
     showcases = showcase['results'][:3]
     for package_dict in showcases:
