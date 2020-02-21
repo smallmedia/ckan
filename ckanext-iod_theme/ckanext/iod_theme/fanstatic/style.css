@@ -140,6 +140,10 @@ h6:lang(fa_IR) {
 .theme-list:lang(fa_IR) li h4 {
   font-family: Vazir, 'Droid Kufi', sans-serif;
 }
+
+.dropdown-backdrop{
+    position: static;
+}
 /*------------------------------------*\
     #RTL
 \*------------------------------------*/
