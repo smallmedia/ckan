@@ -8,7 +8,7 @@
 
   vars:
     - deploy_env: staging
-    - ckan_site_url: http://iranopendata.org
+    - ckan_site_url: https://iranopendata.org
     - datapusher_tgz: https://github.com/ckan/datapusher/archive/0.0.10.tar.gz
     - datapusher_root: /usr/lib/ckan/datapusher
     - git_branch: iod-v2.6
