@@ -2540,6 +2540,13 @@
          }
         },
         {
+         "value": "Tehran Air Quality Control Company",
+         "label": {
+           "en": "Tehran Air Quality Control Company",
+           "fa_IR": "شرکت کنترل کیفیت هوای تهران"
+         }
+        },
+        {
          "value": "Tehran Municipality",
          "label": {
            "en": "Tehran Municipality",
@@ -2579,6 +2586,41 @@
          "label": {
            "en": "Trade Promotion Organization of Iran",
            "fa_IR": "سازمان توسعه تجارت ایران"
+         }
+        },
+        {
+         "value": "Iran Meteorological Organization",
+         "label": {
+           "en": "Iran Meteorological Organization",
+           "fa_IR": "سازمان هواشناسی کشور"
+         }
+        },
+        {
+         "value": "Worldometers",
+         "label": {
+           "en": "Worldometers",
+           "fa_IR": "وردومیترز"
+         }
+        },
+        {
+         "value": "UNESCO",
+         "label": {
+           "en": "UNESCO",
+           "fa_IR": "یونسکو"
+         }
+        },
+        {
+         "value": "Iranian Students' News Agency (ISNA)",
+         "label": {
+           "en": "Iranian Students' News Agency (ISNA)",
+           "fa_IR": "خبرگزاری دانشجویان ایران ایسنا"
+         }
+        },
+        {
+         "value": "National Library and Archives of I.R. of Iran",
+         "label": {
+           "en": "National Library and Archives of I.R. of Iran",
+           "fa_IR": "سازمان اسناد و کتابخانه ملی جمهوری اسلامی"
          }
         }
       ]
