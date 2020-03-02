@@ -1761,6 +1761,104 @@
             "en": "youth",
             "fa_IR": "جوانان"
           }
+        },
+        {
+          "value": "child abuse",
+          "label": {
+            "en": "child abuse",
+            "fa_IR": "کودک آزاری"
+          }
+        },
+        {
+          "value": "sexual abuse",
+          "label": {
+            "en": "sexual abuse",
+            "fa_IR": "آزار جنسی"
+          }
+        },
+        {
+          "value": "emotional abuse",
+          "label": {
+            "en": "emotional abuse",
+            "fa_IR": "آزار عاطفی"
+          }
+        },
+        {
+          "value": "physical abuse",
+          "label": {
+            "en": "physical abuse",
+            "fa_IR": "آزار فیزیکی"
+          }
+        },
+        {
+          "value": "neglect",
+          "label": {
+            "en": "neglect",
+            "fa_IR": "غفلت"
+          }
+        },
+        {
+          "value": "addict",
+          "label": {
+            "en": "addict",
+            "fa_IR": "معتاد"
+          }
+        },
+        {
+          "value": "nahavand",
+          "label": {
+            "en": "nahavand",
+            "fa_IR": "نهاوند"
+          }
+        },
+        {
+          "value": "saeed madani",
+          "label": {
+            "en": "saeed madani",
+            "fa_IR": "سعید مدنی"
+          }
+        },
+        {
+          "value": "child abuse in iran",
+          "label": {
+            "en": "child abuse in iran",
+            "fa_IR": "خشونت علیه کودکان در ایران"
+          }
+        },
+        {
+          "value": "child",
+          "label": {
+            "en": "child",
+            "fa_IR": "کودک"
+          }
+        },
+        {
+          "value": "dollar",
+          "label": {
+            "en": "dollar",
+            "fa_IR": "دلار"
+          }
+        },
+        {
+          "value": "exchange rate",
+          "label": {
+            "en": "exchange rate",
+            "fa_IR": "نرخ تغییرات"
+          }
+        },
+        {
+          "value": "child marriage",
+          "label": {
+            "en": "child marriage",
+            "fa_IR": "ازدواج کودکان"
+          }
+        },
+        {
+          "value": "street kids",
+          "label": {
+            "en": "street kids",
+            "fa_IR": "کودکان خیابانی"
+          }
         }
       ]
     },
