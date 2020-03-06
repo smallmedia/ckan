@@ -834,8 +834,37 @@ a:active {
     #MASONRY
 \*------------------------------------*/
 
+.media-grid {
+  height: auto !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .media-item {
+  position: relative !important;
+  top: unset !important;
+  left: unset !important;
+  width: calc(88% / 3);
+  margin: 15px 2% 0;
+  border: 1em solid transparent;
   text-align: center;
+}
+
+@media (max-width:767px) {
+  .media-grid {
+    flex-direction: column;
+  }
+
+  .media-item {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+  .media-item {
+    width: calc(92% / 2);
+  }
 }
 
 /*------------------------------------*\
