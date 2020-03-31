@@ -1859,6 +1859,27 @@
             "en": "street kids",
             "fa_IR": "کودکان خیابانی"
           }
+        },
+        {
+          "value": "corona",
+          "label": {
+            "en": "corona",
+            "fa_IR": "کرونا"
+          }
+        },
+        {
+          "value": "corona virus",
+          "label": {
+            "en": "corona virus",
+            "fa_IR": "ویروس کرونا"
+          }
+        },
+        {
+          "value": "corona outbreak",
+          "label": {
+            "en": "corona outbreak",
+            "fa_IR": "شیوع کرونا"
+          }
         }
       ]
     },
