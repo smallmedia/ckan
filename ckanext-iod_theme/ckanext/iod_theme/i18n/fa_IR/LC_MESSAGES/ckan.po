@@ -5059,3 +5059,12 @@ msgstr "عضویت در خبرنامه پایگاه داده باز ایران"
 #: ckanext-iod_theme/ckanext/iod_theme/templates/snippets/newsletter.html:2
 msgid "Enter your email address"
 msgstr "آدرس ایمیل"
+
+msgid "corona"
+msgstr "کرونا"
+
+msgid "corona virus"
+msgstr "ویروس کرونا"
+
+msgid "corona outbreak"
+msgstr "شیوع کرونا"
