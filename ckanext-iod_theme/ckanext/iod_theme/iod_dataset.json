@@ -1880,6 +1880,27 @@
             "en": "corona outbreak",
             "fa_IR": "شیوع کرونا"
           }
+        },
+        {
+          "value": "currency",
+          "label": {
+            "en": "currency",
+            "fa_IR": "ارز"
+          }
+        },
+        {
+          "value": "working children",
+          "label": {
+            "en": "working children",
+            "fa_IR": "کودکان کار"
+          }
+        },
+        {
+          "value": "government currency",
+          "label": {
+            "en": "government currency",
+            "fa_IR": "ارز دولتی"
+          }
         }
       ]
     },
@@ -2246,6 +2267,13 @@
          "label": {
            "en": "National Library and Archives of I.R. of Iran",
            "fa_IR": "سازمان اسناد و کتابخانه ملی جمهوری اسلامی"
+         }
+        },
+        {
+         "value": "Gold, Coin and Currency Local and Global market",
+         "label": {
+           "en": "Gold, Coin and Currency Local and Global market",
+           "fa_IR": "شبکه اطلاع رسانی طلا، سکه و ارز"
          }
         }
       ]
@@ -2740,6 +2768,13 @@
          "label": {
            "en": "National Library and Archives of I.R. of Iran",
            "fa_IR": "سازمان اسناد و کتابخانه ملی جمهوری اسلامی"
+         }
+        },
+        {
+         "value": "Gold, Coin and Currency Local and Global market",
+         "label": {
+           "en": "Gold, Coin and Currency Local and Global market",
+           "fa_IR": "شبکه اطلاع رسانی طلا، سکه و ارز"
          }
         }
       ]
