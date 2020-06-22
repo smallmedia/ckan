@@ -2275,6 +2275,13 @@
            "en": "Gold, Coin and Currency Local and Global market",
            "fa_IR": "شبکه اطلاع رسانی طلا، سکه و ارز"
          }
+        },
+        {
+         "value": "Khatam-al Anbiya Construction Headquarter",
+         "label": {
+           "en": "Khatam-al Anbiya Construction Headquarter",
+           "fa_IR": "قرارگاه خاتم الانبیا"
+         }
         }
       ]
     },
@@ -2775,6 +2782,13 @@
          "label": {
            "en": "Gold, Coin and Currency Local and Global market",
            "fa_IR": "شبکه اطلاع رسانی طلا، سکه و ارز"
+         }
+        },
+        {
+         "value": "Khatam-al Anbiya Construction Headquarter",
+         "label": {
+           "en": "Khatam-al Anbiya Construction Headquarter",
+           "fa_IR": "قرارگاه خاتم الانبیا"
          }
         }
       ]
