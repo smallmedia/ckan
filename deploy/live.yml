@@ -23,7 +23,7 @@
     - django_dir: "{{ git_root }}" #  Location of manage.py
     - run_django_collectstatic: yes
     - ckanext_root: "{{ virtualenv_path }}/{{ application_name }}"
-    - mailchimp_list_id: 181733
+    - mailchimp_list_id: 9238ab4edd
 
   vars_files:
     - vault/secrets.yml
