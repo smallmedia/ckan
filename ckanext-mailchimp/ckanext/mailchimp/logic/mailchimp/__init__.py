@@ -34,9 +34,18 @@ class MailChimpClient(object):
                 create_data["tags"].append(tag)
         response = requests.post("{0}/lists/{1}/members".format(self.base_url, self.member_list_id),
                                  json.dumps(create_data), headers=self.headers)
-        if response.status_code not in [200, 201]:
+        if response.status_code in [200, 201]:
+            succes = True
+            message = "SUCCESS"
+        elif response.status_code in [400] and response.json().get("title", "") == "Member Exists":
+            succes = False
+            message = "ALREADY_SUBSCRIBED"
+            self.logger.warn(response.json().get("detail", "Already a list member"))
+        else:
+            succes = False
+            message = "ERROR_ADD"
             self.logger.error(response.text)
-        return True if response.status_code in [200, 201] else False
+        return succes, message
 
     def delete_subscriber_by_email(self, email):
         subscriber = self.find_subscriber_by_email(email)
