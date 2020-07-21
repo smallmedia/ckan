@@ -45,6 +45,11 @@
       - zlib1g-dev
   tags: packages
 
+- name: upgrade pip
+  pip:
+    name: pip==9.0.3
+  tags: packages
+
 - name: Install virtualenv
   pip:
     name: virtualenv

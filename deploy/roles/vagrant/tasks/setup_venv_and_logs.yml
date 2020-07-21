@@ -15,7 +15,7 @@
 
 - name: Create the virtualenv
   become: no
-  command: virtualenv {{ virtualenv_path }} --no-site-packages
+  command: virtualenv {{ virtualenv_path }}
            creates={{ virtualenv_path }}/bin/activate
 
 - name: Create the application log folder
