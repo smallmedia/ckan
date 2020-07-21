@@ -11,6 +11,7 @@
     - ckan_site_url: https://iranopendata.org
     - datapusher_tgz: https://github.com/ckan/datapusher/archive/0.0.10.tar.gz
     - datapusher_root: /usr/lib/ckan/datapusher
+    - git_repo: 'git@github.com:smallmedia/iod-ckan.git'
     - git_branch: iod-v2.6
     - application_name: 'iod-ckan'
     - set_up_application_user: yes
@@ -23,6 +24,8 @@
     - django_dir: "{{ git_root }}" #  Location of manage.py
     - run_django_collectstatic: yes
     - ckanext_root: "{{ virtualenv_path }}/{{ application_name }}"
+    - enable_google_analytics: false
+    - enable_views: false
     - mailchimp_list_id: 9238ab4edd
 
   vars_files:

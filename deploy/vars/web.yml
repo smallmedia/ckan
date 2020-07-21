@@ -18,7 +18,6 @@ run_django_migrate: yes
 # Git
 git_root: "{{ virtualenv_path }}/{{ application_name }}"
 setup_git_repo: yes
-git_repo: 'git@github.com:smallmedia/iod-ckan.git'
 
 # Nginx
 nginx_server_name: localhost

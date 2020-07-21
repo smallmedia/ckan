@@ -144,6 +144,13 @@
 #   shell: >
 #     cd {{ git_root }};
 #     {{ virtualenv_path }}/bin/paster views create -c /etc/ckan/default/ckan.ini
+#   when: enable_views
+
+- name: Enable google analytics
+  shell: >
+    cd {{ git_root }}/ckanext-googleanalytics;
+    {{ virtualenv_path }}/bin/paster initdb -c /etc/ckan/default/ckan.ini
+  when: enable_google_analytics
 
 - name: Reset permissions for Datastore readonly user.
   shell: >
