@@ -7,9 +7,13 @@
 3. From the `/vagrant` directory (which is the default), run `paster serve /etc/ckan/default/ckan.ini`
 4. Visit the app at http://192.168.33.10:5000/
 
-## Working with paster on local
+## Working with paster on local or live
 
-* To create a sysadmin account, run: `paster sysadmin add myusername -c /etc/ckan/default/ckan.ini`
+* To create a sysadmin account:
+  1. `. /home/vagrant/bin/activate` (local) or `. /webapps/iod-ckan/bin/activate` (staging/live)
+  2. change directory to `/webapps/iod-ckan/iod-ckan` (staging/live)
+  3. run `paster sysadmin add myusername -c /etc/ckan/default/ckan.ini`
+
 * If you build a new extension remember to run the installation commands before adding it to plugins list in the config file:
   1. `. /home/vagrant/bin/activate` (local) or `. /webapps/iod-ckan/bin/activate` (staging/live)
   2. `cd ckanext-nameofextension/`
@@ -18,6 +22,18 @@
 
 ## Deploy to iod-ckan-live
 
+First of all add your ssh key to your github profile to have access to the private repo with ssh key.
+then add the following SSH configuration to your `~/.ssh/config` file:
+```
+Host [server-address-here]
+HostName [ip-address-here]
+ForwardAgent yes
+```
+This enables forwarding keys loaded into `ssh-agen`t to remote SSH connections.
+
+Check which keys are loaded currently using `ssh-add -l`, and add any additional required keys using `ssh-add ~/.ssh/key-here`.
+
+Now run the ansible playbook:
 1. Go to the deploy folder: `cd deploy`
 2. Run the deploy script: `ansible-playbook live.yml`
 
@@ -60,3 +76,5 @@ pip install -r dev-requirements.txt
 Showcase will create it's tables. CKAN timeout when Showcase is enabled for the first time. to solve the problem you need to disable all plugins.
 Edit the local config file: `sudo vi /etc/ckan/default/ckan.ini` and comment out the `ckan.plugins` line. then add this line instead: `ckan.plugins = showcase` and run the CKAN.
 After creating the tables, enable all plugins again.
+
+at the end, restart the webapp: `service supervisor restart`
