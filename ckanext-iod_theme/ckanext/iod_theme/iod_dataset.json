@@ -1901,6 +1901,13 @@
             "en": "government currency",
             "fa_IR": "ارز دولتی"
           }
+        },
+        {
+          "value": "veterinary",
+          "label": {
+            "en": "veterinary",
+            "fa_IR": "دامپزشكی"
+          }
         }
       ]
     },
