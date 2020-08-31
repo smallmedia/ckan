@@ -1908,6 +1908,27 @@
             "en": "veterinary",
             "fa_IR": "دامپزشكی"
           }
+        },
+        {
+          "value": "per capita meat production",
+          "label": {
+            "en": "per capita meat production",
+            "fa_IR": "سرانه تولید گوشت"
+          }
+        },
+        {
+          "value": "meat production",
+          "label": {
+            "en": "meat production",
+            "fa_IR": "تولید گوشت"
+          }
+        },
+        {
+          "value": "meat",
+          "label": {
+            "en": "meat",
+            "fa_IR": "گوشت"
+          }
         }
       ]
     },
