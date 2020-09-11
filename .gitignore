@@ -47,3 +47,4 @@ datasets.jsonl.gz
 
 # Vagrant
 .vagrant
+void_*
