@@ -1929,6 +1929,55 @@
             "en": "meat",
             "fa_IR": "گوشت"
           }
+        },
+        {
+          "value": "members of parliament",
+          "label": {
+            "en": "members of parliament",
+            "fa_IR": "نمايندگان مجلس"
+          }
+        },
+        {
+          "value": "doctorate",
+          "label": {
+            "en": "doctorate",
+            "fa_IR": "دکترا"
+          }
+        },
+        {
+          "value": "presidentail election",
+          "label": {
+            "en": "presidentail election",
+            "fa_IR": "انتخابات رياست جمهوری"
+          }
+        },
+        {
+          "value": "voting right",
+          "label": {
+            "en": "voting right",
+            "fa_IR": "حق رأی"
+          }
+        },
+        {
+          "value": "election",
+          "label": {
+            "en": "election",
+            "fa_IR": "انتخابات"
+          }
+        },
+        {
+          "value": "president",
+          "label": {
+            "en": "president",
+            "fa_IR": "رياست جمهوری"
+          }
+        },
+        {
+          "value": "drivers",
+          "label": {
+            "en": "drivers",
+            "fa_IR": "رانندگان"
+          }
         }
       ]
     },
