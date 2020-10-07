@@ -2359,6 +2359,13 @@
            "en": "Khatam-al Anbiya Construction Headquarter",
            "fa_IR": "قرارگاه خاتم الانبیا"
          }
+        },
+        {
+         "value": "Our World In Data",
+         "label": {
+           "en": "Our World In Data",
+           "fa_IR": "جهان ما در داده‌ها"
+         }
         }
       ]
     },
@@ -2866,6 +2873,13 @@
          "label": {
            "en": "Khatam-al Anbiya Construction Headquarter",
            "fa_IR": "قرارگاه خاتم الانبیا"
+         }
+        },
+        {
+         "value": "Our World In Data",
+         "label": {
+           "en": "Our World In Data",
+           "fa_IR": "جهان ما در داده‌ها"
          }
         }
       ]
