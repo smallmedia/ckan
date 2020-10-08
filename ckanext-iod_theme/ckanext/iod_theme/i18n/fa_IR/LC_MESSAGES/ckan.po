@@ -5068,3 +5068,42 @@ msgstr "ویروس کرونا"
 
 msgid "corona outbreak"
 msgstr "شیوع کرونا"
+
+msgid "working children"
+msgstr "کودکان کار"
+
+msgid "overnment currency"
+msgstr "ارز دولتی"
+
+msgid "veterinary"
+msgstr "دامپزشكی"
+
+msgid "per capita meat production"
+msgstr "سرانه تولید گوشت"
+
+msgid "meat production"
+msgstr "تولید گوشت"
+
+msgid "meat"
+msgstr "گوشت"
+
+msgid "members of parliament"
+msgstr "نمايندگان مجلس"
+
+msgid "doctorate"
+msgstr "دکترا"
+
+msgid "presidentail election"
+msgstr "انتخابات رياست جمهوری"
+
+msgid "voting right"
+msgstr "حق رأی"
+
+msgid "election"
+msgstr "انتخابات"
+
+msgid "president"
+msgstr "رياست جمهوری"
+
+msgid "drivers"
+msgstr "رانندگان"
