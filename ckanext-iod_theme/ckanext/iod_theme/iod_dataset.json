@@ -1978,6 +1978,55 @@
             "en": "drivers",
             "fa_IR": "رانندگان"
           }
+        },
+        {
+          "value": "power plants",
+          "label": {
+            "en": "power plants",
+            "fa_IR": "نيروگاه‌های برق"
+          }
+        },
+        {
+          "value": "Hydropower",
+          "label": {
+            "en": "Hydropower",
+            "fa_IR": "نیروگاه‌های آبی"
+          }
+        },
+        {
+          "value": "main catchments",
+          "label": {
+            "en": "main catchments",
+            "fa_IR": "حوضه های اصلی آبریز"
+          }
+        },
+        {
+          "value": "irrigation networks",
+          "label": {
+            "en": "irrigation networks",
+            "fa_IR": "شبكه‌های آبياری"
+          }
+        },
+        {
+          "value": "drainage",
+          "label": {
+            "en": "drainage",
+            "fa_IR": "زهكشی"
+          }
+        },
+        {
+          "value": "water plants",
+          "label": {
+            "en": "water plants",
+            "fa_IR": "تاسيسات آب"
+          }
+        },
+        {
+          "value": "produced water",
+          "label": {
+            "en": "produced water",
+            "fa_IR": "آب توليدی"
+          }
         }
       ]
     },
@@ -2365,6 +2414,13 @@
          "label": {
            "en": "Our World In Data",
            "fa_IR": "جهان ما در داده‌ها"
+         }
+        },
+        {
+         "value": "Ministry of Energy",
+         "label": {
+           "en": "Ministry of Energy",
+           "fa_IR": "وزارت نیرو"
          }
         }
       ]

@@ -5107,3 +5107,24 @@ msgstr "رياست جمهوری"
 
 msgid "drivers"
 msgstr "رانندگان"
+
+msgid "power plants"
+msgstr "نيروگاه‌های برق"
+
+msgid "Hydropower"
+msgstr "نیروگاه‌های آبی"
+
+msgid "main catchments"
+msgstr "حوضه های اصلی آبریز"
+
+msgid "irrigation networks"
+msgstr "شبكه‌های آبياری"
+
+msgid "drainage"
+msgstr "زهكشی"
+
+msgid "water plants"
+msgstr "تاسيسات آب"
+
+msgid "produced water"
+msgstr "آب توليدی"
