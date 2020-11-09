@@ -2415,6 +2415,13 @@
            "en": "Our World In Data",
            "fa_IR": "جهان ما در داده‌ها"
          }
+        },
+        {
+         "value": "Ministry of Energy",
+         "label": {
+           "en": "Ministry of Energy",
+           "fa_IR": "وزارت نیرو"
+         }
         }
       ]
     },
