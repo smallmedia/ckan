@@ -1,0 +1,39 @@
+---
+
+- name: 'Provision {{ application_name }} staging'
+  hosts: staging
+  become: true
+  become_flags: "-E"
+
+  vars:
+    - deploy_env: staging
+    - ckan_site_url: https://eomae9ai.iranopendata.org
+    - datapusher_tgz: https://github.com/ckan/datapusher/archive/0.0.10.tar.gz
+    - datapusher_root: /usr/lib/ckan/datapusher
+    - git_repo: 'git@github.com:smallmedia/iod-ckan.git'
+    - git_branch: iod-a19
+    - application_name: 'iod-ckan'
+    - set_up_application_user: yes
+    - application_user: 'iod-ckan'
+    - application_group: webapps
+    - update_apt_cache: yes
+    - django_settings_file: 'app.core.settings.staging'
+    - requirements_file: '{{ git_root }}/requirements.txt'
+    - virtualenv_path: '/webapps/{{ application_name }}'
+    - django_dir: "{{ git_root }}" #  Location of manage.py
+    - run_django_collectstatic: yes
+    - ckanext_root: "{{ virtualenv_path }}/{{ application_name }}"
+    - enable_google_analytics: true
+    - enable_views: true
+    - mailchimp_list_id: 9238ab4edd
+
+  vars_files:
+    - vault/secrets.yml
+    - vars/db_staging.yml
+    - vars/web.yml
+
+  roles:
+    - debug
+    - base
+    - ckan-deps
+    - web
