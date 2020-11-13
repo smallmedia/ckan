@@ -648,6 +648,16 @@ html:lang(fa_IR) {
   padding: 20px 0;
 }
 
+.homepage .col1 .module-content {
+  padding: 20px 0;
+}
+
+.media-image {
+  max-height: 275px;
+  margin: auto;
+  display: block;
+}
+
 .homepage .stats ul li a {
   font-size: 1.25rem;
   text-transform: capitalize;

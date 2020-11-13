@@ -10,6 +10,15 @@
 <div role="main">
   <div class="container">
     <div class="row row2">
+
+      <div class="span12 col1">
+        {% if h.lang() == 'fa_IR' %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_recent_pages_home(), type='page' %}
+        {% else %}
+          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items(), type='showcase' %}
+        {% endif %}
+      </div>
+
       <div class="span12 col1">
         {% block stats %}
           {% snippet 'home/snippets/stats.html' %}
@@ -32,14 +41,6 @@
           </div>
         </div>
       {% endif %}
-
-      <div class="span12 col1">
-        {% if h.lang() == 'fa_IR' %}
-          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_recent_pages_home(), type='page' %}
-        {% else %}
-          {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items(), type='showcase' %}
-        {% endif %}
-      </div>
 
     </div>
   </div>
