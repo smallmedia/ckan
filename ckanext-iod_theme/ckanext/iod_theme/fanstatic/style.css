@@ -698,7 +698,7 @@ body,
 
 .account-masthead a,
 .site-footer a {
-  color: #444;
+  color: #fff;
 }
 
 .account-masthead .account ul li a:hover,
@@ -1697,6 +1697,12 @@ a:active {
 \*------------------------------------*/
 
 .footer-email-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-contact {
+  color: #fbfbfb;
   margin-top: 30px;
   margin-bottom: 10px;
 }

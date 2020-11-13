@@ -11,18 +11,20 @@
         <p>{% trans %}By accessing this Iran Open Data website or database, users agree to take full responsibility for reliance on any information provided by this site, and to hold harmless and waive any and all liability against individuals or entities associated with its development, form and content for any loss, harm or damage suffered as a result of its use.{% endtrans %}</p>
       </div>
 
-      <div class="span6 footer-email-form">
+      <div class="span4 footer-email-form">
         {% block newsletter %}
           {% snippet 'snippets/newsletter.html' %}
         {% endblock %}
       </div>
-      <div id="lab_social_icon_footer" class="span6">
+      <div id="lab_social_icon_footer" class="span4">
         <a href="https://www.facebook.com/opendatairan" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
         <a href="https://twitter.com/iranopendata" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
         <a href="https://www.instagram.com/iranopendata" target="_blank"><i id="social-in" class="fa fa-instagram fa-3x social"></i></a>
         <a href="https://t.me/IranOpenData" target="_blank"><i id="social-tg" class="fa fa-telegram fa-3x social"></i></a>
       </div>
-
+      <div id="footer-contact" class="span4 footer-contact">
+        <a href="{{ h.url_for('contact_form') }}" title="{{ _('Contact') }}">{{ _('Contact') }}</a>
+      </div>
     </div>
     {% endblock %}
   </div>
