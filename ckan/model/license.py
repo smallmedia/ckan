@@ -217,7 +217,7 @@ class LicenseNotSpecified(DefaultLicense):
 
     @property
     def title(self):
-        return _("License not specified")
+        return "License not specified"
 
 class LicenseOpenDataCommonsPDDL(DefaultLicense):
     domain_data = True
@@ -227,7 +227,7 @@ class LicenseOpenDataCommonsPDDL(DefaultLicense):
 
     @property
     def title(self):
-        return _("Open Data Commons Public Domain Dedication and License (PDDL)")
+        return "Open Data Commons Public Domain Dedication and License (PDDL)"
 
 class LicenseOpenDataCommonsOpenDatabase(DefaultLicense):
     domain_data = True
@@ -237,7 +237,7 @@ class LicenseOpenDataCommonsOpenDatabase(DefaultLicense):
 
     @property
     def title(self):
-        return _("Open Data Commons Open Database License (ODbL)")
+        return "Open Data Commons Open Database License (ODbL)"
 
 class LicenseOpenDataAttribution(DefaultLicense):
     domain_data = True
@@ -247,7 +247,7 @@ class LicenseOpenDataAttribution(DefaultLicense):
 
     @property
     def title(self):
-        return _("Open Data Commons Attribution License")
+        return "Open Data Commons Attribution License"
 
 class LicenseCreativeCommonsZero(DefaultLicense):
     domain_content = True
@@ -258,7 +258,7 @@ class LicenseCreativeCommonsZero(DefaultLicense):
 
     @property
     def title(self):
-        return _("Creative Commons CCZero")
+        return "Creative Commons CCZero"
 
 class LicenseCreativeCommonsAttribution(DefaultLicense):
     id = "cc-by"
@@ -267,7 +267,7 @@ class LicenseCreativeCommonsAttribution(DefaultLicense):
 
     @property
     def title(self):
-        return _("Creative Commons Attribution")
+        return "Creative Commons Attribution"
 
 class LicenseCreativeCommonsAttributionShareAlike(DefaultLicense):
     domain_content = True
@@ -277,7 +277,7 @@ class LicenseCreativeCommonsAttributionShareAlike(DefaultLicense):
 
     @property
     def title(self):
-        return _("Creative Commons Attribution Share-Alike")
+        return "Creative Commons Attribution Share-Alike"
 
 class LicenseGNUFreeDocument(DefaultLicense):
     domain_content = True
@@ -286,7 +286,7 @@ class LicenseGNUFreeDocument(DefaultLicense):
     url = "http://www.opendefinition.org/licenses/gfdl"
     @property
     def title(self):
-        return _("GNU Free Documentation License")
+        return "GNU Free Documentation License"
 
 class LicenseOtherOpen(DefaultLicense):
     domain_content = True
@@ -296,7 +296,7 @@ class LicenseOtherOpen(DefaultLicense):
 
     @property
     def title(self):
-        return _("Other (Open)")
+        return "Other (Open)"
 
 class LicenseOtherPublicDomain(DefaultLicense):
     domain_content = True
@@ -306,7 +306,7 @@ class LicenseOtherPublicDomain(DefaultLicense):
 
     @property
     def title(self):
-        return _("Other (Public Domain)")
+        return "Other (Public Domain)"
 
 class LicenseOtherAttribution(DefaultLicense):
     domain_content = True
@@ -316,7 +316,7 @@ class LicenseOtherAttribution(DefaultLicense):
 
     @property
     def title(self):
-        return _("Other (Attribution)")
+        return "Other (Attribution)"
 
 class LicenseOpenGovernment(DefaultLicense):
     domain_content = True
@@ -328,7 +328,7 @@ class LicenseOpenGovernment(DefaultLicense):
     @property
     def title(self):
         # CS: bad_spelling ignore
-        return _("UK Open Government Licence (OGL)")
+        return "UK Open Government Licence (OGL)"
 
 class LicenseCreativeCommonsNonCommercial(DefaultLicense):
     id = "cc-nc"
@@ -336,7 +336,7 @@ class LicenseCreativeCommonsNonCommercial(DefaultLicense):
 
     @property
     def title(self):
-        return _("Creative Commons Non-Commercial (Any)")
+        return "Creative Commons Non-Commercial (Any)"
 
 class LicenseOtherNonCommercial(DefaultLicense):
     id = "other-nc"
@@ -344,7 +344,7 @@ class LicenseOtherNonCommercial(DefaultLicense):
 
     @property
     def title(self):
-        return _("Other (Non-Commercial)")
+        return "Other (Non-Commercial)"
 
 class LicenseOtherClosed(DefaultLicense):
     id = "other-closed"
@@ -352,4 +352,4 @@ class LicenseOtherClosed(DefaultLicense):
 
     @property
     def title(self):
-        return _("Other (Not Open)")
+        return "Other (Not Open)"
