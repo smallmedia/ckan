@@ -61,6 +61,8 @@ schema = {
     'publish_date': [not_empty_if_blog,
                      p.toolkit.get_validator('ignore_missing'),
                      p.toolkit.get_validator('isodate')],
+    'image_url': [p.toolkit.get_validator('ignore_missing'), unicode],
+
 }
 
 
@@ -110,7 +112,6 @@ def _pages_list(context, data_dict):
     out = db.Page.pages(**search)
     out_list = []
     for pg in out:
-        # print(pg)
         parser = HTMLFirstImage()
         parser.feed(pg.content)
         img = parser.first_image
@@ -120,6 +121,9 @@ def _pages_list(context, data_dict):
                   'publish_date': pg.publish_date.isoformat() if pg.publish_date else None,
                   'group_id': pg.group_id,
                   'page_type': pg.page_type,
+                  'image_url': h.url_for_static(
+                    'uploads/page_images/%s' % pg.image_url,
+                    qualified = True),
                  }
         if img:
             pg_row['image'] = img
@@ -150,6 +154,11 @@ def _pages_update(context, data_dict):
     context['page'] = page
     context['group_id'] = org_id
 
+    upload = uploader.get_uploader('page_images')
+    upload.update_data_dict(data_dict, 'image_url',
+                            'image_upload', 'clear_upload')
+    upload.upload(uploader.get_max_image_size())
+
     data, errors = df.validate(data_dict, schema, context)
 
     if errors:
@@ -161,7 +170,7 @@ def _pages_update(context, data_dict):
         out.group_id = org_id
         out.name = page
     items = ['title', 'content', 'name', 'private',
-             'order', 'page_type', 'publish_date', 'lang']
+             'order', 'page_type', 'publish_date', 'lang', 'image_url']
     for item in items:
         setattr(out, item, data.get(item,'page' if item =='page_type' else None)) #backward compatible with older version where page_type does not exist
 

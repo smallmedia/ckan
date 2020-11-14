@@ -45,7 +45,7 @@
 {% endif %}
 
 
-<form class="form-horizontal" method="post" action="{{ action_url }}" data-module="basic-form">
+<form class="form-horizontal" method="post" action="{{ action_url }}" data-module="basic-form" enctype="multipart/form-data">
 
   {{ form.input('title', id='field-title', label=_('Title'), placeholder=title_placeholder, value=data.title, error=errors.title, classes=['control-full', 'control-large'], attrs={'data-module': 'slug-preview-target'}) }}
 
@@ -59,6 +59,11 @@
   {% endblock extra_pages_form %}
 
   {#{{ form.input('name', id='field-name', label=_('Name'), placeholder=_('my-name'), value=data.name, error=errors.name, classes=['control-full']) }}#}
+
+  {% set is_upload = data.image_url and not data.image_url.startswith('http') %}
+  {% set is_url = data.image_url and data.image_url.startswith('http') %}
+
+  {{ form.image_upload(data, errors, is_upload_enabled=h.uploads_enabled(), is_url=is_url, is_upload=is_upload) }}
 
   <div class="control-group">
     <label for="field-lang" class="control-label">{{ _('Language') }}</label>

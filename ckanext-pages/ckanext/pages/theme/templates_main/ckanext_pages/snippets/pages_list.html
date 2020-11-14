@@ -27,9 +27,9 @@
         {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/' + page.name) %}
       {% endif %}
       <div class="row page-list-item dataset-item">
-      {% if page.image %}
+      {% if page.image_url %}
         <div class="span3 image">
-          <a style="background-image:url({{ page.image }})" href="{{ url }}">
+          <a style="background-image:url({{ page.image_url }})" href="{{ url }}">
           </a>
         </div>
         <div class="span8">

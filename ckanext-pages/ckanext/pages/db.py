@@ -93,6 +93,17 @@ def init_db(model):
         pass
     model.Session.commit()
 
+    sql_upgrade_03 = ('ALTER TABLE ckanext_pages add column image_url Text;',
+                      "UPDATE ckanext_pages set image_url = '';")
+
+    conn = model.Session.connection()
+    try:
+        for statement in sql_upgrade_03:
+            conn.execute(statement)
+    except sa.exc.ProgrammingError:
+        pass
+    model.Session.commit()
+
     types = sa.types
     global pages_table
     pages_table = sa.Table('ckanext_pages', model.meta.metadata,
@@ -106,10 +117,11 @@ def init_db(model):
         sa.Column('group_id', types.UnicodeText, default=None),
         sa.Column('user_id', types.UnicodeText, default=u''),
         sa.Column('publish_date', types.DateTime),
-        sa.Column('page_type', types.DateTime),
+        sa.Column('page_type', types.UnicodeText),
         sa.Column('created', types.DateTime, default=datetime.datetime.utcnow),
         sa.Column('modified', types.DateTime, default=datetime.datetime.utcnow),
         sa.Column('extras', types.UnicodeText, default=u'{}'),
+        sa.Column('image_url', types.UnicodeText, default=u''),
         extend_existing=True
     )
 
