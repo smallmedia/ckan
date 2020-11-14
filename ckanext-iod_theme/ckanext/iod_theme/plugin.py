@@ -114,7 +114,9 @@ def get_recent_pages_home(number=3, exclude=None):
         if exclude and blog['name'] == exclude:
             continue
 
-        image_url = blog.get('image')
+        image_url = blog.get('image_url')
+        if not image_url:
+            image_url = blog.get('image')
 
         if image_url is None:
             if ('extras' in blog and

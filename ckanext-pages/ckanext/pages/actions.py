@@ -121,10 +121,11 @@ def _pages_list(context, data_dict):
                   'publish_date': pg.publish_date.isoformat() if pg.publish_date else None,
                   'group_id': pg.group_id,
                   'page_type': pg.page_type,
-                  'image_url': h.url_for_static(
-                    'uploads/page_images/%s' % pg.image_url,
-                    qualified = True),
                  }
+        if pg.image_url:
+            pg_row['image_url'] = h.url_for_static(
+                'uploads/page_images/%s' % pg.image_url,
+                qualified=True)
         if img:
             pg_row['image'] = img
         extras = pg.extras
