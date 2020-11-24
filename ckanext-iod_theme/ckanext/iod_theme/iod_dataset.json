@@ -2027,6 +2027,41 @@
             "en": "produced water",
             "fa_IR": "آب توليدی"
           }
+        },
+        {
+          "value": "khatam al-anbiya",
+          "label": {
+            "en": "khatam al-anbiya",
+            "fa_IR": "خاتم الانبیا"
+          }
+        },
+        {
+          "value": "transparency",
+          "label": {
+            "en": "transparency",
+            "fa_IR": "شفافیت"
+          }
+        },
+        {
+          "value": "contract",
+          "label": {
+            "en": "contract",
+            "fa_IR": "قرارداد"
+          }
+        },
+        {
+          "value": "project",
+          "label": {
+            "en": "project",
+            "fa_IR": "پروژه"
+          }
+        },
+        {
+          "value": "khatam al-anbiya construction headquarters",
+          "label": {
+            "en": "khatam al-anbiya construction headquarters",
+            "fa_IR": "قرارگاه خاتم الانبیا"
+          }
         }
       ]
     },
