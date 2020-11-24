@@ -701,6 +701,10 @@ body,
   color: #fff;
 }
 
+.site-footer a:hover {
+  color: #ea562e;
+}
+
 .account-masthead .account ul li a:hover,
 .account-masthead .account ul li a:active {
   color: #fff;
@@ -1705,6 +1709,11 @@ a:active {
   color: #fbfbfb;
   margin-top: 30px;
   margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-contact:hover {
+  color: #ea562e;
 }
 
 .footer-email-form .input-email {
