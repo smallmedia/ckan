@@ -1,0 +1,20 @@
+---
+- name: Ansible HostName
+  debug: msg="{{ ansible_hostname }}"
+
+- name: Inventory HostName
+  debug: msg="{{ inventory_hostname }}"
+
+- name: Group Name
+  debug: msg="{{ group_names[0] }}"
+
+- name: Inventory File
+  debug: msg="{{ inventory_file }}"
+
+- name: Ansible Play Name
+  debug: msg="{{ ansible_play_name }}"
+
+- name: Pause
+  pause:
+    prompt: "Make sure the server and playbook is correct"
+    seconds: 30

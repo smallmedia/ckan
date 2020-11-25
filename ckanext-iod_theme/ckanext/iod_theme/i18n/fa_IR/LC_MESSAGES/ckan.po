@@ -5128,3 +5128,18 @@ msgstr "تاسيسات آب"
 
 msgid "produced water"
 msgstr "آب توليدی"
+
+msgid "khatam al-anbiya"
+msgstr "خاتم الانبیا"
+
+msgid "transparency"
+msgstr "شفافیت"
+
+msgid "contract"
+msgstr "قرارداد"
+
+msgid "project"
+msgstr "پروژه"
+
+msgid "khatam al-anbiya construction headquarters"
+msgstr "قرارگاه خاتم الانبیا"

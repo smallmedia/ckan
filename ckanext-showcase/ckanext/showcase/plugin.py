@@ -50,6 +50,7 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
     def update_config(self, config):
         tk.add_template_directory(config, 'templates')
         tk.add_public_directory(config, 'public')
+        tk.add_resource('fanstatic', 'showcase')
         if tk.check_ckan_version(min_version='2.4'):
             tk.add_ckan_admin_tab(config, 'ckanext_showcase_admins',
                                   'Showcase Config')
@@ -96,7 +97,8 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
     def get_helpers(self):
         return {
             'facet_remove_field': showcase_helpers.facet_remove_field,
-            'get_site_statistics': showcase_helpers.get_site_statistics
+            'get_site_statistics': showcase_helpers.get_site_statistics,
+            'get_wysiwyg_editor': showcase_helpers.get_wysiwyg_editor,
         }
 
     # IFacets
@@ -129,7 +131,9 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
             'ckanext_showcase_admin_remove':
                 ckanext.showcase.logic.auth.remove_showcase_admin,
             'ckanext_showcase_admin_list':
-                ckanext.showcase.logic.auth.showcase_admin_list
+                ckanext.showcase.logic.auth.showcase_admin_list,
+            'ckanext_showcase_upload':
+                ckanext.showcase.logic.auth.showcase_upload
         }
 
     # IRoutes
@@ -157,7 +161,9 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
                       action='manage_showcase_admins', ckan_icon='picture'),
             m.connect('ckanext_showcase_admin_remove',
                       '/ckan-admin/showcase_admin_remove',
-                      action='remove_showcase_admin')
+                      action='remove_showcase_admin'),
+            m.connect('showcase_upload', '/showcase_upload',
+                    action='showcase_upload')
         map.redirect('/showcases', '/showcase')
         map.redirect('/showcases/{url:.*}', '/showcase/{url}')
         return map
@@ -190,6 +196,8 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
                 ckanext.showcase.logic.action.delete.showcase_admin_remove,
             'ckanext_showcase_admin_list':
                 ckanext.showcase.logic.action.get.showcase_admin_list,
+            'ckanext_showcase_upload':
+                ckanext.showcase.logic.action.create.showcase_upload,
         }
         return action_functions
 
@@ -221,8 +229,12 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
                 context, {'showcase_id': pkg_dict['id']}))
 
         # Rendered notes
-        pkg_dict[u'showcase_notes_formatted'] = \
-            h.render_markdown(pkg_dict['notes'])
+        if showcase_helpers.get_wysiwyg_editor() == 'ckeditor':
+            pkg_dict[u'showcase_notes_formatted'] = pkg_dict['notes']
+        else:
+            pkg_dict[u'showcase_notes_formatted'] = \
+                h.render_markdown(pkg_dict['notes'])
+
         return pkg_dict
 
     def after_show(self, context, pkg_dict):
@@ -255,6 +267,8 @@ class ShowcasePlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm):
             lanfilter = 'lang:{0}'.format(h.lang())
             if lanfilter not in fq:
                 search_params.update({'fq': fq + " +" + lanfilter})
+        if not search_params.get('sort'):
+            search_params['sort'] = 'metadata_modified desc'
         return search_params
 
     # ITranslation

@@ -2,5 +2,5 @@
 192.168.33.10
 
 
-[iod-ckan-demo]
+[demo]
 254.254.254.254 ansible_connection=ssh ansible_user=root

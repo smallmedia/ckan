@@ -504,7 +504,7 @@ blockquote:lang(fa_IR) {
 }
 
 .usecases h3 {
-  padding: 10px 10px 0;
+  padding: 0 10px 0;
 }
 
 .usecases dl,
@@ -595,7 +595,7 @@ blockquote:lang(fa_IR) {
 
 .homepage [role=main] {
   background-color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .homepage [role=main]:not(.hero) {
@@ -648,6 +648,16 @@ html:lang(fa_IR) {
   padding: 20px 0;
 }
 
+.homepage .col1 .module-content {
+  padding: 0 0;
+}
+
+.media-image {
+  max-height: 275px;
+  margin: auto;
+  display: block;
+}
+
 .homepage .stats ul li a {
   font-size: 1.25rem;
   text-transform: capitalize;
@@ -688,7 +698,11 @@ body,
 
 .account-masthead a,
 .site-footer a {
-  color: #444;
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #ea562e;
 }
 
 .account-masthead .account ul li a:hover,
@@ -754,9 +768,8 @@ a:active {
 }
 
 .iod-title {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
-  padding: 10px 0 20px;
 }
 
 .usecases .list {
@@ -1690,6 +1703,17 @@ a:active {
 .footer-email-form {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.footer-contact {
+  color: #fbfbfb;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-contact:hover {
+  color: #ea562e;
 }
 
 .footer-email-form .input-email {
