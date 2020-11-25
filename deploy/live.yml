@@ -2,7 +2,6 @@
 
 - name: 'Provision {{ application_name }} staging'
   hosts: iod-ckan-live
-  gather_facts: no
   become: true
   become_flags: "-E"
 
@@ -24,8 +23,8 @@
     - django_dir: "{{ git_root }}" #  Location of manage.py
     - run_django_collectstatic: yes
     - ckanext_root: "{{ virtualenv_path }}/{{ application_name }}"
-    - enable_google_analytics: false
-    - enable_views: false
+    - enable_google_analytics: true
+    - enable_views: true
     - mailchimp_list_id: 9238ab4edd
 
   vars_files:
@@ -34,6 +33,7 @@
     - vars/web.yml
 
   roles:
+    - debug
     - base
     - ckan-deps
     - web
