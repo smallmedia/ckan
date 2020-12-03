@@ -1793,6 +1793,14 @@ a:active {
   color: #2CA5E0;
 }
 
+/*------------------------------------*\
+    #PAGES
+\*------------------------------------*/
+
+.page-list-item .image a {
+  margin-bottom: 10px;
+}
+
 /*
     Format section
 */
