@@ -4792,7 +4792,7 @@ msgstr "آیا مطمئنید که می‌خواهید این کاربر را ا
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:9
 msgid "Manage Showcase Admins"
-msgstr "مدیریت مدیران کاربر داده"
+msgstr "مدیریت مدیران کاربرد داده"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:16
 msgid "Add an Existing User"
@@ -4804,7 +4804,7 @@ msgstr "برای اضافه کردن یک کاربر موجود به مدیرا�
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:32
 msgid "Add User"
-msgstr "اضافه کردن کابر"
+msgstr "اضافه کردن کاربر"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:38
 msgid "Showcase Admins"
@@ -4816,7 +4816,7 @@ msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:61
 msgid "There are currently no Showcase Admins."
-msgstr "در حال حاضر مدیر کابرد داده‌ای وجود ندارد."
+msgstr "در حال حاضر مدیر کاربرد داده‌ای وجود ندارد."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:69
 msgid " <p><strong>Showcase Admin:</strong> Can create and remove showcases. Can add and remove datasets from showcases.</p> "
@@ -4867,7 +4867,7 @@ msgstr "مجموعه‌داده‌های موجود برای اضافه کردن
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
 msgid "Add to Showcase"
-msgstr "اضافه کردن به مجموعه داده"
+msgstr "اضافه کردن به کاربرد داده"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
@@ -4882,7 +4882,7 @@ msgstr "آیا مطمئنید که می‌خواهید این کاربرد دا�
 #: ckanext/showcase/templates/showcase/new.html:3
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Create Showcase"
-msgstr "ساخت کاربر داده"
+msgstr "ساخت کاربرد داده"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:35
 msgid "View showcase"
@@ -4980,7 +4980,7 @@ msgstr "مجموعه‌داده‌ای در این کاربرد داده وجو�
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
 msgid "This showcase has no description"
-msgstr "این مجموعه داده توضیحی ندارد"
+msgstr "این کاربرد داده توضیحی ندارد"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:35
 msgid "{num} Datasets"
@@ -5143,3 +5143,241 @@ msgstr "پروژه"
 
 msgid "khatam al-anbiya construction headquarters"
 msgstr "قرارگاه خاتم الانبیا"
+
+# Translations template for ckanext-infographic.
+#: ckanext/infographic/controller.py:71 ckanext/infographic/controller.py:267
+msgid "User not authorized to edit {infographic_id}"
+msgstr "کاربر دسترسی ویرایش {infographic_id} را ندارد."
+
+#: ckanext/infographic/controller.py:147 ckanext/infographic/controller.py:184
+#: ckanext/infographic/controller.py:224 ckanext/infographic/controller.py:238
+#: ckanext/infographic/controller.py:274
+msgid "Infographic not found"
+msgstr "اینفوگرافیک پیدا نشد"
+
+#: ckanext/infographic/controller.py:149 ckanext/infographic/controller.py:276
+msgid "Unauthorized to read infographic"
+msgstr "دسترسی خواندن اینفوگرافیک را ندارید"
+
+#: ckanext/infographic/controller.py:171 ckanext/infographic/controller.py:182
+msgid "Unauthorized to delete infographic"
+msgstr "دسترسی حذف اینفوگرافیک را ندارید"
+
+#: ckanext/infographic/controller.py:176
+msgid "Infographic has been deleted."
+msgstr "اینفوگرافیک حذف شده است."
+
+#: ckanext/infographic/controller.py:227 ckanext/infographic/controller.py:329
+msgid "The dataset has been added to the infographic."
+msgid_plural "The datasets have been added to the infographic."
+msgstr[0] "‫مجموعه‌های داده به اینفوگرافیک اضافه شد."
+msgstr[1] "مجموعه داده به اینفوگرافیک اضافه شد."
+
+#: ckanext/infographic/controller.py:241 ckanext/infographic/controller.py:297
+msgid "The dataset has been removed from the infographic."
+msgid_plural "The datasets have been removed from the infographic."
+msgstr[0] "‫‫مجموعه‌های داده از اینفوگرافیک حذف شد."
+msgstr[1] "‫مجموعه داده از اینفوگرافیک حذف شد."
+
+#: ckanext/infographic/controller.py:547
+msgid "The user is now a Infographic Admin"
+msgstr "این کاربر اکنون یک مدیر اینفوگرافیک است"
+
+#: ckanext/infographic/controller.py:583
+msgid "The user is not a Infographic Admin"
+msgstr "این کاربر مدیر اینفوگرافیک نیست"
+
+#: ckanext/infographic/controller.py:585
+msgid "The user is no longer a Infographic Admin"
+msgstr "این کاربر دیگر مدیر اینفوگرافیک نیست"
+
+#: ckanext/infographic/templates/header.html:8
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:3
+#: ckanext/infographic/templates/package/read_base.html:7
+#: ckanext/infographic/templates/infographic/edit_base.html:5
+#: ckanext/infographic/templates/infographic/edit_base.html:17
+#: ckanext/infographic/templates/infographic/edit_base.html:21
+#: ckanext/infographic/templates/infographic/read.html:6
+#: ckanext/infographic/templates/infographic/read.html:33
+#: ckanext/infographic/templates/infographic/search.html:4
+#: ckanext/infographic/templates/infographic/search.html:7
+msgid "Infographics"
+msgstr "اینفوگرافیک‌ها"
+
+#: ckanext/infographic/templates/admin/confirm_remove_infographic_admin.html:11
+msgid "Are you sure you want to remove this user as a Infographic Admin - {name}?"
+msgstr "آیا مطمئنید که می‌خواهید این کاربر را از مدیران اینفوگرافیک حذف کنید - {name}؟"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:9
+msgid "Manage Infographic Admins"
+msgstr "مدیریت مدیران اینفوگرافیک"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:19
+msgid "To make an existing user a Infographic Admin, search for their username below."
+msgstr "برای اضافه کردن یک کاربر موجود به مدیران اینفوگرافیک، نام کاربری را جستجو کنید."
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:38
+msgid "Infographic Admins"
+msgstr "مدیران اینفوگرافیک"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:51
+msgid "Are you sure you want to remove this user from the Infographic Admin list?"
+msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را از لیست مدیران اینفوگرافیک حذف کنید؟"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:61
+msgid "There are currently no Infographic Admins."
+msgstr "در حال حاضر مدیر کابرد داده‌ای وجود ندارد."
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:69
+msgid " <p><strong>Infographic Admin:</strong> Can create and remove infographics. Can add and remove datasets from infographics.</p> "
+msgstr "‫<p><strong>مدیر اینفوگرافیک:</strong> می‌تواند اینفوگرافیک‌ها را اضافه یا حذف کند. می‌تواند مجموعه‌داد‌ه به اینفوگرافیک اضافه کند یا از آن حذف کند.</p> "
+
+#: ckanext/infographic/templates/home/snippets/stats.html:28
+msgid "infographic"
+msgstr "اینفوگرافیک"
+
+msgid "infographics"
+msgstr "اینفوگرافیک‌ها"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:13
+msgid "Associate this infographic with this dataset"
+msgstr "این اینفوگرافیک را با این مجموعه داده مرتبط کنید"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:13
+msgid "Add to infographic"
+msgstr "به اینفوگرافیک اضافه کنید"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:17
+msgid "Infographics featuring {dataset_name}"
+msgstr "اینفوگرافیک‌هایی که شامل {dataset_name} اند."
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:22
+msgid "There are no infographics that feature this dataset"
+msgstr "اینفوگرافیک‌ای که شامل این مجموعه‌داده باشد موجود نیست"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:3
+msgid "Infographics - Add datasets"
+msgstr "اینفوگرافیک‌ها - اضافه کردن مجموعه‌داده‌ها"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:31
+#: ckanext/infographic/templates/infographic/manage_datasets.html:36
+msgid "Datasets available to add to this infographic"
+msgstr "مجموعه‌داده‌های موجود برای اضافه کردن به این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:48
+#: ckanext/infographic/templates/infographic/manage_datasets.html:51
+msgid "Add to Infographic"
+msgstr "اضافه کردن به اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/confirm_delete.html:11
+msgid "Are you sure you want to delete infographic - {infographic_name}?"
+msgstr "آیا مطمئنید که می‌خواهید این اینفوگرافیک را حذف کنید - {infographic_name}؟"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:22
+#: ckanext/infographic/templates/infographic/new.html:3
+#: ckanext/infographic/templates/infographic/new_package_form.html:63
+msgid "Create Infographic"
+msgstr "ساخت اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:35
+msgid "View infographic"
+msgstr "نمایش اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:41
+msgid "Edit infographic"
+msgstr "ویرایش اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:3
+msgid "Infographics - Manage datasets"
+msgstr "‫اینفوگرافیک‌ها - مدیریت مجموعه‌داده‌ها"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:96
+msgid "Datasets in this infographic"
+msgstr "مجموعه‌داده‌ها در این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:109
+msgid "Remove from Infographic"
+msgstr "حذف از اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:140
+msgid "This infographic has no datasets associated to it"
+msgstr "هیچ مجموعه‌داده‌ای به این اینفوگرافیک اضافه نشده است"
+
+#: ckanext/infographic/templates/infographic/new.html:8
+msgid "Create a Infographic"
+msgstr "ساخت یک اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:24
+msgid "eg. my-infographic"
+msgstr "برای نمونه my-infographic"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:58
+msgid "Are you sure you want to delete this infographic?"
+msgstr "‫آیا مطمئنید که می‌خواهید این اینفوگرافیک را حذف کنید؟"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:63
+msgid "Update Infographic"
+msgstr "به‌روزرسانی اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/search.html:13
+msgid "Add Infographic"
+msgstr "اضافه کردن اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/search.html:33
+msgid "Search infographics..."
+msgstr "جستجوی اینفوگرافیک‌ها …"
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:4
+msgid "What are Infographics?"
+msgstr "اینفوگرافیک چیست؟"
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:8
+msgid "Datasets have been used to build apps, websites and visualizations. They've been featured in articles, and written about in news reports and blog posts. Infographics collect together the best examples of datasets in use, to provide further insight, ideas, and inspiration."
+msgstr "دسته‌ای از مجموعه‌داده‌ها برای ساخت اپلیکیشن‌ها، وب‌سایت‌ها و تصویرسازی به کار رفته‌اند. از آنها در مقالات استفاده شده یا در خبرها و نوشته‌های وبلاگ به آنها اشاره شده است. اینفوگرافیک‌ها، بهترین نمونه‌های مجموعه‌داده‌های استفاده شده را برای ایده‌ها و تشویق بیشتر، گردآوری و ارائه می‌کنند."
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:12
+#, python-format
+msgid "Sysadmins can manage Infographic Admins from the <a href='%(url)s'>Infographic configuration page</a>."
+msgstr "‫مدیران سیستم می‌توانند مدیران اینفوگرافیک را از <a href='%(url)s'>صفحه تنظیمات کاربرد داد</a> طریق  کنترل کنند."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_info.html:37
+msgid "Datasets in Infographic"
+msgstr "مجموعه‌داده‌ها در اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_info.html:47
+msgid "There are no Datasets in this Infographic"
+msgstr "مجموعه‌داده‌ای در این اینفوگرافیک وجود ندارد"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:30
+msgid "This infographic has no description"
+msgstr "این اینفوگرافیک توضیحی ندارد"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:41
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:42
+msgid "View {infographic_title}"
+msgstr "مشاهده {infographic_title}"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:46
+msgid "Remove dataset from this infographic"
+msgstr "حذف مجموعه‌داده از این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:7
+msgid "{number} infographic found for '{query}'"
+msgid_plural "{number} infographics found for '{query}'"
+msgstr[0] "‏‫{number} اینفوگرافیک برای '{query}' یافته شد."
+msgstr[1] "‫{number} اینفوگرافیک برای '{query}' یافته شد."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:8
+msgid "No infographics found for '{query}'"
+msgstr "اینفوگرافیک‌ای برای ‘{query}’ یافته نشد."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:9
+msgid "{number} infographic found"
+msgid_plural "{number} infographics found"
+msgstr[0] "‫{number}  اینفوگرافیک یافته شده است."
+msgstr[1] "‏‫{number}  اینفوگرافیک یافته شده است."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:10
+msgid "No infographics found"
+msgstr "اینفوگرافیک‌ای یافته نشد"
+
