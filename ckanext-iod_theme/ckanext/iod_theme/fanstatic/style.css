@@ -864,6 +864,10 @@ a:active {
   text-align: center;
 }
 
+.infographic .media-item {
+  width: calc(88% / 2);
+}
+
 @media (max-width:767px) {
   .media-grid {
     flex-direction: column;
