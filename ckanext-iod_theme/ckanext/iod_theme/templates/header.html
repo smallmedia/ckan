@@ -94,6 +94,9 @@
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ _('Showcases') }} <b class="caret"></b></a>
               <ul class="dropdown-menu">
                   <li>
+                    {% link_for _('Infographics'), controller='ckanext.infographic.controller:InfographicController', action='search' %}
+                  </li>
+                  <li>
                     {% link_for _('Reports'), controller='ckanext.showcase.controller:ShowcaseController', action='search' %}
                   </li>
                   <li><a href="{{ h.url_for('campaigns') }}" title="{{ _('Campaigns') }}">{{ _('Campaigns') }}</a></li>
