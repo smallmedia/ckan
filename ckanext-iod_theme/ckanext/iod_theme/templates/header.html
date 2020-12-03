@@ -73,9 +73,11 @@
     {% endif %}
   {% endblock %}
   <div class="container">
-    {% block footer_lang %}
-      {% snippet "snippets/language_selector.html" %}
-    {% endblock %}
+    {% if h.lang() == 'en' %}
+      {% block language_selector_en %}
+        {% snippet "snippets/language_selector.html" %}
+      {% endblock %}
+    {% endif %}
 
     <div class="nav-collapse collapse">
 
@@ -111,6 +113,12 @@
         </nav>
       {% endblock %}
     </div>
+
+    {% if h.lang() == 'fa_IR' %}
+      {% block language_selector_fa %}
+        {% snippet "snippets/language_selector.html" %}
+      {% endblock %}
+    {% endif %}
 
     {# The .header-image class hides the main text and uses image replacement for the title #}
     <hgroup class="header-image">
