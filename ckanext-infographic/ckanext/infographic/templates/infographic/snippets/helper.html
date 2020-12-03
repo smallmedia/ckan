@@ -1,0 +1,16 @@
+<div class="module module-narrow module-shallow">
+  <h2 class="module-heading">
+    <i class="fa fa-info-circle icon-info-sign"></i>
+    {{ _('What are Infographics?') }}
+  </h2>
+  <div class="module-content">
+    <p>
+      {% trans %}Datasets have been used to build apps, websites and visualizations. They've been featured in articles, and written about in news reports and blog posts. Infographics collect together the best examples of datasets in use, to provide further insight, ideas, and inspiration.{% endtrans %}
+    </p>
+    {% if h.check_access('ckanext_infographic_admin_add') %}
+      <p>
+        {% trans url=h.url_for(controller='ckanext.infographic.controller:InfographicController', action='manage_infographic_admins') %}Sysadmins can manage Infographic Admins from the <a href='{{ url }}'>Infographic configuration page</a>.{% endtrans %}
+      </p>
+    {% endif %}
+  </div>
+</div>

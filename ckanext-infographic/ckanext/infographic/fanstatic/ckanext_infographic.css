@@ -1,0 +1,51 @@
+/* Custom style rules for ckanext-infographic */
+
+.context-info .module-content .smallest {
+    font-size: 13px;
+}
+
+.context-info .module-content .info .btn {
+    margin-top: 18px;
+}
+
+.actions {
+    top: 36px;
+    right: 25px;
+}
+
+.ckanext-infographic-edit-wrapper {
+    background-image: none;
+}
+
+.ckanext-infographic-image-container {
+    text-align: center;
+}
+
+.ckanext-infographic-image {
+    margin-bottom: 25px;
+}
+
+.ckanext-infographic-notes {
+    margin-bottom: 25px;
+}
+
+.ckanext-infographic-launch {
+    margin-bottom: 25px;
+}
+
+
+td.ckanext_infographic_pagination_footer {
+    padding: 0;
+}
+.ckanext_infographic_pagination_footer .pagination {
+    margin: 0;
+    border-top: none 0;
+}
+
+.module-narrow .nav-item > a {
+    word-break: break-word;
+}
+
+.ck-editor__editable_inline {
+    min-height: 200px;
+}
