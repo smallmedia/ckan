@@ -141,6 +141,10 @@ h6:lang(fa_IR) {
   font-family: Vazir, 'Droid Kufi', sans-serif;
 }
 
+input:lang(fa_IR), button:lang(fa_IR), select:lang(fa_IR), textarea:lang(fa_IR) {
+    font-family: Vazir, 'Droid Kufi', sans-serif;
+}
+
 .dropdown-backdrop{
     position: static;
 }
@@ -1732,8 +1736,8 @@ a:active {
 }
 
 .footer-email-form .btn {
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 #lab_social_icon_footer {
