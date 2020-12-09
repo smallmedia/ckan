@@ -641,6 +641,16 @@ html:lang(fa_IR) {
 
 .homepage .module-search .module-content .heading {
   font-size: 1.25rem;
+  line-height: 10px;
+}
+
+.homepage .module-search .search-giant {
+  margin-bottom: 1px;
+}
+
+.search-form .search-input.search-giant input {
+    font-size: 12px;
+    padding: 8px;
 }
 
 .homepage .module-search .search-giant input {
