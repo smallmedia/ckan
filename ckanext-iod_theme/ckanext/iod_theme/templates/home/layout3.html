@@ -44,6 +44,12 @@
         </div>
       {% endif %}
 
+      <div class="span12 col1">
+        {% block stats_showcase %}
+          {% snippet 'home/snippets/stats_showcase.html' %}
+        {% endblock %}
+      </div>
+
     </div>
   </div>
 </div>

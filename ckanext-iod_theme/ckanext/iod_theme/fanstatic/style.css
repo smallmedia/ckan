@@ -638,7 +638,6 @@ html:lang(fa_IR) {
     font-size: .8rem;
 }
 
-
 .homepage .module-search {
   padding: 0;
 }
@@ -815,6 +814,10 @@ a:active {
   width: calc(50% - 10px);
   text-align: center;
   background: #fff;
+}
+
+.showcase ul li {
+  width: calc(100% - 10px) !important;
 }
 
 .homepage .stats ul a {
