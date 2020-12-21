@@ -630,6 +630,15 @@ html:lang(fa_IR) {
   direction: rtl;
 }
 
+.navigation {
+    font-size: 1.15rem;
+}
+
+.lang-selector {
+    font-size: .8rem;
+}
+
+
 .homepage .module-search {
   padding: 0;
 }
