@@ -14,7 +14,7 @@ show_remove    - If True, show the remove button to remove the showcase/dataset 
     <ul class="{{ list_class or 'dataset-list unstyled' }}">
         {% block package_list_inner %}
           {% for package in packages %}
-            {% snippet 'showcase/snippets/showcase_item_simple.html', package=package, item_class=item_class, truncate=truncate, truncate_title=truncate_title, show_remove=show_remove %}
+            {% snippet 'showcase/snippets/showcase_item_simple_image.html', package=package, item_class=item_class, truncate=truncate, truncate_title=truncate_title, show_remove=show_remove %}
           {% endfor %}
         {% endblock %}
     </ul>

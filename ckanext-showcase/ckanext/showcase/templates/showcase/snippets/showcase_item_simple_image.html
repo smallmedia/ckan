@@ -1,0 +1,33 @@
+{#
+Displays a single dataset of type 'showcase'.
+
+package        - A package to display.
+item_class     - The class name to use on the list item.
+truncate       - The length to trucate the description to (default: 180)
+truncate_title - The length to truncate the title to (default: 80).
+show_remove    - If True, show the remove button to remove showcase/dataset association.
+
+#}
+{% set truncate = truncate or 180 %}
+{% set truncate_title = truncate_title or 80 %}
+{% set title = package.title or package.name %}
+{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+
+{% block styles %}
+  {% resource 'pages-theme/styles/pages.css' %}
+{% endblock %}
+
+{% block package_item %}
+  <div class="row page-list-item dataset-item">
+    <div class="span2 image">
+      <a style="background-image:url({{ package.image_display_url }})" href="{{ package.image_display_url }}">
+      </a>
+    </div>
+    <div class="span6">
+      <h3 class="dataset-heading">
+        <a href="{{ h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name) }}" >{{ h.truncate(title, truncate_title) }}</a>
+
+      </h3>
+    </div>
+  </div>
+{% endblock %}
