@@ -889,7 +889,7 @@ a:active {
 }
 
 .infographic .media-item {
-  width: calc(88% / 2);
+  width: calc(88% / 3);
 }
 
 @media (max-width:767px) {
