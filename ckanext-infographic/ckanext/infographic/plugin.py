@@ -97,7 +97,7 @@ class InfographicPlugin(plugins.SingletonPlugin, lib_plugins.DefaultDatasetForm)
     def get_helpers(self):
         return {
             'facet_remove_field': infographic_helpers.facet_remove_field,
-            'get_site_statistics': infographic_helpers.get_site_statistics,
+            'get_infographic_statistics': infographic_helpers.get_infographic_statistics,
             'get_wysiwyg_editor': infographic_helpers.get_wysiwyg_editor,
         }
 

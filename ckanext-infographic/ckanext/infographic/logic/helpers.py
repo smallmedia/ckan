@@ -13,7 +13,7 @@ def facet_remove_field(key, value=None, replace=None):
         action='search')
 
 
-def get_site_statistics():
+def get_infographic_statistics():
     '''
     Custom stats helper, so we can get the correct number of packages, and a
     count of infographics.
@@ -22,11 +22,6 @@ def get_site_statistics():
     stats = {}
     stats['infographic_count'] = tk.get_action('package_search')(
         {}, {"rows": 1, 'fq': '+dataset_type:infographic'})['count']
-    stats['dataset_count'] = tk.get_action('package_search')(
-        {}, {"rows": 1, 'fq': '!dataset_type:infographic'})['count']
-    stats['group_count'] = len(tk.get_action('group_list')({}, {}))
-    stats['organization_count'] = len(
-        tk.get_action('organization_list')({}, {}))
 
     return stats
 
