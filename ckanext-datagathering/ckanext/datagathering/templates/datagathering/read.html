@@ -1,0 +1,110 @@
+{% extends "page.html" %}
+
+{% set pkg = c.pkg_dict %}
+{% set name = pkg.title or pkg.name %}
+{% set editor = h.get_wysiwyg_editor() %}
+
+{% block subtitle %}{{ pkg.title or pkg.name }} - {{ _('Datagatherings') }}{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  {% resource "datagathering/ckanext_datagathering.css" %}
+  {% if editor == 'ckeditor' %}
+    {% resource "datagathering/ckeditor-content-style.css" %}
+  {% endif %}
+{% endblock %}
+
+{% block links -%}
+  {{ super() }}
+  <link rel="alternate" type="application/rdf+xml" href="{{ h.url_for(controller='ckanext.datagathering.controller:DatagatheringController', action='read', id=pkg.id, format='rdf', qualified=True) }}"/>
+{% endblock -%}
+
+{% block head_extras -%}
+  {{ super() }}
+  {% set description = h.markdown_extract(pkg.notes, extract_length=200)|forceescape %}
+  <meta property="og:title" content="{{ h.dataset_display_name(pkg) }} - {{ g.site_title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ h.full_current_url() }}">
+  {% if pkg.image_display_url %}
+     <meta property="og:image" content="{{ pkg.image_display_url }}">
+  {% endif %}
+{% endblock -%}
+
+{% block breadcrumb_content_selected %} class="active"{% endblock %}
+
+{% block breadcrumb_content %}
+    {% set datagathering = pkg.title or pkg.name %}
+    <li>{{ h.nav_link(_('Datagatherings'), controller='ckanext.datagathering.controller:DatagatheringController', action='search', highlight_actions = 'new index') }}</li>
+    <li{{ self.breadcrumb_content_selected() }}>{% link_for datagathering|truncate(30), controller='ckanext.datagathering.controller:DatagatheringController', action='read', id=pkg.name %}</li>
+{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block pre_primary %}
+{% endblock %}
+
+{% block primary_content_inner %}
+  {% if h.check_access('ckanext_datagathering_update', {'id':pkg.id }) %}
+    <div class="actions">
+    {% link_for _('Manage'), controller='ckanext.datagathering.controller:DatagatheringController', action='edit', id=pkg.name, class_='btn', icon='wrench' %}
+    </div>
+  {% endif %}
+  {% block package_description %}
+    {% if pkg.private %}
+      <span class="dataset-private label label-inverse pull-right">
+        <i class="fa fa-lock icon-lock"></i>
+        {{ _('Private') }}
+      </span>
+    {% endif %}
+    <h1>
+      {% block page_heading %}
+        {{ name }}
+        {% if pkg.state.startswith('draft') %}
+          [{{ _('Draft') }}]
+        {% endif %}
+      {% endblock %}
+    </h1>
+
+    {% if pkg.image_display_url %}
+      <p class="ckanext-datagathering-image-container"><img src="{{ pkg.image_display_url }}" alt="{{ name }}" class="media-image ckanext-datagathering-image img-responsive"></p>
+    {% endif %}
+
+    {% block package_notes %}
+      {% if pkg.datagathering_notes_formatted and editor == 'ckeditor' %}
+        <div class="ck-content">
+          {{ pkg.datagathering_notes_formatted|safe }}
+        </div>
+      {% elif pkg.datagathering_notes_formatted %}
+        <div class="notes embedded-content ckanext-datagathering-notes">
+          {{ pkg.datagathering_notes_formatted }}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    {% if pkg.url %}
+      <p><a class="btn btn-primary ckanext-datagathering-launch" href="{{ pkg.url }}" target="_blank"><i class="fa fa-external-link icon-external-link"></i> {{ _('Launch website') }}</a></p>
+    {% endif %}
+
+  {% endblock %}
+
+  {% block package_tags %}
+    {% snippet "datagathering/snippets/tags.html", tags=pkg.tags %}
+  {% endblock %}
+
+  {% block package_search_results_list %}
+  {% endblock %}
+
+{% endblock %}
+
+{% block secondary_content %}
+  {% block secondary_help_content %}{% endblock %}
+
+  {% block package_info %}
+    {% snippet 'datagathering/snippets/datagathering_info.html', pkg=pkg, datagathering_pkgs=c.datagathering_pkgs %}
+  {% endblock %}
+
+  {% block package_social %}
+    {% snippet "snippets/social.html" %}
+  {% endblock %}
+{% endblock %}
