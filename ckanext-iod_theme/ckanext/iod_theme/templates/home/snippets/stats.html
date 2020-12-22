@@ -1,5 +1,5 @@
 {% set stats = h.get_site_statistics() %}
-{% set info_stats = h.get_infographic_statistics() %}
+{% set datagathering_stats = h.get_datagathering_statistics() %}
 
 <div class="box stats">
   <div class="inner">
@@ -10,13 +10,13 @@
         <li>
           <a href="{{ h.url_for(controller='package', action='search') }}">
             <b>{{ h.SI_number_span(stats.dataset_count) }}</b>
-            {{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}
+            {{ _('official statistic') }}
           </a>
         </li>
         <li>
-          <a href="{{ h.url_for('infographic') }}">
-            <b>{{ h.SI_number_span(info_stats.infographic_count) }}</b>
-            {{ _('Infographic') }}
+          <a href="{{ h.url_for(controller='ckanext.datagathering.controller:DatagatheringController', action='search') }}">
+            <b>{{ h.SI_number_span(datagathering_stats.datagathering_count) }}</b>
+            {{ _('unofficial statistic') }}
           </a>
         </li>
       </ul>
