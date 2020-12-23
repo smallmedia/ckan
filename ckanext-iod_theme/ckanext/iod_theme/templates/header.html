@@ -95,6 +95,9 @@
               {% link_for _('Infographic'), controller='ckanext.infographic.controller:InfographicController', action='search' %}
             </li>
             <li><a href="{{ h.url_for('campaigns') }}" title="{{ _('Campaign') }}">{{ _('Campaign') }}</a></li>
+            <li>
+              {% link_for _('Datagathering'), controller='ckanext.datagathering.controller:DatagatheringController', action='search' %}
+            </li>
             <li><a href="{{ h.url_for('blog_index') }}" title="{{ _('Blog') }}">{{ _('Blog') }}</a></li>
 
           </ul>
