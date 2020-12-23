@@ -81,6 +81,50 @@
   pause:
     seconds: 30
 
+- name: Install infographic
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-infographic"
+
+- name: Install cKan paster config file to enable infographic
+  template:
+    dest: /etc/ckan/default/ckan.ini
+    src: 'roles/web/templates/ckan_infographic.ini.j2'
+
+- name: Restart supervisor for infographic
+  # service:
+  #   name: supervisor
+  #   state: restarted
+  shell: >
+    service supervisor restart
+
+- name: Pause for supervisor
+  pause:
+    seconds: 30
+
+- name: Install datagathering
+  shell: >
+    {{ virtualenv_path }}/bin/python setup.py develop
+  args:
+    chdir: "{{ ckanext_root }}/ckanext-datagathering"
+
+- name: Install cKan paster config file to enable datagathering
+  template:
+    dest: /etc/ckan/default/ckan.ini
+    src: 'roles/web/templates/ckan_datagathering.ini.j2'
+
+- name: Restart supervisor for datagathering
+  # service:
+  #   name: supervisor
+  #   state: restarted
+  shell: >
+    service supervisor restart
+
+- name: Pause for supervisor
+  pause:
+    seconds: 30
+
 - name: Install toolkit
   shell: >
     {{ virtualenv_path }}/bin/python setup.py develop

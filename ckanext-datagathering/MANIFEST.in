@@ -1,0 +1,3 @@
+include README.rst
+recursive-include ckanext/datagathering *.html *.json *.js *.less *.css
+recursive-include ckanext/datagathering/i18n *

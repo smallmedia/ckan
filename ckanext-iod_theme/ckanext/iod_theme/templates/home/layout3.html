@@ -1,10 +1,6 @@
 <div role="main" class="hero">
   <div class="container">
     <h1 class="iod-title">{% trans %}Making Iranian Data Publicly Available{% endtrans %}</h1>
-
-    {% block search %}
-      {% snippet 'home/snippets/search.html' %}
-    {% endblock %}
   </div>
 </div>
 <div role="main">
@@ -17,6 +13,12 @@
         {% else %}
           {% snippet 'home/snippets/showcase_list_home.html', packages=h.get_showcase_items(), type='showcase' %}
         {% endif %}
+      </div>
+
+      <div class="span12">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
       </div>
 
       <div class="span12 col1">
@@ -33,7 +35,7 @@
         <div class="span12 col1">
           <div class="box usecases">
             <div class="inner">
-              <h3>{{ _('Projects') }}</h3>
+              <h3>{{ _('Education and Research') }}</h3>
               <ul class="list">
                 {% snippet 'home/snippets/promote_list_home_fa.html' %}
               </ul>
@@ -41,6 +43,12 @@
           </div>
         </div>
       {% endif %}
+
+      <div class="span12 col1">
+        {% block stats_showcase %}
+          {% snippet 'home/snippets/stats_showcase.html' %}
+        {% endblock %}
+      </div>
 
     </div>
   </div>

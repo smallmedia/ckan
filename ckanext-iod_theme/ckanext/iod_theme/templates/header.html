@@ -73,9 +73,11 @@
     {% endif %}
   {% endblock %}
   <div class="container">
-    {% block footer_lang %}
-      {% snippet "snippets/language_selector.html" %}
-    {% endblock %}
+    {% if h.lang() == 'en' %}
+      {% block language_selector_en %}
+        {% snippet "snippets/language_selector.html" %}
+      {% endblock %}
+    {% endif %}
 
     <div class="nav-collapse collapse">
 
@@ -84,30 +86,32 @@
           <ul class="nav nav-pills">
             {% block header_site_navigation_tabs %}
               {{ h.build_nav_main(
-                ('search', _('Datasets')),
-                ('organizations_index', _('Organizations')),
-                ('about', _('About'))
+                ('search', _('Dataset')),
+                ('organizations_index', _('Organizations'))
               ) }}
             {% endblock %}
-            <li><a href="{{ h.url_for('blog_index') }}" title="{{ _('Blog') }}">{{ _('Blog') }}</a></li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ _('Showcases') }} <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                  <li>
-                    {% link_for _('Reports'), controller='ckanext.showcase.controller:ShowcaseController', action='search' %}
-                  </li>
-                  <li><a href="{{ h.url_for('campaigns') }}" title="{{ _('Campaigns') }}">{{ _('Campaigns') }}</a></li>
-                  <li><a href="{{ h.url_for('pages_index') }}" title="{{ _('Articles') }}">{{ _('Articles') }}</a></li>
-              </ul>
-            </li>
-
+            <li><a href="{{ h.url_for('pages_index') }}" title="{{ _('Article') }}">{{ _('Article') }}</a></li>
+            {% if h.lang() == 'fa_IR' %}
+              <li>
+                {% link_for _('Infographic'), controller='ckanext.infographic.controller:InfographicController', action='search' %}
+              </li>
+            {% endif %}
+            <li><a href="{{ h.url_for('campaigns') }}" title="{{ _('Campaign') }}">{{ _('Campaign') }}</a></li>
             <li>
-              <a href="{{ h.url_for('about') }}" title="{{ _('About') }}">{{ _('About') }}</a>
+              {% link_for _('Datagathering'), controller='ckanext.datagathering.controller:DatagatheringController', action='search' %}
             </li>
+            <li><a href="{{ h.url_for('blog_index') }}" title="{{ _('Blog') }}">{{ _('Blog') }}</a></li>
+
           </ul>
         </nav>
       {% endblock %}
     </div>
+
+    {% if h.lang() == 'fa_IR' %}
+      {% block language_selector_fa %}
+        {% snippet "snippets/language_selector.html" %}
+      {% endblock %}
+    {% endif %}
 
     {# The .header-image class hides the main text and uses image replacement for the title #}
     <hgroup class="header-image">

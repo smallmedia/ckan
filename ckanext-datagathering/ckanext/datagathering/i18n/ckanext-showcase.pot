@@ -1,0 +1,522 @@
+# Translations template for ckanext-datagathering.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the ckanext-datagathering
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-datagathering 1.0.0b1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-09-23 14:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/datagathering/controller.py:56
+msgid "Unauthorized to create a package"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:71 ckanext/datagathering/controller.py:267
+msgid "User not authorized to edit {datagathering_id}"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:147 ckanext/datagathering/controller.py:184
+#: ckanext/datagathering/controller.py:224 ckanext/datagathering/controller.py:238
+#: ckanext/datagathering/controller.py:274
+msgid "Datagathering not found"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:149 ckanext/datagathering/controller.py:276
+msgid "Unauthorized to read datagathering"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:171 ckanext/datagathering/controller.py:182
+msgid "Unauthorized to delete datagathering"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:176
+msgid "Datagathering has been deleted."
+msgstr ""
+
+#: ckanext/datagathering/controller.py:201 ckanext/datagathering/controller.py:210
+msgid "Dataset not found"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:203
+msgid "Not authorized to see this page"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:212
+msgid "Unauthorized to read package"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:227 ckanext/datagathering/controller.py:329
+msgid "The dataset has been added to the datagathering."
+msgid_plural "The datasets have been added to the datagathering."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/controller.py:241 ckanext/datagathering/controller.py:297
+msgid "The dataset has been removed from the datagathering."
+msgid_plural "The datasets have been removed from the datagathering."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/controller.py:462 ckanext/datagathering/templates/header.html:6
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:463 ckanext/datagathering/templates/header.html:7
+#: ckanext/datagathering/templates/package/read_base.html:5
+msgid "Groups"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:464 ckanext/datagathering/plugin.py:103
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:33
+msgid "Tags"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:465
+msgid "Formats"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:466
+msgid "Licenses"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:516
+msgid "Parameter '{parameter_name}' is not an integer"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:531 ckanext/datagathering/controller.py:567
+msgid "User not authorized to view page"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:540 ckanext/datagathering/controller.py:581
+msgid "Unauthorized to perform that action"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:542
+msgid "User '{user_name}' not found."
+msgstr ""
+
+#: ckanext/datagathering/controller.py:547
+msgid "The user is now a Datagathering Admin"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:583
+msgid "The user is not a Datagathering Admin"
+msgstr ""
+
+#: ckanext/datagathering/controller.py:585
+msgid "The user is no longer a Datagathering Admin"
+msgstr ""
+
+#: ckanext/datagathering/logic/converters.py:24 ckanext/datagathering/logic/validators.py:29
+msgid "Not found"
+msgstr ""
+
+#: ckanext/datagathering/logic/converters.py:24 ckanext/datagathering/logic/validators.py:29
+#: ckanext/datagathering/templates/package/read_base.html:4
+msgid "Dataset"
+msgstr ""
+
+#: ckanext/datagathering/templates/header.html:5
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/datagathering/templates/header.html:8
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:3
+#: ckanext/datagathering/templates/package/read_base.html:7
+#: ckanext/datagathering/templates/datagathering/edit_base.html:5
+#: ckanext/datagathering/templates/datagathering/edit_base.html:17
+#: ckanext/datagathering/templates/datagathering/edit_base.html:21
+#: ckanext/datagathering/templates/datagathering/read.html:6
+#: ckanext/datagathering/templates/datagathering/read.html:33
+#: ckanext/datagathering/templates/datagathering/search.html:4
+#: ckanext/datagathering/templates/datagathering/search.html:7
+msgid "Datagatherings"
+msgstr ""
+
+#: ckanext/datagathering/templates/header.html:9
+msgid "About"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/confirm_remove_datagathering_admin.html:3
+#: ckanext/datagathering/templates/admin/confirm_remove_datagathering_admin.html:16
+msgid "Confirm Remove"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/confirm_remove_datagathering_admin.html:11
+msgid "Are you sure you want to remove this user as a Datagathering Admin - {name}?"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/confirm_remove_datagathering_admin.html:15
+#: ckanext/datagathering/templates/datagathering/confirm_delete.html:14
+msgid "Cancel"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:9
+msgid "Manage Datagathering Admins"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:16
+msgid "Add an Existing User"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:19
+msgid "To make an existing user a Datagathering Admin, search for their username below."
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:23
+msgid "Username"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:32
+msgid "Add User"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:38
+msgid "Datagathering Admins"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:43
+msgid "User"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:51
+msgid "Are you sure you want to remove this user from the Datagathering Admin list?"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:53
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:46
+msgid "Remove"
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:61
+msgid "There are currently no Datagathering Admins."
+msgstr ""
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:69
+msgid ""
+" <p><strong>Datagathering Admin:</strong> Can create and remove datagatherings. Can add"
+" and remove datasets from datagatherings.</p> "
+msgstr ""
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:5
+msgid "{site_title} statistics"
+msgstr ""
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgid_plural "datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:16
+msgid "organization"
+msgid_plural "organizations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:22
+msgid "group"
+msgid_plural "groups"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:28
+msgid "datagathering"
+msgid_plural "datagatherings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:13
+msgid "Associate this datagathering with this dataset"
+msgstr ""
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:13
+msgid "Add to datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:17
+msgid "Datagatherings featuring {dataset_name}"
+msgstr ""
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:22
+msgid "There are no datagatherings that feature this dataset"
+msgstr ""
+
+#: ckanext/datagathering/templates/package/read_base.html:6
+msgid "Activity Stream"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:3
+msgid "Datagatherings - Add datasets"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:21
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:24
+#: ckanext/datagathering/templates/datagathering/search.html:27
+msgid "Relevance"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:22
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:25
+#: ckanext/datagathering/templates/datagathering/search.html:28
+msgid "Name Ascending"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:23
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:26
+#: ckanext/datagathering/templates/datagathering/search.html:29
+msgid "Name Descending"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:24
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:27
+#: ckanext/datagathering/templates/datagathering/search.html:30
+msgid "Last Modified"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:25
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:28
+#: ckanext/datagathering/templates/datagathering/search.html:31
+msgid "Popular"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:31
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:36
+msgid "Datasets available to add to this datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:48
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:51
+msgid "Add to Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:78
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:88
+msgid "No datasets could be found"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/confirm_delete.html:3
+#: ckanext/datagathering/templates/datagathering/confirm_delete.html:15
+msgid "Confirm Delete"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/confirm_delete.html:11
+msgid "Are you sure you want to delete datagathering - {datagathering_name}?"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:19
+msgid "Edit"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:22
+#: ckanext/datagathering/templates/datagathering/new.html:3
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:63
+msgid "Create Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:35
+msgid "View datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:41
+msgid "Edit datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:42
+msgid "Manage datasets"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:3
+msgid "Datagatherings - Manage datasets"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:96
+msgid "Datasets in this datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:109
+msgid "Remove from Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:140
+msgid "This datagathering has no datasets associated to it"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new.html:8
+msgid "Create a Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:15
+msgid "Title"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:15
+msgid "eg. A descriptive title"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:24
+msgid "URL"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:24
+msgid "eg. my-datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:28
+msgid "Description"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:28
+msgid "eg. Some useful notes about the data"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:33
+msgid "eg. economy, mental health, government"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:44
+msgid "External link"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:44
+msgid "http://www.example.com"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:48
+msgid "Submitted By"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:48
+msgid "Joe Bloggs"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:50
+msgid "Submitter Email"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:50
+msgid "joe@example.com"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:58
+msgid "Are you sure you want to delete this datagathering?"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:59
+msgid "Delete"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:63
+msgid "Update Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/read.html:46
+msgid "Manage"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/read.html:53
+msgid "Private"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/read.html:60
+msgid "Draft"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/read.html:78
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:27
+msgid "Launch website"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/search.html:13
+msgid "Add Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/search.html:33
+msgid "Search datagatherings..."
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:4
+msgid "What are Datagatherings?"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:8
+msgid ""
+"Datasets have been used to build apps, websites and visualizations. They've "
+"been featured in articles, and written about in news reports and blog posts. "
+"Datagatherings collect together the best examples of datasets in use, to provide "
+"further insight, ideas, and inspiration."
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:12
+#, python-format
+msgid ""
+"Sysadmins can manage Datagathering Admins from the <a href='%(url)s'>Datagathering "
+"configuration page</a>."
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:21
+msgid "Submitted by"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:37
+msgid "Datasets in Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:47
+msgid "There are no Datasets in this Datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:30
+msgid "This datagathering has no description"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:35
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:37
+msgid "0 Datasets"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:41
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:42
+msgid "View {datagathering_title}"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:46
+msgid "Remove dataset from this datagathering"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:7
+msgid "{number} datagathering found for '{query}'"
+msgid_plural "{number} datagatherings found for '{query}'"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:8
+msgid "No datagatherings found for '{query}'"
+msgstr ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:9
+msgid "{number} datagathering found"
+msgid_plural "{number} datagatherings found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:10
+msgid "No datagatherings found"
+msgstr ""
+

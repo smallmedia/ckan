@@ -1,0 +1,18 @@
+{% set stats = h.get_site_statistics() %}
+
+<div class="box stats showcase">
+  <div class="inner">
+    <ul>
+      {% block stats_group2 %}
+      <ul>
+        <li>
+          <a href="{{ h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='search') }}">
+            <b>{{ h.SI_number_span(stats.showcase_count) }}</b>
+            {{ _('Iran Open Data in media') }}
+          </a>
+        </li>
+      </ul>
+      {% endblock %}
+    </ul>
+  </div>
+</div>

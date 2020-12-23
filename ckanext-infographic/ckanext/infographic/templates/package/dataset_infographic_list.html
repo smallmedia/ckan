@@ -1,0 +1,25 @@
+{% extends "package/read_base.html" %}
+
+{% block subtitle %}{{ _('Infographics') }} - {{ super() }}{% endblock %}
+
+{% block primary_content_inner %}
+  {% if h.check_access('ckanext_infographic_update') and c.infographic_dropdown %}
+    <form method="post" class="form-horizontal" id="infographic-add">
+      <select id="field-add_infographic" name="infographic_added" data-module="autocomplete">
+        {% for option in c.infographic_dropdown %}
+          <option value="{{ option[0] }}"> {{ option[1] }}</option>
+        {% endfor %}
+      </select>
+      <button type="submit" class="btn btn-primary" title="{{ _('Associate this infographic with this dataset') }}">{{ _('Add to dataset') }}</button>
+    </form>
+  {% endif %}
+
+  <h2>{% block page_heading %}{{ _('Infographics featuring {dataset_name}').format(dataset_name=h.dataset_display_name(c.pkg_dict)) }}{% endblock %}</h2>
+  {% block infographic_list %}
+    {% if c.infographic_list %}
+      {% snippet "infographic/snippets/infographic_list.html", packages=c.infographic_list, pkg_id=c.pkg_dict.name, show_remove=h.check_access('ckanext_infographic_update') %}
+    {% else %}
+      <p class="empty">{{ _('There are no infographics that feature this dataset') }}</p>
+    {% endif %}
+  {% endblock %}
+{% endblock %}

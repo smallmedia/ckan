@@ -3,11 +3,11 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-05 18:33+0100\n"
-"PO-Revision-Date: 2019-08-21 16:37-0400\n"
+"PO-Revision-Date: 2020-12-22 16:26-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -51,11 +51,17 @@ msgstr "لوگوی سایت"
 
 #: ckan%2Fcontrollers%2Fadmin.py%3A54+ckan%2Ftemplates%2Fgroup%2Fabout.html%3A3+ckan%2Ftemplates%2Fgroup%2Fread_base.html%3A19+ckan%2Ftemplates%2Fheader.html%3A106+ckan%2Ftemplates%2Fhome%2Fabout.html%3A3+ckan%2Ftemplates%2Fhome%2Fabout.html%3A6+ckan%2Ftemplates%2Fhome%2Fabout.html%3A16+ckan%2Ftemplates%2Forganization%2Fabout.html%3A3+ckan%2Ftemplates%2Forganization%2Fread_base.html%3A19+ckan%2Ftemplates%2Fuser%2Fedit_user_form.html%3A14
 msgid "About"
-msgstr "درباره "
+msgstr "درباره"
+
+msgid "About Us"
+msgstr "درباره ما"
+
+msgid "About us"
+msgstr "درباره ما"
 
 #: ckan/controllers/admin.py:54
 msgid "About page text"
-msgstr "متن صفحه درباره "
+msgstr "متن صفحه درباره"
 
 #: ckan/controllers/admin.py:55
 msgid "Intro Text"
@@ -271,11 +277,11 @@ msgstr "پیشینه بازبینی گروه CKAN"
 
 #: ckan/controllers/group.py:782
 msgid "Recent changes to CKAN Group: "
-msgstr "پیشینه تغییرات در گروه CKAN:"
+msgstr "پیشینه تغییرات در گروه CKAN: "
 
 #: ckan%2Fcontrollers%2Fgroup.py%3A803+ckan%2Fcontrollers%2Fpackage.py%3A472
 msgid "Log message: "
-msgstr "پیام ارتباطی به کاربر:"
+msgstr "پیام ارتباطی به کاربر: "
 
 #: ckan%2Fcontrollers%2Fgroup.py%3A853+ckan%2Fcontrollers%2Fpackage.py%3A1179+ckan%2Fcontrollers%2Fuser.py%3A715
 msgid "You are now following {0}"
@@ -295,7 +301,7 @@ msgstr "سایت در حال حاضر آفلاین است. پایگاه داده
 
 #: ckan/controllers/home.py:81
 msgid "Please <a href=\"%s\">update your profile</a> and add your email address. "
-msgstr "لطفا <a href=\"%s\"> پروفایل خود را </a>  به‌روز کنید و نشانی ایمیل‌تان را به آن اضافه کنید."
+msgstr "لطفا <a href=\"%s\"> پروفایل خود را </a>  به‌روز کنید و نشانی ایمیل‌تان را به آن اضافه کنید. "
 
 #: ckan/controllers/home.py:83
 msgid "%s uses your email address if you need to reset your password."
@@ -331,7 +337,7 @@ msgstr "پیشینه بازبینی مجموعه داده CKAN"
 
 #: ckan/controllers/package.py:451
 msgid "Recent changes to CKAN Dataset: "
-msgstr "تغییرات اخیر در مجموعه داده CKAN:"
+msgstr "تغییرات اخیر در مجموعه داده CKAN: "
 
 #: ckan/controllers/package.py:507
 msgid "Unauthorized to create a package"
@@ -755,7 +761,7 @@ msgstr "{months} ماه‌های گذشته"
 
 #: ckan/lib/formatters.py:132
 msgid "over {years} year ago"
-msgstr " در طول {years} سال گذشته"
+msgstr "در طول {years} سال گذشته"
 
 #: ckan/lib/formatters.py:169
 msgid "{bytes} bytes"
@@ -3868,6 +3874,9 @@ msgstr "حوزه"
 msgid "themes"
 msgstr "حوزه‌‌ها"
 
+msgid "topics"
+msgstr "موضوع‌ها"
+
 #: ckanext-iod_theme/ckanext/iod_theme/templates/home/snippets/stats.html:17
 msgid "Theme"
 msgstr "حوزه"
@@ -3876,17 +3885,20 @@ msgstr "حوزه"
 msgid "Themes"
 msgstr "حوزه‌‌ها"
 
+msgid "Topics"
+msgstr "موضوع‌ها"
+
 #: ckanext-iod_theme/ckanext/iod_theme/templates/home/layout3.html:26
 msgid "Use Cases"
-msgstr "کاربرد داده"
+msgstr "کاربرد داده‌ها"
 
 #: ckanext-iod_theme/ckanext/iod_theme/templates/home/layout3.html:26
 msgid "Use cases"
-msgstr "کاربرد داده"
+msgstr "کاربرد داده‌ها"
 
 #: ckanext-iod_theme/ckanext/iod_theme/templates/home/layout3.html:26
 msgid "use cases"
-msgstr "کاربرد داده"
+msgstr "کاربرد داده‌ها"
 
 #: ckanext-iod_theme/ckanext/iod_theme/templates/header.html:101
 msgid "Policy"
@@ -4714,31 +4726,31 @@ msgstr "کاربر دسترسی ویرایش {showcase_id} را ندارد."
 #: ckanext/showcase/controller.py:224 ckanext/showcase/controller.py:238
 #: ckanext/showcase/controller.py:274
 msgid "Showcase not found"
-msgstr "کاربرد داده پیدا نشد"
+msgstr "گزارش پیدا نشد"
 
 #: ckanext/showcase/controller.py:149 ckanext/showcase/controller.py:276
 msgid "Unauthorized to read showcase"
-msgstr "دسترسی خواندن کاربرد داده را ندارید"
+msgstr "دسترسی خواندن گزارش را ندارید"
 
 #: ckanext/showcase/controller.py:171 ckanext/showcase/controller.py:182
 msgid "Unauthorized to delete showcase"
-msgstr "دسترسی حذف کاربرد داده را ندارید"
+msgstr "دسترسی حذف گزارش را ندارید"
 
 #: ckanext/showcase/controller.py:176
 msgid "Showcase has been deleted."
-msgstr "کاربرد داده حذف شده است."
+msgstr "گزارش حذف شده است."
 
 #: ckanext/showcase/controller.py:227 ckanext/showcase/controller.py:329
 msgid "The dataset has been added to the showcase."
 msgid_plural "The datasets have been added to the showcase."
-msgstr[0] "‫مجموعه‌های داده به کاربرد داده اضافه شد."
-msgstr[1] "مجموعه داده به کاربرد داده اضافه شد."
+msgstr[0] "‫مجموعه‌های داده به گزارش اضافه شد."
+msgstr[1] "مجموعه داده به گزارش اضافه شد."
 
 #: ckanext/showcase/controller.py:241 ckanext/showcase/controller.py:297
 msgid "The dataset has been removed from the showcase."
 msgid_plural "The datasets have been removed from the showcase."
-msgstr[0] "‫‫مجموعه‌های داده از کاربرد داده حذف شد."
-msgstr[1] "‫مجموعه داده از کاربرد داده حذف شد."
+msgstr[0] "‫‫مجموعه‌های داده از گزارش حذف شد."
+msgstr[1] "‫مجموعه داده از گزارش حذف شد."
 
 #: ckanext/showcase/controller.py:516
 msgid "Parameter '{parameter_name}' is not an integer"
@@ -4758,15 +4770,15 @@ msgstr "کاربر ‘{user_name}’ یافت نشد."
 
 #: ckanext/showcase/controller.py:547
 msgid "The user is now a Showcase Admin"
-msgstr "این کاربر اکنون یک مدیر کاربرد داده است"
+msgstr "این کاربر اکنون یک مدیر گزارش است"
 
 #: ckanext/showcase/controller.py:583
 msgid "The user is not a Showcase Admin"
-msgstr "این کاربر مدیر کاربرد داده نیست"
+msgstr "این کاربر مدیر گزارش نیست"
 
 #: ckanext/showcase/controller.py:585
 msgid "The user is no longer a Showcase Admin"
-msgstr "این کاربر دیگر مدیر کاربرد داده نیست"
+msgstr "این کاربر دیگر مدیر گزارش نیست"
 
 #: ckanext/showcase/templates/header.html:8
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:3
@@ -4779,7 +4791,7 @@ msgstr "این کاربر دیگر مدیر کاربرد داده نیست"
 #: ckanext/showcase/templates/showcase/search.html:4
 #: ckanext/showcase/templates/showcase/search.html:7
 msgid "Showcases"
-msgstr "کاربرد داده‌ها"
+msgstr "گزارش‌ها"
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:3
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:16
@@ -4788,11 +4800,11 @@ msgstr "تایید حذف"
 
 #: ckanext/showcase/templates/admin/confirm_remove_showcase_admin.html:11
 msgid "Are you sure you want to remove this user as a Showcase Admin - {name}?"
-msgstr "آیا مطمئنید که می‌خواهید این کاربر را از مدیران کاربرد داده حذف کنید - {name}؟"
+msgstr "آیا مطمئنید که می‌خواهید این کاربر را از مدیران گزارش حذف کنید - {name}؟"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:9
 msgid "Manage Showcase Admins"
-msgstr "مدیریت مدیران کاربر داده"
+msgstr "مدیریت مدیران گزارش"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:16
 msgid "Add an Existing User"
@@ -4800,27 +4812,27 @@ msgstr "اضافه کردن یک کاربر موجود"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:19
 msgid "To make an existing user a Showcase Admin, search for their username below."
-msgstr "برای اضافه کردن یک کاربر موجود به مدیران کاربرد داده، نام کاربری را جستجو کنید."
+msgstr "برای اضافه کردن یک کاربر موجود به مدیران گزارش، نام کاربری را جستجو کنید."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:32
 msgid "Add User"
-msgstr "اضافه کردن کابر"
+msgstr "اضافه کردن کاربر"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:38
 msgid "Showcase Admins"
-msgstr "مدیران کاربرد داده"
+msgstr "مدیران گزارش"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:51
 msgid "Are you sure you want to remove this user from the Showcase Admin list?"
-msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را از لیست مدیران کاربرد داده حذف کنید؟"
+msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را از لیست مدیران گزارش حذف کنید؟"
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:61
 msgid "There are currently no Showcase Admins."
-msgstr "در حال حاضر مدیر کابرد داده‌ای وجود ندارد."
+msgstr "در حال حاضر مدیر گزارش‌ای وجود ندارد."
 
 #: ckanext/showcase/templates/admin/manage_showcase_admins.html:69
 msgid " <p><strong>Showcase Admin:</strong> Can create and remove showcases. Can add and remove datasets from showcases.</p> "
-msgstr "‫<p><strong>مدیر کاربرد داده:</strong> می‌تواند کاربرد داده‌ها را اضافه یا حذف کند. می‌تواند مجموعه‌داد‌ه به کاربرد داده اضافه کند یا از آن حذف کند.</p> "
+msgstr "‫<p><strong>مدیر گزارش:</strong> می‌تواند گزارش‌ها را اضافه یا حذف کند. می‌تواند مجموعه‌داد‌ه به گزارش اضافه کند یا از آن حذف کند.</p> "
 
 #: ckanext/showcase/templates/home/snippets/stats.html:5
 msgid "{site_title} statistics"
@@ -4832,42 +4844,48 @@ msgstr "آمارها"
 msgid "Statistics"
 msgstr "آمارها"
 
+msgid "official statistic"
+msgstr "آمار رسمی"
+
+msgid "unofficial statistic"
+msgstr "آمار غیر رسمی"
+
 #: ckanext/showcase/templates/home/snippets/stats.html:28
 msgid "showcase"
-msgstr "کاربرد داده"
+msgstr "گزارش"
 
 msgid "showcases"
-msgstr "کاربرد داده‌ها"
+msgstr "گزارش‌ها"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Associate this showcase with this dataset"
-msgstr "این کاربرد داده را با این مجموعه داده مرتبط کنید"
+msgstr "این گزارش را با این مجموعه داده مرتبط کنید"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:13
 msgid "Add to showcase"
-msgstr "به کاربرد داده اضافه کنید"
+msgstr "به گزارش اضافه کنید"
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:17
 msgid "Showcases featuring {dataset_name}"
-msgstr "کاربرد داده‌هایی که شامل {dataset_name} اند."
+msgstr "گزارش‌هایی که شامل {dataset_name} اند."
 
 #: ckanext/showcase/templates/package/dataset_showcase_list.html:22
 msgid "There are no showcases that feature this dataset"
-msgstr "کاربرد داده‌ای که شامل این مجموعه‌داده باشد موجود نیست"
+msgstr "گزارش‌ای که شامل این مجموعه‌داده باشد موجود نیست"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:3
 msgid "Showcases - Add datasets"
-msgstr "کاربرد داده‌ها - اضافه کردن مجموعه‌داده‌ها"
+msgstr "گزارش‌ها - اضافه کردن مجموعه‌داده‌ها"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:31
 #: ckanext/showcase/templates/showcase/manage_datasets.html:36
 msgid "Datasets available to add to this showcase"
-msgstr "مجموعه‌داده‌های موجود برای اضافه کردن به این کاربرد داده"
+msgstr "مجموعه‌داده‌های موجود برای اضافه کردن به این گزارش"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:48
 #: ckanext/showcase/templates/showcase/manage_datasets.html:51
 msgid "Add to Showcase"
-msgstr "اضافه کردن به مجموعه داده"
+msgstr "اضافه کردن به گزارش"
 
 #: ckanext/showcase/templates/showcase/add_datasets.html:78
 #: ckanext/showcase/templates/showcase/manage_datasets.html:88
@@ -4876,21 +4894,21 @@ msgstr "مجموعه‌داده‌ای پیدا نشد"
 
 #: ckanext/showcase/templates/showcase/confirm_delete.html:11
 msgid "Are you sure you want to delete showcase - {showcase_name}?"
-msgstr "آیا مطمئنید که می‌خواهید این کاربرد داده را حذف کنید - {showcase_name}؟"
+msgstr "آیا مطمئنید که می‌خواهید این گزارش را حذف کنید - {showcase_name}؟"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:22
 #: ckanext/showcase/templates/showcase/new.html:3
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Create Showcase"
-msgstr "ساخت کاربر داده"
+msgstr "ساخت گزارش"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:35
 msgid "View showcase"
-msgstr "نمایش کاربرد داده"
+msgstr "نمایش گزارش"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:41
 msgid "Edit showcase"
-msgstr "ویرایش کاربرد داده"
+msgstr "ویرایش گزارش"
 
 #: ckanext/showcase/templates/showcase/edit_base.html:42
 msgid "Manage datasets"
@@ -4898,23 +4916,23 @@ msgstr "مدیریت مجموعه‌داده‌ها"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:3
 msgid "Showcases - Manage datasets"
-msgstr "‫کاربرد داده‌ها - مدیریت مجموعه‌داده‌ها"
+msgstr "‫گزارش‌ها - مدیریت مجموعه‌داده‌ها"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:96
 msgid "Datasets in this showcase"
-msgstr "مجموعه‌داده‌ها در این کاربرد داده"
+msgstr "مجموعه‌داده‌ها در این گزارش"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:109
 msgid "Remove from Showcase"
-msgstr "حذف از کاربرد داده"
+msgstr "حذف از گزارش"
 
 #: ckanext/showcase/templates/showcase/manage_datasets.html:140
 msgid "This showcase has no datasets associated to it"
-msgstr "هیچ مجموعه‌داده‌ای به این کاربرد داده اضافه نشده است"
+msgstr "هیچ مجموعه‌داده‌ای به این گزارش اضافه نشده است"
 
 #: ckanext/showcase/templates/showcase/new.html:8
 msgid "Create a Showcase"
-msgstr "ساخت یک کاربرد داده"
+msgstr "ساخت یک گزارش"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:24
 msgid "eg. my-showcase"
@@ -4938,11 +4956,11 @@ msgstr "ایمیل ارسال‌کننده"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:58
 msgid "Are you sure you want to delete this showcase?"
-msgstr "‫آیا مطمئنید که می‌خواهید این کاربرد داده را حذف کنید؟"
+msgstr "‫آیا مطمئنید که می‌خواهید این گزارش را حذف کنید؟"
 
 #: ckanext/showcase/templates/showcase/new_package_form.html:63
 msgid "Update Showcase"
-msgstr "به‌روزرسانی کاربرد داده"
+msgstr "به‌روزرسانی گزارش"
 
 #: ckanext/showcase/templates/showcase/read.html:78
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:27
@@ -4951,36 +4969,36 @@ msgstr "مراجعه به وب‌سایت"
 
 #: ckanext/showcase/templates/showcase/search.html:13
 msgid "Add Showcase"
-msgstr "اضافه کردن کاربرد داده"
+msgstr "اضافه کردن گزارش"
 
 #: ckanext/showcase/templates/showcase/search.html:33
 msgid "Search showcases..."
-msgstr "جستجوی کاربرد داده‌ها …"
+msgstr "جستجوی گزارش‌ها …"
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:4
 msgid "What are Showcases?"
-msgstr "کاربرد داده چیست؟"
+msgstr "گزارش چیست؟"
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:8
 msgid "Datasets have been used to build apps, websites and visualizations. They've been featured in articles, and written about in news reports and blog posts. Showcases collect together the best examples of datasets in use, to provide further insight, ideas, and inspiration."
-msgstr "دسته‌ای از مجموعه‌داده‌ها برای ساخت اپلیکیشن‌ها، وب‌سایت‌ها و تصویرسازی به کار رفته‌اند. از آنها در مقالات استفاده شده یا در خبرها و نوشته‌های وبلاگ به آنها اشاره شده است. کاربرد داده‌ها، بهترین نمونه‌های مجموعه‌داده‌های استفاده شده را برای ایده‌ها و تشویق بیشتر، گردآوری و ارائه می‌کنند."
+msgstr "دسته‌ای از مجموعه‌داده‌ها برای ساخت اپلیکیشن‌ها، وب‌سایت‌ها و تصویرسازی به کار رفته‌اند. از آنها در مقالات استفاده شده یا در خبرها و نوشته‌های وبلاگ به آنها اشاره شده است. گزارش‌ها، بهترین نمونه‌های مجموعه‌داده‌های استفاده شده را برای ایده‌ها و تشویق بیشتر، گردآوری و ارائه می‌کنند."
 
 #: ckanext/showcase/templates/showcase/snippets/helper.html:12
 #, python-format
 msgid "Sysadmins can manage Showcase Admins from the <a href='%(url)s'>Showcase configuration page</a>."
-msgstr "‫مدیران سیستم می‌توانند مدیران کاربرد داده را از <a href='%(url)s'>صفحه تنظیمات کاربرد داد</a> طریق  کنترل کنند."
+msgstr "‫مدیران سیستم می‌توانند مدیران گزارش را از <a href='%(url)s'>صفحه تنظیمات کاربرد داد</a> طریق  کنترل کنند."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:37
 msgid "Datasets in Showcase"
-msgstr "مجموعه‌داده‌ها در کاربرد داده"
+msgstr "مجموعه‌داده‌ها در گزارش"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_info.html:47
 msgid "There are no Datasets in this Showcase"
-msgstr "مجموعه‌داده‌ای در این کاربرد داده وجود ندارد"
+msgstr "مجموعه‌داده‌ای در این گزارش وجود ندارد"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:30
 msgid "This showcase has no description"
-msgstr "این مجموعه داده توضیحی ندارد"
+msgstr "این گزارش توضیحی ندارد"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:35
 msgid "{num} Datasets"
@@ -4993,27 +5011,27 @@ msgstr "مشاهده {showcase_title}"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_item.html:46
 msgid "Remove dataset from this showcase"
-msgstr "حذف مجموعه‌داده از این کاربرد داده"
+msgstr "حذف مجموعه‌داده از این گزارش"
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:7
 msgid "{number} showcase found for '{query}'"
 msgid_plural "{number} showcases found for '{query}'"
-msgstr[0] "‏‫{number} کاربرد داده برای '{query}' یافته شد."
-msgstr[1] "‫{number} کاربرد داده برای '{query}' یافته شد."
+msgstr[0] "‏‫{number} گزارش برای '{query}' یافته شد."
+msgstr[1] "‫{number} گزارش برای '{query}' یافته شد."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:8
 msgid "No showcases found for '{query}'"
-msgstr "کاربرد داده‌ای برای ‘{query}’ یافته نشد."
+msgstr "گزارش‌ای برای ‘{query}’ یافته نشد."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:9
 msgid "{number} showcase found"
 msgid_plural "{number} showcases found"
-msgstr[0] "‫{number}  کاربرد داده یافته شده است."
-msgstr[1] "‏‫{number}  کاربرد داده یافته شده است."
+msgstr[0] "‫{number}  گزارش یافته شده است."
+msgstr[1] "‏‫{number}  گزارش یافته شده است."
 
 #: ckanext/showcase/templates/showcase/snippets/showcase_search_result_text.html:10
 msgid "No showcases found"
-msgstr "کاربرد داده‌ای یافته نشد"
+msgstr "گزارش‌ای یافته نشد"
 
 #: recline_view
 msgid "_id"
@@ -5031,9 +5049,15 @@ msgstr "شما می‌توانید از حوزه‌های CKAN برای ایجا
 msgid "Reports"
 msgstr "گزارش‌ها"
 
+msgid "Report"
+msgstr "گزارش"
+
 #: Menu
 msgid "Campaigns"
 msgstr "کمپین‌ها"
+
+msgid "Campaign"
+msgstr "کمپین"
 
 #: Menu
 msgid "Posts"
@@ -5043,14 +5067,24 @@ msgstr "مقاله‌ها"
 msgid "Blog"
 msgstr "وبلاگ"
 
+#: Menu
 msgid "Articles"
 msgstr "مقاله‌ها"
+
+msgid "Article"
+msgstr "مقاله"
 
 msgid "Latest Articles"
 msgstr "تازه‌ترین مقاله‌ها"
 
 msgid "Projects"
 msgstr "پروژه‌ها"
+
+msgid "Education and Research"
+msgstr "آموزش و پژوهش"
+
+msgid "Iran Open Data in media"
+msgstr "پایگاه داده باز ایران در رسانه‌ها"
 
 #: ckanext-iod_theme/ckanext/iod_theme/templates/snippets/newsletter.html:2
 msgid "SUBSCRIBE TO NEWSLETTER"
@@ -5143,3 +5177,490 @@ msgstr "پروژه"
 
 msgid "khatam al-anbiya construction headquarters"
 msgstr "قرارگاه خاتم الانبیا"
+
+# Translations template for ckanext-infographic.
+#: ckanext/infographic/controller.py:71 ckanext/infographic/controller.py:267
+msgid "User not authorized to edit {infographic_id}"
+msgstr "کاربر دسترسی ویرایش {infographic_id} را ندارد."
+
+#: ckanext/infographic/controller.py:147 ckanext/infographic/controller.py:184
+#: ckanext/infographic/controller.py:224 ckanext/infographic/controller.py:238
+#: ckanext/infographic/controller.py:274
+msgid "Infographic not found"
+msgstr "اینفوگرافیک پیدا نشد"
+
+#: ckanext/infographic/controller.py:149 ckanext/infographic/controller.py:276
+msgid "Unauthorized to read infographic"
+msgstr "دسترسی خواندن اینفوگرافیک را ندارید"
+
+#: ckanext/infographic/controller.py:171 ckanext/infographic/controller.py:182
+msgid "Unauthorized to delete infographic"
+msgstr "دسترسی حذف اینفوگرافیک را ندارید"
+
+#: ckanext/infographic/controller.py:176
+msgid "Infographic has been deleted."
+msgstr "اینفوگرافیک حذف شده است."
+
+#: ckanext/infographic/controller.py:227 ckanext/infographic/controller.py:329
+msgid "The dataset has been added to the infographic."
+msgid_plural "The datasets have been added to the infographic."
+msgstr[0] "‫مجموعه‌های داده به اینفوگرافیک اضافه شد."
+msgstr[1] "مجموعه داده به اینفوگرافیک اضافه شد."
+
+#: ckanext/infographic/controller.py:241 ckanext/infographic/controller.py:297
+msgid "The dataset has been removed from the infographic."
+msgid_plural "The datasets have been removed from the infographic."
+msgstr[0] "‫‫مجموعه‌های داده از اینفوگرافیک حذف شد."
+msgstr[1] "‫مجموعه داده از اینفوگرافیک حذف شد."
+
+#: ckanext/infographic/controller.py:547
+msgid "The user is now a Infographic Admin"
+msgstr "این کاربر اکنون یک مدیر اینفوگرافیک است"
+
+#: ckanext/infographic/controller.py:583
+msgid "The user is not a Infographic Admin"
+msgstr "این کاربر مدیر اینفوگرافیک نیست"
+
+#: ckanext/infographic/controller.py:585
+msgid "The user is no longer a Infographic Admin"
+msgstr "این کاربر دیگر مدیر اینفوگرافیک نیست"
+
+#: ckanext/infographic/templates/header.html:8
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:3
+#: ckanext/infographic/templates/package/read_base.html:7
+#: ckanext/infographic/templates/infographic/edit_base.html:5
+#: ckanext/infographic/templates/infographic/edit_base.html:17
+#: ckanext/infographic/templates/infographic/edit_base.html:21
+#: ckanext/infographic/templates/infographic/read.html:6
+#: ckanext/infographic/templates/infographic/read.html:33
+#: ckanext/infographic/templates/infographic/search.html:4
+#: ckanext/infographic/templates/infographic/search.html:7
+msgid "Infographics"
+msgstr "اینفوگرافیک‌ها"
+
+msgid "Infographic"
+msgstr "اینفوگرافیک"
+
+#: ckanext/infographic/templates/admin/confirm_remove_infographic_admin.html:11
+msgid "Are you sure you want to remove this user as a Infographic Admin - {name}?"
+msgstr "آیا مطمئنید که می‌خواهید این کاربر را از مدیران اینفوگرافیک حذف کنید - {name}؟"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:9
+msgid "Manage Infographic Admins"
+msgstr "مدیریت مدیران اینفوگرافیک"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:19
+msgid "To make an existing user a Infographic Admin, search for their username below."
+msgstr "برای اضافه کردن یک کاربر موجود به مدیران اینفوگرافیک، نام کاربری را جستجو کنید."
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:38
+msgid "Infographic Admins"
+msgstr "مدیران اینفوگرافیک"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:51
+msgid "Are you sure you want to remove this user from the Infographic Admin list?"
+msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را از لیست مدیران اینفوگرافیک حذف کنید؟"
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:61
+msgid "There are currently no Infographic Admins."
+msgstr "در حال حاضر مدیر کابرد داده‌ای وجود ندارد."
+
+#: ckanext/infographic/templates/admin/manage_infographic_admins.html:69
+msgid " <p><strong>Infographic Admin:</strong> Can create and remove infographics. Can add and remove datasets from infographics.</p> "
+msgstr "‫<p><strong>مدیر اینفوگرافیک:</strong> می‌تواند اینفوگرافیک‌ها را اضافه یا حذف کند. می‌تواند مجموعه‌داد‌ه به اینفوگرافیک اضافه کند یا از آن حذف کند.</p> "
+
+#: ckanext/infographic/templates/home/snippets/stats.html:28
+msgid "infographic"
+msgstr "اینفوگرافیک"
+
+msgid "infographics"
+msgstr "اینفوگرافیک‌ها"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:13
+msgid "Associate this infographic with this dataset"
+msgstr "این اینفوگرافیک را با این مجموعه داده مرتبط کنید"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:13
+msgid "Add to infographic"
+msgstr "به اینفوگرافیک اضافه کنید"
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:17
+msgid "Infographics featuring {dataset_name}"
+msgstr "اینفوگرافیک‌هایی که شامل {dataset_name} اند."
+
+#: ckanext/infographic/templates/package/dataset_infographic_list.html:22
+msgid "There are no infographics that feature this dataset"
+msgstr "اینفوگرافیکی که شامل این مجموعه‌داده باشد موجود نیست"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:3
+msgid "Infographics - Add datasets"
+msgstr "اینفوگرافیک‌ها - اضافه کردن مجموعه‌داده‌ها"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:31
+#: ckanext/infographic/templates/infographic/manage_datasets.html:36
+msgid "Datasets available to add to this infographic"
+msgstr "مجموعه‌داده‌های موجود برای اضافه کردن به این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/add_datasets.html:48
+#: ckanext/infographic/templates/infographic/manage_datasets.html:51
+msgid "Add to Infographic"
+msgstr "اضافه کردن به اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/confirm_delete.html:11
+msgid "Are you sure you want to delete infographic - {infographic_name}?"
+msgstr "آیا مطمئنید که می‌خواهید این اینفوگرافیک را حذف کنید - {infographic_name}؟"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:22
+#: ckanext/infographic/templates/infographic/new.html:3
+#: ckanext/infographic/templates/infographic/new_package_form.html:63
+msgid "Create Infographic"
+msgstr "ساخت اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:35
+msgid "View infographic"
+msgstr "نمایش اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/edit_base.html:41
+msgid "Edit infographic"
+msgstr "ویرایش اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:3
+msgid "Infographics - Manage datasets"
+msgstr "‫اینفوگرافیک‌ها - مدیریت مجموعه‌داده‌ها"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:96
+msgid "Datasets in this infographic"
+msgstr "مجموعه‌داده‌ها در این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:109
+msgid "Remove from Infographic"
+msgstr "حذف از اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/manage_datasets.html:140
+msgid "This infographic has no datasets associated to it"
+msgstr "هیچ مجموعه‌داده‌ای به این اینفوگرافیک اضافه نشده است"
+
+#: ckanext/infographic/templates/infographic/new.html:8
+msgid "Create a Infographic"
+msgstr "ساخت یک اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:24
+msgid "eg. my-infographic"
+msgstr "برای نمونه my-infographic"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:58
+msgid "Are you sure you want to delete this infographic?"
+msgstr "‫آیا مطمئنید که می‌خواهید این اینفوگرافیک را حذف کنید؟"
+
+#: ckanext/infographic/templates/infographic/new_package_form.html:63
+msgid "Update Infographic"
+msgstr "به‌روزرسانی اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/search.html:13
+msgid "Add Infographic"
+msgstr "اضافه کردن اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/search.html:33
+msgid "Search infographics..."
+msgstr "جستجوی اینفوگرافیک‌ها …"
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:4
+msgid "What are Infographics?"
+msgstr "اینفوگرافیک چیست؟"
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:8
+msgid "Datasets have been used to build apps, websites and visualizations. They've been featured in articles, and written about in news reports and blog posts. Infographics collect together the best examples of datasets in use, to provide further insight, ideas, and inspiration."
+msgstr "دسته‌ای از مجموعه‌داده‌ها برای ساخت اپلیکیشن‌ها، وب‌سایت‌ها و تصویرسازی به کار رفته‌اند. از آنها در مقالات استفاده شده یا در خبرها و نوشته‌های وبلاگ به آنها اشاره شده است. اینفوگرافیک‌ها، بهترین نمونه‌های مجموعه‌داده‌های استفاده شده را برای ایده‌ها و تشویق بیشتر، گردآوری و ارائه می‌کنند."
+
+#: ckanext/infographic/templates/infographic/snippets/helper.html:12
+#, python-format
+msgid "Sysadmins can manage Infographic Admins from the <a href='%(url)s'>Infographic configuration page</a>."
+msgstr "‫مدیران سیستم می‌توانند مدیران اینفوگرافیک را از <a href='%(url)s'>صفحه تنظیمات کاربرد داد</a> طریق  کنترل کنند."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_info.html:37
+msgid "Datasets in Infographic"
+msgstr "مجموعه‌داده‌ها در اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_info.html:47
+msgid "There are no Datasets in this Infographic"
+msgstr "مجموعه‌داده‌ای در این اینفوگرافیک وجود ندارد"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:30
+msgid "This infographic has no description"
+msgstr "این اینفوگرافیک توضیحی ندارد"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:41
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:42
+msgid "View {infographic_title}"
+msgstr "مشاهده {infographic_title}"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_item.html:46
+msgid "Remove dataset from this infographic"
+msgstr "حذف مجموعه‌داده از این اینفوگرافیک"
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:7
+msgid "{number} infographic found for '{query}'"
+msgid_plural "{number} infographics found for '{query}'"
+msgstr[0] "‏‫{number} اینفوگرافیک برای '{query}' یافته شد."
+msgstr[1] "‫{number} اینفوگرافیک برای '{query}' یافته شد."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:8
+msgid "No infographics found for '{query}'"
+msgstr "اینفوگرافیکی برای ‘{query}’ یافته نشد."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:9
+msgid "{number} infographic found"
+msgid_plural "{number} infographics found"
+msgstr[0] "‫{number}  اینفوگرافیک یافته شده است."
+msgstr[1] "‏‫{number}  اینفوگرافیک یافته شده است."
+
+#: ckanext/infographic/templates/infographic/snippets/infographic_search_result_text.html:10
+msgid "No infographics found"
+msgstr "اینفوگرافیکی یافته نشد"
+
+# Translations template for ckanext-datagathering.
+#: ckanext/datagathering/controller.py:71
+#: ckanext/datagathering/controller.py:267
+msgid "User not authorized to edit {datagathering_id}"
+msgstr "کاربر دسترسی ویرایش {datagathering_id} را ندارد."
+
+#: ckanext/datagathering/controller.py:147
+#: ckanext/datagathering/controller.py:184
+#: ckanext/datagathering/controller.py:224
+#: ckanext/datagathering/controller.py:238
+#: ckanext/datagathering/controller.py:274
+msgid "Datagathering not found"
+msgstr "فراخوان داده‌ پیدا نشد"
+
+#: ckanext/datagathering/controller.py:149
+#: ckanext/datagathering/controller.py:276
+msgid "Unauthorized to read datagathering"
+msgstr "دسترسی خواندن فراخوان داده‌ را ندارید"
+
+#: ckanext/datagathering/controller.py:171
+#: ckanext/datagathering/controller.py:182
+msgid "Unauthorized to delete datagathering"
+msgstr "دسترسی حذف فراخوان داده‌ را ندارید"
+
+#: ckanext/datagathering/controller.py:176
+msgid "Datagathering has been deleted."
+msgstr "فراخوان داده‌ حذف شده است."
+
+#: ckanext/datagathering/controller.py:227
+#: ckanext/datagathering/controller.py:329
+msgid "The dataset has been added to the datagathering."
+msgid_plural "The datasets have been added to the datagathering."
+msgstr[0] "‫مجموعه‌های داده به فراخوان داده‌ اضافه شد."
+msgstr[1] "مجموعه داده به فراخوان داده‌ اضافه شد."
+
+#: ckanext/datagathering/controller.py:241
+#: ckanext/datagathering/controller.py:297
+msgid "The dataset has been removed from the datagathering."
+msgid_plural "The datasets have been removed from the datagathering."
+msgstr[0] "‫‫مجموعه‌های داده از فراخوان داده‌ حذف شد."
+msgstr[1] "‫مجموعه داده از فراخوان داده‌ حذف شد."
+
+#: ckanext/datagathering/controller.py:547
+msgid "The user is now a Datagathering Admin"
+msgstr "این کاربر اکنون یک مدیر فراخوان داده‌ است"
+
+#: ckanext/datagathering/controller.py:583
+msgid "The user is not a Datagathering Admin"
+msgstr "این کاربر مدیر فراخوان داده‌ نیست"
+
+#: ckanext/datagathering/controller.py:585
+msgid "The user is no longer a Datagathering Admin"
+msgstr "این کاربر دیگر مدیر فراخوان داده‌ نیست"
+
+#: ckanext/datagathering/templates/header.html:8
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:3
+#: ckanext/datagathering/templates/package/read_base.html:7
+#: ckanext/datagathering/templates/datagathering/edit_base.html:5
+#: ckanext/datagathering/templates/datagathering/edit_base.html:17
+#: ckanext/datagathering/templates/datagathering/edit_base.html:21
+#: ckanext/datagathering/templates/datagathering/read.html:6
+#: ckanext/datagathering/templates/datagathering/read.html:33
+#: ckanext/datagathering/templates/datagathering/search.html:4
+#: ckanext/datagathering/templates/datagathering/search.html:7
+msgid "Datagatherings"
+msgstr "فراخوان داده‌‌ها"
+
+msgid "Datagathering"
+msgstr "فراخوان داده‌"
+
+#: ckanext/datagathering/templates/admin/confirm_remove_datagathering_admin.html:11
+msgid "Are you sure you want to remove this user as a Datagathering Admin - {name}?"
+msgstr "آیا مطمئنید که می‌خواهید این کاربر را از مدیران فراخوان داده‌ حذف کنید - {name}؟"
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:9
+msgid "Manage Datagathering Admins"
+msgstr "مدیریت مدیران فراخوان داده‌"
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:19
+msgid "To make an existing user a Datagathering Admin, search for their username below."
+msgstr "برای اضافه کردن یک کاربر موجود به مدیران فراخوان داده‌، نام کاربری را جستجو کنید."
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:38
+msgid "Datagathering Admins"
+msgstr "مدیران فراخوان داده‌"
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:51
+msgid "Are you sure you want to remove this user from the Datagathering Admin list?"
+msgstr "‫آیا مطمئنید که می‌خواهید این کاربر را از لیست مدیران فراخوان داده‌ حذف کنید؟"
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:61
+msgid "There are currently no Datagathering Admins."
+msgstr "در حال حاضر مدیر کابرد داده‌ای وجود ندارد."
+
+#: ckanext/datagathering/templates/admin/manage_datagathering_admins.html:69
+msgid " <p><strong>Datagathering Admin:</strong> Can create and remove datagatherings. Can add and remove datasets from datagatherings.</p> "
+msgstr "‫<p><strong>مدیر فراخوان داده‌:</strong> می‌تواند فراخوان داده‌‌ها را اضافه یا حذف کند. می‌تواند مجموعه‌داد‌ه به فراخوان داده‌ اضافه کند یا از آن حذف کند.</p> "
+
+#: ckanext/datagathering/templates/home/snippets/stats.html:28
+msgid "datagathering"
+msgstr "فراخوان داده‌"
+
+msgid "datagatherings"
+msgstr "فراخوان داده‌‌ها"
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:13
+msgid "Associate this datagathering with this dataset"
+msgstr "این فراخوان داده‌ را با این مجموعه داده مرتبط کنید"
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:13
+msgid "Add to datagathering"
+msgstr "به فراخوان داده‌ اضافه کنید"
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:17
+msgid "Datagatherings featuring {dataset_name}"
+msgstr "فراخوان داده‌‌هایی که شامل {dataset_name} اند."
+
+#: ckanext/datagathering/templates/package/dataset_datagathering_list.html:22
+msgid "There are no datagatherings that feature this dataset"
+msgstr "فراخوان داده‌‌ای که شامل این مجموعه‌داده باشد موجود نیست"
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:3
+msgid "Datagatherings - Add datasets"
+msgstr "فراخوان داده‌‌ها - اضافه کردن مجموعه‌داده‌ها"
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:31
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:36
+msgid "Datasets available to add to this datagathering"
+msgstr "مجموعه‌داده‌های موجود برای اضافه کردن به این فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/add_datasets.html:48
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:51
+msgid "Add to Datagathering"
+msgstr "اضافه کردن به فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/confirm_delete.html:11
+msgid "Are you sure you want to delete datagathering - {datagathering_name}?"
+msgstr "آیا مطمئنید که می‌خواهید این فراخوان داده‌ را حذف کنید - {datagathering_name}؟"
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:22
+#: ckanext/datagathering/templates/datagathering/new.html:3
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:63
+msgid "Create Datagathering"
+msgstr "ساخت فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:35
+msgid "View datagathering"
+msgstr "نمایش فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/edit_base.html:41
+msgid "Edit datagathering"
+msgstr "ویرایش فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:3
+msgid "Datagatherings - Manage datasets"
+msgstr "‫فراخوان داده‌‌ها - مدیریت مجموعه‌داده‌ها"
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:96
+msgid "Datasets in this datagathering"
+msgstr "مجموعه‌داده‌ها در این فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:109
+msgid "Remove from Datagathering"
+msgstr "حذف از فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/manage_datasets.html:140
+msgid "This datagathering has no datasets associated to it"
+msgstr "هیچ مجموعه‌داده‌ای به این فراخوان داده‌ اضافه نشده است"
+
+#: ckanext/datagathering/templates/datagathering/new.html:8
+msgid "Create a Datagathering"
+msgstr "ساخت یک فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:24
+msgid "eg. my-datagathering"
+msgstr "برای نمونه my-datagathering"
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:58
+msgid "Are you sure you want to delete this datagathering?"
+msgstr "‫آیا مطمئنید که می‌خواهید این فراخوان داده‌ را حذف کنید؟"
+
+#: ckanext/datagathering/templates/datagathering/new_package_form.html:63
+msgid "Update Datagathering"
+msgstr "به‌روزرسانی فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/search.html:13
+msgid "Add Datagathering"
+msgstr "اضافه کردن فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/search.html:33
+msgid "Search datagatherings..."
+msgstr "جستجوی فراخوان داده‌‌ها …"
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:4
+msgid "What are Datagatherings?"
+msgstr "فراخوان داده‌ چیست؟"
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:8
+msgid "Datasets have been used to build apps, websites and visualizations. They've been featured in articles, and written about in news reports and blog posts. Datagatherings collect together the best examples of datasets in use, to provide further insight, ideas, and inspiration."
+msgstr "دسته‌ای از مجموعه‌داده‌ها برای ساخت اپلیکیشن‌ها، وب‌سایت‌ها و تصویرسازی به کار رفته‌اند. از آنها در مقالات استفاده شده یا در خبرها و نوشته‌های وبلاگ به آنها اشاره شده است. فراخوان داده‌‌ها، بهترین نمونه‌های مجموعه‌داده‌های استفاده شده را برای ایده‌ها و تشویق بیشتر، گردآوری و ارائه می‌کنند."
+
+#: ckanext/datagathering/templates/datagathering/snippets/helper.html:12
+#, python-format
+msgid "Sysadmins can manage Datagathering Admins from the <a href='%(url)s'>Datagathering configuration page</a>."
+msgstr "‫مدیران سیستم می‌توانند مدیران فراخوان داده‌ را از <a href='%(url)s'>صفحه تنظیمات کاربرد داد</a> طریق  کنترل کنند."
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:37
+msgid "Datasets in Datagathering"
+msgstr "مجموعه‌داده‌ها در فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_info.html:47
+msgid "There are no Datasets in this Datagathering"
+msgstr "مجموعه‌داده‌ای در این فراخوان داده‌ وجود ندارد"
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:30
+msgid "This datagathering has no description"
+msgstr "این فراخوان داده‌ توضیحی ندارد"
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:41
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:42
+msgid "View {datagathering_title}"
+msgstr "مشاهده {datagathering_title}"
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_item.html:46
+msgid "Remove dataset from this datagathering"
+msgstr "حذف مجموعه‌داده از این فراخوان داده‌"
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:7
+msgid "{number} datagathering found for '{query}'"
+msgid_plural "{number} datagatherings found for '{query}'"
+msgstr[0] "‏‫{number} فراخوان داده‌ برای '{query}' یافته شد."
+msgstr[1] "‫{number} فراخوان داده‌ برای '{query}' یافته شد."
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:8
+msgid "No datagatherings found for '{query}'"
+msgstr "فراخوان داده‌‌ای برای ‘{query}’ یافته نشد."
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:9
+msgid "{number} datagathering found"
+msgid_plural "{number} datagatherings found"
+msgstr[0] "‫{number}  فراخوان داده‌ یافته شده است."
+msgstr[1] "‏‫{number}  فراخوان داده‌ یافته شده است."
+
+#: ckanext/datagathering/templates/datagathering/snippets/datagathering_search_result_text.html:10
+msgid "No datagatherings found"
+msgstr "فراخوان داده‌‌ای یافته نشد"

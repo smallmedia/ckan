@@ -141,6 +141,10 @@ h6:lang(fa_IR) {
   font-family: Vazir, 'Droid Kufi', sans-serif;
 }
 
+input:lang(fa_IR), button:lang(fa_IR), select:lang(fa_IR), textarea:lang(fa_IR) {
+    font-family: Vazir, 'Droid Kufi', sans-serif;
+}
+
 .dropdown-backdrop{
     position: static;
 }
@@ -504,7 +508,7 @@ blockquote:lang(fa_IR) {
 }
 
 .usecases h3 {
-  padding: 0 10px 0;
+  padding: 0 0 0;
 }
 
 .usecases dl,
@@ -626,17 +630,35 @@ html:lang(fa_IR) {
   direction: rtl;
 }
 
+.navigation {
+    font-size: 1.15rem;
+}
+
+.lang-selector {
+    font-size: .8rem;
+}
+
 .homepage .module-search {
   padding: 0;
 }
 
 .homepage .module-search .module-content {
-  background: #42b70b;
+  background: #ea562e;
   border-radius: 0;
 }
 
 .homepage .module-search .module-content .heading {
   font-size: 1.25rem;
+  line-height: 10px;
+}
+
+.homepage .module-search .search-giant {
+  margin-bottom: 1px;
+}
+
+.search-form .search-input.search-giant input {
+    font-size: 12px;
+    padding: 8px;
 }
 
 .homepage .module-search .search-giant input {
@@ -678,6 +700,7 @@ html:lang(fa_IR) {
 .theme-list h3,
 .homepage .usecases h3 {
   margin: 0;
+  padding-top: 5px;
 }
 
 body,
@@ -793,6 +816,10 @@ a:active {
   background: #fff;
 }
 
+.showcase ul li {
+  width: calc(100% - 10px) !important;
+}
+
 .homepage .stats ul a {
   padding-bottom: 15px;
 }
@@ -862,6 +889,10 @@ a:active {
   margin: 15px 2% 0;
   border: 1em solid transparent;
   text-align: center;
+}
+
+.infographic .media-item {
+  width: calc(88% / 3);
 }
 
 @media (max-width:767px) {
@@ -1707,7 +1738,7 @@ a:active {
 
 .footer-contact {
   color: #fbfbfb;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -1728,8 +1759,8 @@ a:active {
 }
 
 .footer-email-form .btn {
-  margin-right: 4px;
-  margin-left: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 #lab_social_icon_footer {
@@ -1783,6 +1814,14 @@ a:active {
 
 #lab_social_icon_footer #social-tg:hover {
   color: #2CA5E0;
+}
+
+/*------------------------------------*\
+    #PAGES
+\*------------------------------------*/
+
+.page-list-item .image a {
+  margin-bottom: 10px;
 }
 
 /*

@@ -1,12 +1,12 @@
 ---
 
-- name: 'Provision {{ application_name }} staging'
-  hosts: iod-ckan-live
+- name: 'Provision {{ application_name }} live'
+  hosts: live
   become: true
   become_flags: "-E"
 
   vars:
-    - deploy_env: staging
+    - deploy_env: live
     - ckan_site_url: https://iranopendata.org
     - datapusher_tgz: https://github.com/ckan/datapusher/archive/0.0.10.tar.gz
     - datapusher_root: /usr/lib/ckan/datapusher

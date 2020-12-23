@@ -10,9 +10,9 @@
 #}
 
 {% if type == 'blog' %}
-  <h2>Blog</h2>
+  <h1 class="page-heading">{{ _('Blog') }}</h1>
 {% else %}
- <h2>Pages</h2>
+  <h1 class="page-heading">{{ _('Articles') }}</h1>
 {% endif %}
 
 {% if pages %}
