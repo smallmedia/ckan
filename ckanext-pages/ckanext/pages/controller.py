@@ -341,8 +341,9 @@ class PagesController(p.toolkit.BaseController):
 
     def _pages_list_pages(self, page_type):
         data_dict={'org_id': None, 'page_type': page_type}
-        if page_type == 'blog':
-            data_dict['order_publish_date'] = True
+        # if page_type == 'blog':
+        #     data_dict['order_publish_date'] = True
+        data_dict['order_publish_date'] = True
         p.toolkit.c.pages_dict = p.toolkit.get_action('ckanext_pages_list')(
             data_dict=data_dict
         )
