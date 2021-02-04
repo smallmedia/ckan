@@ -5178,6 +5178,12 @@ msgstr "پروژه"
 msgid "khatam al-anbiya construction headquarters"
 msgstr "قرارگاه خاتم الانبیا"
 
+msgid "corona test"
+msgstr "تست کرونا"
+
+msgid "court"
+msgstr "دادگاه"
+
 # Translations template for ckanext-infographic.
 #: ckanext/infographic/controller.py:71 ckanext/infographic/controller.py:267
 msgid "User not authorized to edit {infographic_id}"
