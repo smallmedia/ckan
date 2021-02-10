@@ -900,7 +900,7 @@ a:active {
     flex-direction: column;
   }
 
-  .media-item {
+  .media-item, .infographic .media-item {
     width: 100%;
   }
 }

@@ -2062,6 +2062,20 @@
             "en": "khatam al-anbiya construction headquarters",
             "fa_IR": "قرارگاه خاتم الانبیا"
           }
+        },
+        {
+          "value": "corona test",
+          "label": {
+            "en": "corona test",
+            "fa_IR": "تست کرونا"
+          }
+        },
+        {
+          "value": "court",
+          "label": {
+            "en": "court",
+            "fa_IR": "دادگاه"
+          }
         }
       ]
     },
@@ -2456,6 +2470,13 @@
          "label": {
            "en": "Ministry of Energy",
            "fa_IR": "وزارت نیرو"
+         }
+        },
+        {
+         "value": "Iran Open Data",
+         "label": {
+           "en": "Iran Open Data",
+           "fa_IR": "پایگاه داده باز ایران"
          }
         }
       ]
@@ -2971,6 +2992,20 @@
          "label": {
            "en": "Our World In Data",
            "fa_IR": "جهان ما در داده‌ها"
+         }
+        },
+        {
+         "value": "Ministry of Energy",
+         "label": {
+           "en": "Ministry of Energy",
+           "fa_IR": "وزارت نیرو"
+         }
+        },
+        {
+         "value": "Iran Open Data",
+         "label": {
+           "en": "Iran Open Data",
+           "fa_IR": "پایگاه داده باز ایران"
          }
         }
       ]
