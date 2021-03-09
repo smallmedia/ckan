@@ -2076,6 +2076,20 @@
             "en": "court",
             "fa_IR": "دادگاه"
           }
+        },
+        {
+          "value": "news",
+          "label": {
+            "en": "news",
+            "fa_IR": "خبر"
+          }
+        },
+        {
+          "value": "Islamic Republic of Iran Broadcasting",
+          "label": {
+            "en": "Islamic Republic of Iran Broadcasting",
+            "fa_IR": "صدا و سیما"
+          }
         }
       ]
     },
@@ -2477,6 +2491,13 @@
          "label": {
            "en": "Iran Open Data",
            "fa_IR": "پایگاه داده باز ایران"
+         }
+        },
+        {
+         "value": "Mehr News Agency",
+         "label": {
+           "en": "Mehr News Agency",
+           "fa_IR": "خبرگزاری مهر"
          }
         }
       ]
@@ -3006,6 +3027,13 @@
          "label": {
            "en": "Iran Open Data",
            "fa_IR": "پایگاه داده باز ایران"
+         }
+        },
+        {
+         "value": "Mehr News Agency",
+         "label": {
+           "en": "Mehr News Agency",
+           "fa_IR": "خبرگزاری مهر"
          }
         }
       ]
