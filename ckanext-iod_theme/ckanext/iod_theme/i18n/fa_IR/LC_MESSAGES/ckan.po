@@ -5184,6 +5184,9 @@ msgstr "تست کرونا"
 msgid "court"
 msgstr "دادگاه"
 
+msgid "Islamic Republic of Iran Broadcasting"
+msgstr "صدا و سیما"
+
 # Translations template for ckanext-infographic.
 #: ckanext/infographic/controller.py:71 ckanext/infographic/controller.py:267
 msgid "User not authorized to edit {infographic_id}"
