@@ -2090,6 +2090,20 @@
             "en": "Islamic Republic of Iran Broadcasting",
             "fa_IR": "صدا و سیما"
           }
+        },
+        {
+          "value": "gasoline",
+          "label": {
+            "en": "gasoline",
+            "fa_IR": "بنزین"
+          }
+        },
+        {
+          "value": "smuggling",
+          "label": {
+            "en": "smuggling",
+            "fa_IR": "قاچاق"
+          }
         }
       ]
     },
@@ -2498,6 +2512,13 @@
          "label": {
            "en": "Mehr News Agency",
            "fa_IR": "خبرگزاری مهر"
+         }
+        },
+        {
+         "value": "Global Petrol Prices",
+         "label": {
+           "en": "Global Petrol Prices",
+           "fa_IR": "قیمت جهانی بنزین"
          }
         }
       ]
@@ -3034,6 +3055,13 @@
          "label": {
            "en": "Mehr News Agency",
            "fa_IR": "خبرگزاری مهر"
+         }
+        },
+        {
+         "value": "Global Petrol Prices",
+         "label": {
+           "en": "Global Petrol Prices",
+           "fa_IR": "قیمت جهانی بنزین"
          }
         }
       ]
